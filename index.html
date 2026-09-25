@@ -16,16 +16,16 @@
               dark: '#050c14',
               surface: '#0b1b28',
               card: '#0c2234',
-              cardBorder: '#00dfb2',
-              cyan: '#00e5b3',
+              cardBorder: '#00e5b3',
+              cyan: '#00e6a8',
               cyanHover: '#00cfa2',
               accentBlue: '#0ea5e9',
               accentYellow: '#eab308'
             }
           },
           boxShadow: {
-            'neon-cyan': '0 0 20px -3px rgba(0, 229, 179, 0.45)',
-            'neon-glow': '0 0 35px -5px rgba(0, 229, 179, 0.3)'
+            'neon-cyan': '0 0 20px -3px rgba(0, 230, 168, 0.45)',
+            'neon-glow': '0 0 35px -5px rgba(0, 230, 168, 0.3)'
           }
         }
       }
@@ -34,7 +34,7 @@
 <!-- Google Fonts Inter & Plus Jakarta Sans -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
 <style data-purpose="base-styling">
     body {
@@ -43,13 +43,12 @@
       color: #f1f5f9;
       -webkit-tap-highlight-color: transparent;
     }
-    /* Estilização suave para scrollbar mobile */
     ::-webkit-scrollbar {
       width: 4px;
       height: 4px;
     }
     ::-webkit-scrollbar-thumb {
-      background: #00e5b3;
+      background: #00e6a8;
       border-radius: 9999px;
     }
     .no-scrollbar::-webkit-scrollbar {
@@ -64,27 +63,20 @@
     @keyframes pulse-pin {
       0%, 100% {
         transform: scale(1);
-        filter: drop-shadow(0 0 6px #00e5b3);
+        filter: drop-shadow(0 0 6px #00e6a8);
       }
       50% {
         transform: scale(1.15);
-        filter: drop-shadow(0 0 14px #00e5b3);
+        filter: drop-shadow(0 0 14px #00e6a8);
       }
     }
     .pin-glow {
       animation: pulse-pin 2.5s infinite ease-in-out;
     }
-    @keyframes slideUp {
-      from { transform: translateY(100%); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    .animate-slide-up {
-      animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    }
     @keyframes highlight-glow {
-      0% { box-shadow: 0 0 0 0 rgba(0, 229, 179, 0.7); }
-      70% { box-shadow: 0 0 45px 10px rgba(0, 229, 179, 0.5); }
-      100% { box-shadow: 0 0 35px -5px rgba(0, 229, 179, 0.3); }
+      0% { box-shadow: 0 0 0 0 rgba(0, 230, 168, 0.7); }
+      70% { box-shadow: 0 0 45px 10px rgba(0, 230, 168, 0.5); }
+      100% { box-shadow: 0 0 35px -5px rgba(0, 230, 168, 0.3); }
     }
     .highlight-card-anim {
       animation: highlight-glow 2s ease-out;
@@ -93,33 +85,34 @@
 </head>
 <body class="min-h-screen bg-[#050c14] text-slate-100 antialiased overflow-x-hidden pb-12">
 <!-- Toast de Sucesso Notificação -->
-<div class="fixed top-5 left-1/2 -translate-x-1/2 z-[100] max-w-[92vw] w-[420px] bg-[#0c2234] border-2 border-[#00e5b3] text-white px-4 py-3.5 rounded-2xl shadow-[0_10px_35px_rgba(0,229,179,0.35)] flex items-center gap-3 transition-all duration-300 transform -translate-y-28 opacity-0 pointer-events-none" id="toastSuccess">
-<div class="w-10 h-10 rounded-xl bg-[#00e5b3]/20 text-[#00e5b3] flex items-center justify-center shrink-0">
+<div class="fixed top-5 left-1/2 -translate-x-1/2 z-[100] max-w-[92vw] w-[420px] bg-[#0c2234] border-2 border-[#00e6a8] text-white px-4 py-3.5 rounded-2xl shadow-[0_10px_35px_rgba(0,230,168,0.35)] flex items-center gap-3 transition-all duration-300 transform -translate-y-28 opacity-0 pointer-events-none" id="toastSuccess">
+<div class="w-10 h-10 rounded-xl bg-[#00e6a8]/20 text-[#00e6a8] flex items-center justify-center shrink-0">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </div>
 <div class="flex-1 text-xs">
-<p class="font-extrabold text-[#00e5b3] text-sm">🎉 Anúncio Publicado com Sucesso!</p>
-<p class="text-slate-300 leading-snug">Seu imóvel já está em destaque ao vivo na página inicial.</p>
+<p class="font-extrabold text-[#00e6a8] text-sm">🎉 Anúncio Publicado com Sucesso!</p>
+<p class="text-slate-300 leading-snug">Seu imóvel já está em destaque ao vivo com conversão de moeda.</p>
 </div>
-<button class="text-slate-400 hover:text-white p-1" onclick="hideToast()">✕</button>
+<button class="text-slate-400 hover:text-white p-1 text-base leading-none" onclick="hideToast()">✕</button>
 </div>
 <!-- BEGIN: MainHeader -->
-<header class="sticky top-0 z-50 bg-[#050c14]/90 backdrop-blur-md border-b border-cyan-500/20 px-4 py-3.5 flex items-center justify-between">
+<header class="sticky top-0 z-40 bg-[#050c14]/90 backdrop-blur-md border-b border-cyan-500/20 px-4 py-3.5 flex items-center justify-between">
 <!-- Logotipo da Marca -->
 <a aria-label="OpenWord Home" class="flex items-center gap-1.5 focus:outline-none" href="#">
-<span class="text-2xl font-black tracking-tight text-white">Open<span class="text-[#00e5b3]">Word</span></span>
-<span class="w-2 h-2 rounded-full bg-[#00e5b3] inline-block shadow-[0_0_8px_#00e5b3]"></span>
+<span class="text-2xl font-black tracking-tight text-white font-['Space_Grotesk']">Open<span class="text-[#00e6a8]">Word</span></span>
+<span class="w-2 h-2 rounded-full bg-[#00e6a8] inline-block shadow-[0_0_8px_#00e6a8]"></span>
 </a>
 <!-- Menu rápido / Botão de Ação -->
 <div class="flex items-center gap-3">
 <nav class="hidden sm:flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-300">
-<a class="hover:text-[#00e5b3] transition-colors" href="#aluguel">Aluguéis</a>
-<a class="hover:text-[#00e5b3] transition-colors" href="#venda">A Venda</a>
-<a class="hover:text-[#00e5b3] transition-colors" href="#mapa">Mapa</a>
+<a class="hover:text-[#00e6a8] transition-colors" href="#destaque">Aluguéis</a>
+<a class="hover:text-[#00e6a8] transition-colors" href="#destaque">A Venda</a>
+<a class="hover:text-[#00e6a8] transition-colors" href="#mapa">Mapa</a>
 </nav>
-<button class="bg-[#00e5b3] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-bold text-xs sm:text-sm px-4 sm:px-5 py-2 rounded-full uppercase tracking-wider shadow-neon-cyan transition-all flex items-center gap-1.5" id="openPublishModalHeaderBtn">
+<!-- Botão Topo: com onclick direto para garantia absoluta de abertura -->
+<button class="bg-[#00e6a8] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-extrabold text-xs sm:text-sm px-4 sm:px-5 py-2 rounded-full uppercase tracking-wider shadow-neon-cyan transition-all flex items-center gap-1.5 cursor-pointer font-['Space_Grotesk']" id="openPublishModalHeaderBtn" onclick="openModal()" type="button">
 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>Anunciar</span>
+<span class="">Anunciar</span>
 </button>
 </div>
 </header>
@@ -127,37 +120,34 @@
 <main class="space-y-8">
 <!-- BEGIN: HeroSection -->
 <section class="relative px-4 pt-8 pb-10 overflow-hidden" data-purpose="hero-banner">
-<!-- Imagem de fundo estilo globo noturno com pins luminosos -->
-<div class="absolute inset-0 -z-10 opacity-35 bg-center bg-cover pointer-events-none" style="background-image: radial-gradient(circle at 60% 30%, rgba(0, 229, 179, 0.25) 0%, transparent 60%), radial-gradient(circle at 20% 80%, rgba(14, 165, 233, 0.2) 0%, #050c14 80%);">
-</div>
-<!-- Efeito visual de pins no mapa de fundo -->
+<div class="absolute inset-0 -z-10 opacity-35 bg-center bg-cover pointer-events-none" style="background-image: radial-gradient(circle at 60% 30%, rgba(0, 230, 168, 0.25) 0%, transparent 60%), radial-gradient(circle at 20% 80%, rgba(14, 165, 233, 0.2) 0%, #050c14 80%);"></div>
 <div class="absolute top-10 right-8 pin-glow pointer-events-none opacity-80">
-<svg class="w-6 h-6 text-[#00e5b3]" fill="currentColor" viewbox="0 0 24 24">
+<svg class="w-6 h-6 text-[#00e6a8]" fill="currentColor" viewbox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
 <div class="absolute bottom-6 right-20 pin-glow pointer-events-none opacity-60" style="animation-delay: 1.2s;">
-<svg class="w-5 h-5 text-[#00e5b3]" fill="currentColor" viewbox="0 0 24 24">
+<svg class="w-5 h-5 text-[#00e6a8]" fill="currentColor" viewbox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
 <div class="max-w-md mx-auto">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00e5b3]/10 border border-[#00e5b3]/30 text-[#00e5b3] text-xs font-semibold mb-4">
-<span class="w-1.5 h-1.5 rounded-full bg-[#00e5b3] animate-ping"></span>
-          Imóveis Exclusivos no Mundo Inteiro
-        </div>
-<h1 class="text-3xl sm:text-4xl font-black tracking-tight text-white leading-tight">
-          Encontre seu <br/>
-<span class="text-[#00e5b3] drop-shadow-[0_0_15px_rgba(0,229,179,0.35)]">imóvel ideal.</span>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00e6a8]/10 border border-[#00e6a8]/30 text-[#00e6a8] text-xs font-semibold mb-4">
+<span class="w-1.5 h-1.5 rounded-full bg-[#00e6a8] animate-ping"></span>
+        Imóveis Exclusivos no Mundo Inteiro
+      </div>
+<h1 class="text-3xl sm:text-4xl font-black tracking-tight text-white leading-tight font-['Space_Grotesk']">
+        Encontre seu <br/>
+<span class="text-[#00e6a8] drop-shadow-[0_0_15px_rgba(0,230,168,0.35)]">imóvel ideal.</span>
 </h1>
 <p class="mt-3 text-sm text-slate-300 leading-relaxed max-w-xs">
-          Explore as melhores casas para comprar ou alugar ao redor do mundo com máxima segurança e agilidade.
-        </p>
-<!-- Botão Principal de Conversão Hero (Atualizado para ANUNCIE SEU IMÓVEL) -->
+        Explore as melhores casas para comprar ou alugar ao redor do mundo com máxima segurança e suporte multimoedas.
+      </p>
+<!-- Botão Hero com onclick direto garantido -->
 <div class="mt-6 flex flex-col sm:flex-row gap-3">
-<button class="w-full text-center bg-[#00e5b3] hover:bg-[#00cfa2] active:scale-98 text-[#050c14] font-extrabold text-sm py-3.5 px-6 rounded-2xl tracking-wide shadow-neon-cyan transition-all flex items-center justify-center gap-2" id="openPublishModalHeroBtn">
+<button class="w-full text-center bg-[#00e6a8] hover:bg-[#00cfa2] active:scale-98 text-[#050c14] font-extrabold text-sm py-3.5 px-6 rounded-2xl tracking-wide shadow-neon-cyan transition-all flex items-center justify-center gap-2 cursor-pointer font-['Space_Grotesk']" id="openPublishModalHeroBtn" onclick="openModal()" type="button">
 <svg class="w-5 h-5 text-[#050c14]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>ANUNCIE SEU IMÓVEL</span>
+<span class="">ANUNCIE SEU IMÓVEL</span>
 </button>
 </div>
 </div>
@@ -166,28 +156,26 @@
 <!-- BEGIN: QuickFiltersSection -->
 <section class="px-4" data-purpose="category-badges">
 <div class="max-w-md mx-auto">
-<!-- Barra de Busca Rápida -->
 <div class="relative mb-4">
-<input class="w-full bg-[#0c2234]/80 text-sm text-slate-100 placeholder-slate-400 pl-11 pr-4 py-3 rounded-2xl border border-cyan-500/30 focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3] focus:outline-none transition" placeholder="Buscar por cidade, bairro ou país..." type="text"/>
-<svg class="w-5 h-5 text-[#00e5b3] absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<input class="w-full bg-[#0c2234]/80 text-sm text-slate-100 placeholder-slate-400 pl-11 pr-4 py-3 rounded-2xl border border-cyan-500/30 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] focus:outline-none transition" placeholder="Buscar por cidade, bairro ou país..." type="text"/>
+<svg class="w-5 h-5 text-[#00e6a8] absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </div>
-<!-- Tags Categorias -->
-<div class="p-2 rounded-2xl bg-[#091b29]/90 border border-[#00dfb2]/40 backdrop-blur-md flex flex-wrap items-center justify-around gap-1.5 shadow-inner">
-<button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0">
-<svg class="w-4 h-4 text-[#00e5b3] shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
-<span>Casas a venda</span>
+<div class="p-2 rounded-2xl bg-[#091b29]/90 border border-[#00e6a8]/40 backdrop-blur-md flex flex-wrap items-center justify-around gap-1.5 shadow-inner">
+<button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0" onclick="filterType('Venda')" type="button">
+<svg class="w-4 h-4 text-[#00e6a8] shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+<span class="">Casas a venda</span>
 </button>
 <div class="hidden sm:block w-px h-5 bg-slate-700"></div>
-<button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0">
+<button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0" onclick="filterType('Aluguel')" type="button">
 <svg class="w-4 h-4 text-[#0ea5e9] shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
-<span>Casas de Aluguel</span>
+<span class="">Casas de Aluguel</span>
 </button>
 <div class="hidden sm:block w-px h-5 bg-slate-700"></div>
-<button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0">
+<button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0" onclick="filterType('Lazer')" type="button">
 <svg class="w-4 h-4 text-[#eab308] shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
-<span>Área de Lazer</span>
+<span class="">Área de Lazer</span>
 </button>
 </div>
 </div>
@@ -197,25 +185,24 @@
 <section class="px-4 transition-all duration-500" data-purpose="featured-listing" id="destaque">
 <div class="max-w-md mx-auto">
 <div class="flex items-center justify-between mb-2">
-<div class="text-xs uppercase tracking-wider text-[#00e5b3] font-bold flex items-center gap-1.5">
-<span class="w-2 h-2 rounded-full bg-[#00e5b3] animate-pulse"></span>
-<span id="featuredSectionBadge">Imóvel em Destaque</span>
+<div class="text-xs uppercase tracking-wider text-[#00e6a8] font-bold flex items-center gap-1.5 font-['Space_Grotesk']">
+<span class="w-2 h-2 rounded-full bg-[#00e6a8] animate-pulse"></span>
+<span class="" id="featuredSectionBadge">Imóvel em Destaque</span>
 </div>
-<span class="hidden text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-md bg-[#00e5b3]/20 text-[#00e5b3] border border-[#00e5b3]/40 tracking-wider" id="newListingTag">
-    Recém Publicado
-  </span>
+<span class="hidden text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-md bg-[#00e6a8]/20 text-[#00e6a8] border border-[#00e6a8]/40 tracking-wider font-['Space_Grotesk']" id="newListingTag">
+          Recém Publicado
+        </span>
 </div>
-<!-- Card Principal Estilo Cockpit Dark Navy com Borda Ciano -->
-<article class="bg-[#0a1f2e] border-2 border-[#00dfb2] rounded-3xl p-4 sm:p-5 shadow-neon-glow space-y-4 transition-all duration-300" id="featuredPropertyCard">
+<!-- Card Principal Estilo Dark Navy com Borda Ciano -->
+<article class="bg-[#0a1f2e] border-2 border-[#00e6a8] rounded-3xl p-4 sm:p-5 shadow-neon-glow space-y-4 transition-all duration-300" id="featuredPropertyCard">
 <!-- Carrossel de Fotos do Imóvel Interativo -->
 <div class="relative rounded-2xl overflow-hidden bg-slate-900 border border-cyan-500/20 aspect-[4/3] group" id="propertyCarouselContainer">
-<!-- Slider container com scroll horizontal suave & snap -->
 <div class="flex w-full h-full overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar" id="propertySlider">
-<!-- Slide 1: Fachada / Exterior Original -->
+<!-- Slide 1: Fachada Principal -->
 <div class="w-full h-full shrink-0 snap-center relative">
 <img alt="Fachada e acesso do imóvel" class="w-full h-full object-cover select-none" id="mainPropertyImg1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik"/>
 </div>
-<!-- Slide 2: Sala de Estar e Cozinha Gourmet Integradas -->
+<!-- Slide 2: Sala de Estar e Cozinha Integradas -->
 <div class="w-full h-full shrink-0 snap-center relative">
 <img alt="Modern luxury living room and gourmet kitchen open concept" class="w-full h-full object-cover select-none" id="mainPropertyImg2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWWKeevwFBpHbmRY-esN2jYVPnc4Wq-lnRjQytT3obsGIZdlOUMqcS5p3LDddD0NhKdjEgWnWBaqncUkNbhDsKJ71Z-_um4gL_bSiridPgrjPVbCzITESh9PEagTCYdg0U6Ndgc3XGc2S3TAYTGzx5SbqmQ8DACkmJ5ZwZtel-pCZdu3jQuxW1KsP0cp37MZQm-LXn__mAEiFIZCYCiDcFMpFo-2N0dZGbaGwp4wzMn5qTvx7aIRE5kXrCe3AAlZ77l1Qagfl9vzZiUc"/>
 </div>
@@ -229,71 +216,75 @@
 </div>
 </div>
 <!-- Controles do carrossel (< e >) -->
-<button aria-label="Imagem anterior" class="absolute left-2.5 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#00e5b3] hover:text-[#050c14] text-white p-2 rounded-full backdrop-blur-sm transition active:scale-90" id="carouselPrevBtn" type="button">
+<button aria-label="Imagem anterior" class="absolute left-2.5 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#00e6a8] hover:text-[#050c14] text-white p-2 rounded-full backdrop-blur-sm transition active:scale-90" id="carouselPrevBtn" type="button">
 <svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </button>
-<button aria-label="Próxima imagem" class="absolute right-2.5 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#00e5b3] hover:text-[#050c14] text-white p-2 rounded-full backdrop-blur-sm transition active:scale-90" id="carouselNextBtn" type="button">
+<button aria-label="Próxima imagem" class="absolute right-2.5 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#00e6a8] hover:text-[#050c14] text-white p-2 rounded-full backdrop-blur-sm transition active:scale-90" id="carouselNextBtn" type="button">
 <svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </button>
 <!-- Tag de Localização sobre a Imagem -->
-<div class="absolute bottom-2.5 left-2.5 z-20 bg-[#050c14]/85 backdrop-blur-md px-3 py-1 rounded-xl border border-cyan-500/30 text-xs font-bold text-[#00e5b3] max-w-[70%] truncate" id="propertyBadgeLocation">
-  Jardins / Cidade das Rosas
-</div>
+<div class="absolute bottom-2.5 left-2.5 z-20 bg-[#050c14]/85 backdrop-blur-md px-3 py-1 rounded-xl border border-cyan-500/30 text-xs font-bold text-[#00e6a8] max-w-[70%] truncate" id="propertyBadgeLocation">
+            Jardins / Cidade das Rosas
+          </div>
 <!-- Indicador de Paginação (Contador Numérico & Pontos Indicadores) -->
 <div class="absolute top-2.5 right-2.5 z-20 bg-[#050c14]/85 backdrop-blur-md px-2.5 py-1 rounded-xl border border-cyan-500/30 flex items-center gap-1.5">
 <span class="text-[11px] font-bold text-slate-100" id="carouselCounter">1/4</span>
 <div class="flex items-center gap-1 pl-1 border-l border-white/20" id="carouselDots">
-<button aria-label="Ir para foto 1" class="w-2 h-2 rounded-full bg-[#00e5b3] transition-all shadow-[0_0_6px_#00e5b3]" data-index="0"></button>
-<button aria-label="Ir para foto 2" class="w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all" data-index="1"></button>
-<button aria-label="Ir para foto 3" class="w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all" data-index="2"></button>
-<button aria-label="Ir para foto 4" class="w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all" data-index="3"></button>
+<button aria-label="Ir para foto 1" class="w-2 h-2 rounded-full bg-[#00e6a8] transition-all shadow-[0_0_6px_#00e6a8]" data-index="0" type="button"></button>
+<button aria-label="Ir para foto 2" class="w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all" data-index="1" type="button"></button>
+<button aria-label="Ir para foto 3" class="w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all" data-index="2" type="button"></button>
+<button aria-label="Ir para foto 4" class="w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all" data-index="3" type="button"></button>
 </div>
 </div>
 </div>
-<!-- Perfil da Corretora / Anfitrião -->
+<!-- Perfil do Anunciante / Proprietário -->
 <div class="flex items-center gap-3.5 pt-1 border-b border-cyan-500/15 pb-4">
 <div class="relative shrink-0">
-<img alt="Foto de perfil do proprietário" class="w-14 h-14 rounded-full object-cover border-2 border-[#00e5b3] shadow-[0_0_10px_rgba(0,229,179,0.3)]" id="propertyOwnerAvatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbbIM0ad81i2lbIub5bmxKAYHUh6UWRvXdbUmtIAsKSh0Obf7hgqh6xFDwEVD_NNjR7v3R2vkcE6EJ5hfZ-LNcZc9BhYQYMILMCw_OpW6lncqy7bL7x_56nBiwE8RPfJEWEJif6n05j2B-evKzNrRUpVnBek6wwztlBy7zGJNV375Q0Wl4ev_ZQOQFeK0oKpmHkthG3nth5UTC37PcG4Y0sxKBr10ZoTy6Fyc0kj8bJHy_UdAVgcFzxHCQHR0Uy0FZA5QVlCOrXVMAf1E"/>
+<img alt="Foto de perfil do proprietário" class="w-14 h-14 rounded-full object-cover border-2 border-[#00e6a8] shadow-[0_0_10px_rgba(0,230,168,0.3)]" id="propertyOwnerAvatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbbIM0ad81i2lbIub5bmxKAYHUh6UWRvXdbUmtIAsKSh0Obf7hgqh6xFDwEVD_NNjR7v3R2vkcE6EJ5hfZ-LNcZc9BhYQYMILMCw_OpW6lncqy7bL7x_56nBiwE8RPfJEWEJif6n05j2B-evKzNrRUpVnBek6wwztlBy7zGJNV375Q0Wl4ev_ZQOQFeK0oKpmHkthG3nth5UTC37PcG4Y0sxKBr10ZoTy6Fyc0kj8bJHy_UdAVgcFzxHCQHR0Uy0FZA5QVlCOrXVMAf1E"/>
 <span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-emerald-500 border-2 border-[#0a1f2e]"></span>
 </div>
 <div class="min-w-0 flex-1">
 <p class="text-xs text-slate-400 font-medium" id="propertyOwnerRole">Proprietário Responsável</p>
 <h2 class="text-base font-bold text-white leading-tight truncate" id="propertyOwnerName">Ronaldo Londres</h2>
-<a class="text-xs font-semibold text-[#00e5b3] hover:underline flex items-center gap-1 mt-0.5 truncate" href="tel:+5584986802229" id="propertyOwnerPhoneLink">
+<a class="text-xs font-semibold text-[#00e6a8] hover:underline flex items-center gap-1 mt-0.5 truncate" href="tel:+5584986802229" id="propertyOwnerPhoneLink">
 <svg class="w-3.5 h-3.5 shrink-0" fill="currentColor" viewbox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
-<span id="propertyOwnerPhoneText">(84) 98680-2229</span>
+<span class="" id="propertyOwnerPhoneText">(84) 98680-2229</span>
 </a>
 </div>
 </div>
-<!-- Valores e Metragem -->
+<!-- Valores e Metragem com Suporte a Moedas Mundiais -->
 <div class="bg-[#071622] rounded-2xl p-3.5 border border-cyan-500/20 flex flex-wrap items-center justify-between gap-2">
 <div>
-<span class="text-xs text-slate-400 block font-medium" id="propertyPriceLabel">Valor Mensal</span>
-<span class="text-base sm:text-lg font-black text-white"><span id="propertyPriceType">Aluguel:</span> <span class="text-[#00e5b3]" id="propertyPriceValue">R$ 380,00</span></span>
+<div class="flex items-center gap-1.5">
+<span class="text-xs text-slate-400 font-medium" id="propertyPriceLabel">Valor Mensal</span>
+<span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-cyan-500/10 text-[#00e6a8] border border-cyan-500/25 uppercase" id="propertyPriceCurrencyBadge">BRL</span>
+</div>
+<span class="text-base sm:text-lg font-black text-white font-['Space_Grotesk']"><span class="" id="propertyPriceType">Aluguel:</span> <span class="text-[#00e6a8]" id="propertyPriceValue">R$ 380,00</span></span>
 </div>
 <div class="text-right">
 <span class="text-xs text-slate-400 block font-medium">Área Útil</span>
-<span class="text-xs sm:text-sm font-extrabold text-slate-100" id="propertyAreaMetrics">Metros: 211 m²</span>
+<span class="text-xs sm:text-sm font-extrabold text-slate-100 font-['Space_Grotesk']" id="propertyAreaMetrics">Metros: 211 m²</span>
 </div>
 </div>
 <!-- Especificações do Imóvel -->
 <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-xs font-medium text-slate-200 py-1" id="propertyFeaturesGrid">
-<div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e5b3] shrink-0"></span><span class="truncate" id="featBedrooms">3 Quartos</span></div>
-<div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e5b3] shrink-0"></span><span class="truncate" id="featYard">1 Quintal</span></div>
-<div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e5b3] shrink-0"></span><span class="truncate" id="featBathrooms">2 Banheiros</span></div>
-<div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e5b3] shrink-0"></span><span class="truncate" id="featLaundry">1 Área de Serviço</span></div>
-<div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e5b3] shrink-0"></span><span class="truncate" id="featKitchen">1 Cozinha Planejada</span></div>
-<div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e5b3] shrink-0"></span><span class="truncate" id="featGarage">2 Vagas de Garagem</span></div>
+<div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e6a8] shrink-0"></span><span class="truncate" id="featBedrooms">3 Quartos</span></div>
+<div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e6a8] shrink-0"></span><span class="truncate" id="featYard">1 Quintal</span></div>
+<div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e6a8] shrink-0"></span><span class="truncate" id="featBathrooms">2 Banheiros</span></div>
+<div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e6a8] shrink-0"></span><span class="truncate" id="featLaundry">1 Área de Serviço</span></div>
+<div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e6a8] shrink-0"></span><span class="truncate" id="featKitchen">1 Cozinha Planejada</span></div>
+<div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e6a8] shrink-0"></span><span class="truncate" id="featGarage">2 Vagas de Garagem</span></div>
 </div>
 <!-- Botões de Ação do Imóvel -->
 <div class="pt-2 flex flex-wrap gap-2.5 sm:gap-3">
-<a class="flex-1 min-w-[140px] text-center bg-[#00e5b3] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-bold text-xs py-3 px-2 rounded-xl tracking-wider shadow-neon-cyan transition-all uppercase whitespace-nowrap flex items-center justify-center gap-2" href="https://wa.me/5584986802229?text=Ol%C3%A1%2C%20vi%20o%20anuncio%20do%20aluguel%20da%20sua%20casa%2C%20ela%20ainda%20est%C3%A1%20disponivel%20%3F" id="propertyWhatsappBtn" rel="noopener noreferrer" target="_blank">
+<!-- WhatsApp Link oficial wa.me -->
+<a class="flex-1 min-w-[140px] text-center bg-[#00e6a8] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-bold text-xs py-3 px-2 rounded-xl tracking-wider shadow-neon-cyan transition-all uppercase whitespace-nowrap flex items-center justify-center gap-2 font-['Space_Grotesk']" href="https://wa.me/5584986802229?text=Ol%C3%A1%2C%20vi%20o%20anuncio%20do%20aluguel%20da%20sua%20casa%2C%20ela%20ainda%20est%C3%A1%20disponivel%20%3F" id="propertyWhatsappBtn" rel="noopener noreferrer" target="_blank">
 <svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
-<span>ENTRAR EM CONTATO</span>
+<span class="">ENTRAR EM CONTATO</span>
 </a>
-<button class="px-4 py-3 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold active:scale-95 transition shrink-0 flex items-center gap-1.5" id="favoriteBtn" onclick="toggleFavorite()">
+<button class="px-4 py-3 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold active:scale-95 transition shrink-0 flex items-center gap-1.5" id="favoriteBtn" onclick="toggleFavorite()" type="button">
 <svg class="w-4 h-4 text-slate-400 transition" fill="none" id="favoriteIcon" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-<span id="favoriteLabel">Favoritar</span>
+<span class="" id="favoriteLabel">Favoritar</span>
 </button>
 </div>
 </article>
@@ -304,24 +295,22 @@
 <section class="px-4" data-purpose="map-preview" id="mapa">
 <div class="max-w-md mx-auto space-y-3">
 <div class="flex items-center justify-between">
-<h2 class="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
-<span class="w-2 h-2 rounded-full bg-[#00e5b3]"></span>
-            Localização no Mapa
-          </h2>
+<h2 class="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2 font-['Space_Grotesk']">
+<span class="w-2 h-2 rounded-full bg-[#00e6a8]"></span>
+          Localização no Mapa
+        </h2>
 <span class="text-xs text-slate-400">Tempo real</span>
 </div>
 <!-- Moldura do Mapa Satélite Estilizado -->
-<div class="relative bg-[#0c2234] border-2 border-[#00dfb2] rounded-3xl overflow-hidden shadow-neon-glow aspect-video sm:aspect-[16/10]">
-<!-- Representação visual do mapa de satélite urbano -->
-<img alt="Visão de satélite cartográfico e demarcação de rota" class="w-full h-full object-cover brightness-75 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMUGxeQ3hAKNuBpPVha5ot27sL_nrmgPk0Fh6uOjVe1gy86eXdlOq3-yjz5zFyNm0BJHNi9Y8Nu3G99FI9lwMvOj1tHCxy8vGvVELYej8-PDWQjQcjAngB7a0BXxDQOtvXD7BdcQqvPW07m_iYSHiwRcuZiwVdYZUIRMHsBTjvuxOgLNd6ekYKR9IlPEFPX6tAn7VJ5yB16eWk576qgrU3YiMbVBszFcu59ni9uzwrfwjbbmtRJCLOAw"/>
-<!-- Camada de overlay escuro e pins luminosos -->
+<div class="relative bg-[#0c2234] border-2 border-[#00e6a8] rounded-3xl overflow-hidden shadow-neon-glow aspect-video sm:aspect-[16/10]" id="mapVisualContainer">
+<img alt="Visão de satélite cartográfico e demarcação de rota" class="w-full h-full object-cover brightness-75 contrast-125 transition-transform duration-300" id="mapSatelliteImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMUGxeQ3hAKNuBpPVha5ot27sL_nrmgPk0Fh6uOjVe1gy86eXdlOq3-yjz5zFyNm0BJHNi9Y8Nu3G99FI9lwMvOj1tHCxy8vGvVELYej8-PDWQjQcjAngB7a0BXxDQOtvXD7BdcQqvPW07m_iYSHiwRcuZiwVdYZUIRMHsBTjvuxOgLNd6ekYKR9IlPEFPX6tAn7VJ5yB16eWk576qgrU3YiMbVBszFcu59ni9uzwrfwjbbmtRJCLOAw"/>
 <div class="absolute inset-0 bg-[#050c14]/40 pointer-events-none"></div>
 <!-- Pin Central de Alta Visibilidade -->
 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pin-glow">
-<div class="bg-[#00e5b3] text-[#050c14] font-extrabold text-[10px] px-2 py-0.5 rounded-full shadow-md whitespace-nowrap mb-1" id="mapPinBadge">
-  R$ 380 / mês
-</div>
-<svg class="w-8 h-8 text-[#00e5b3] drop-shadow-[0_0_12px_#00e5b3]" fill="currentColor" viewbox="0 0 24 24">
+<div class="bg-[#00e6a8] text-[#050c14] font-extrabold text-[10px] px-2 py-0.5 rounded-full shadow-md whitespace-nowrap mb-1 font-['Space_Grotesk']" id="mapPinBadge">
+            R$ 380,00 / mês
+          </div>
+<svg class="w-8 h-8 text-[#00e6a8] drop-shadow-[0_0_12px_#00e6a8]" fill="currentColor" viewbox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
@@ -331,138 +320,159 @@
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
-<!-- Controles de Navegação no Mapa -->
+<!-- Controles de Zoom -->
 <div class="absolute bottom-3 right-3 flex flex-col gap-1.5 bg-[#050c14]/80 backdrop-blur-md p-1 rounded-xl border border-cyan-500/30">
-<button class="w-7 h-7 flex items-center justify-center text-white hover:text-[#00e5b3] text-sm font-bold active:scale-95">+</button>
+<button class="w-7 h-7 flex items-center justify-center text-white hover:text-[#00e6a8] text-sm font-bold active:scale-95 cursor-pointer" onclick="zoomMap(1.15)" type="button">+</button>
 <div class="h-px bg-slate-700"></div>
-<button class="w-7 h-7 flex items-center justify-center text-white hover:text-[#00e5b3] text-sm font-bold active:scale-95">-</button>
+<button class="w-7 h-7 flex items-center justify-center text-white hover:text-[#00e6a8] text-sm font-bold active:scale-95 cursor-pointer" onclick="zoomMap(0.85)" type="button">-</button>
 </div>
-<!-- Badge com indicação de precisão -->
 <div class="absolute bottom-3 left-3 bg-[#050c14]/80 backdrop-blur-md text-[10px] font-semibold text-slate-300 px-2.5 py-1 rounded-lg border border-cyan-500/20">
-  Raio: 5.0 km
+          Raio: 5.0 km
+        </div>
 </div>
-</div>
-<!-- Botão VER MAIS -->
-<button class="w-full bg-[#00e5b3] hover:bg-[#00cfa2] active:scale-98 text-[#050c14] font-black text-sm py-3.5 rounded-2xl tracking-wider uppercase shadow-neon-cyan transition-all">VIZUALIZAR MAPA</button>
+<button class="w-full bg-[#00e6a8] hover:bg-[#00cfa2] active:scale-98 text-[#050c14] font-black text-sm py-3.5 rounded-2xl tracking-wider uppercase shadow-neon-cyan transition-all cursor-pointer font-['Space_Grotesk']" onclick="openMapInteractive()" type="button">VIZUALIZAR MAPA</button>
 </div>
 </section>
 <!-- END: MapInteractiveSection -->
 </main>
 <!-- ========================================== -->
-<!-- MODAL / ABA DE PERGUNTAS: ANUNCIAR IMÓVEL  -->
+<!-- MODAL / ABA DE ANÚNCIO: ID "modal-anuncio" -->
+<!-- Inicia oculto com 'hidden' e display 'none'  -->
 <!-- ========================================== -->
-<div class="fixed inset-0 z-[90] bg-[#050c14]/85 backdrop-blur-lg flex flex-col justify-end sm:justify-center items-center p-0 sm:p-4 opacity-0 pointer-events-none transition-opacity duration-300" id="publishModal">
-<div class="w-full sm:max-w-xl bg-[#091b29] border-t sm:border-2 border-[#00dfb2] rounded-t-3xl sm:rounded-3xl shadow-[0_0_50px_rgba(0,229,179,0.3)] flex flex-col max-h-[92vh] overflow-hidden transform translate-y-8 transition-transform duration-300" id="publishModalDialog">
+<div class="fixed inset-0 z-[90] bg-[#050c14]/85 backdrop-blur-md hidden flex-col justify-end sm:justify-center items-center p-0 sm:p-4 transition-opacity duration-300" id="modal-anuncio" onclick="handleBackdropClick(event)" style="display: none;">
+<div class="w-full sm:max-w-xl bg-[#091b29] border-t-2 sm:border-2 border-[#00e6a8] rounded-t-3xl sm:rounded-3xl shadow-[0_0_50px_rgba(0,230,168,0.3)] flex flex-col max-h-[92vh] overflow-hidden" id="modalAnuncioDialog" onclick="event.stopPropagation()">
 <!-- Modal Header -->
-<div class="p-4 sm:p-5 border-b border-cyan-500/20 flex items-center justify-between bg-[#071622]">
+<div class="p-4 sm:p-5 border-b border-cyan-500/20 flex items-center justify-between bg-[#071622] shrink-0">
 <div class="flex items-center gap-2.5">
-<div class="w-8 h-8 rounded-full bg-[#00e5b3]/20 flex items-center justify-center text-[#00e5b3]">
+<div class="w-8 h-8 rounded-full bg-[#00e6a8]/20 flex items-center justify-center text-[#00e6a8]">
 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </div>
 <div>
-<h3 class="text-base font-extrabold text-white leading-tight">Anuncie Seu Imóvel</h3>
-<p class="text-[11px] text-[#00e5b3]">Aba de Perguntas &amp; Cadastro do Imóvel</p>
+<h3 class="text-base font-extrabold text-white leading-tight font-['Space_Grotesk']">Anuncie Seu Imóvel</h3>
+<p class="text-[11px] text-[#00e6a8]">Passo a passo rápido em 3 etapas • Suporte Multimoedas</p>
 </div>
 </div>
-<button class="w-8 h-8 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 flex items-center justify-center transition" id="closePublishModalBtn">✕</button>
+<!-- Botão Fechar Garantido -->
+<button class="w-8 h-8 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 flex items-center justify-center transition cursor-pointer text-base font-bold" id="closePublishModalBtn" onclick="closeModal()" type="button">✕</button>
 </div>
 <!-- Stepper Indicator -->
-<div class="grid grid-cols-3 bg-[#05111b] border-b border-cyan-500/20 text-[11px] font-bold">
-<div class="py-2.5 text-center text-[#00e5b3] border-b-2 border-[#00e5b3] flex items-center justify-center gap-1.5" id="stepTab1">
-<span class="w-4 h-4 rounded-full bg-[#00e5b3] text-[#050c14] inline-flex items-center justify-center text-[10px]">1</span>
-<span>Tipo &amp; Local</span>
-</div>
-<div class="py-2.5 text-center text-slate-400 border-b-2 border-transparent flex items-center justify-center gap-1.5" id="stepTab2">
-<span class="w-4 h-4 rounded-full bg-slate-700 text-slate-300 inline-flex items-center justify-center text-[10px]">2</span>
-<span>Cômodos</span>
-</div>
-<div class="py-2.5 text-center text-slate-400 border-b-2 border-transparent flex items-center justify-center gap-1.5" id="stepTab3">
-<span class="w-4 h-4 rounded-full bg-slate-700 text-slate-300 inline-flex items-center justify-center text-[10px]">3</span>
-<span>Valores &amp; Dono</span>
-</div>
+<div class="grid grid-cols-3 bg-[#05111b] border-b border-cyan-500/20 text-[11px] font-bold select-none shrink-0 font-['Space_Grotesk']">
+<button class="py-2.5 text-center text-[#00e6a8] border-b-2 border-[#00e6a8] flex items-center justify-center gap-1.5 transition cursor-pointer" id="stepTab1" onclick="goToStep(1)" type="button">
+<span class="w-5 h-5 rounded-full bg-[#00e6a8] text-[#050c14] inline-flex items-center justify-center text-[10px] font-black" id="stepDot1">1</span>
+<span class="">Local &amp; CEP</span>
+</button>
+<button class="py-2.5 text-center text-slate-400 border-b-2 border-transparent flex items-center justify-center gap-1.5 transition cursor-pointer" id="stepTab2" onclick="goToStep(2)" type="button">
+<span class="w-5 h-5 rounded-full bg-slate-700 text-slate-300 inline-flex items-center justify-center text-[10px] font-black" id="stepDot2">2</span>
+<span class="">Cômodos &amp; Fotos</span>
+</button>
+<button class="py-2.5 text-center text-slate-400 border-b-2 border-transparent flex items-center justify-center gap-1.5 transition cursor-pointer" id="stepTab3" onclick="goToStep(3)" type="button">
+<span class="w-5 h-5 rounded-full bg-slate-700 text-slate-300 inline-flex items-center justify-center text-[10px] font-black" id="stepDot3">3</span>
+<span class="">Preço &amp; Dono</span>
+</button>
 </div>
 <!-- Modal Form Body -->
-<form class="flex-1 overflow-y-auto p-4 sm:p-5 space-y-5 text-xs text-slate-200" id="propertyAnnounceForm">
-<!-- STEP 1: Tipo & Localização -->
+<form class="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4 text-xs text-slate-200" id="propertyAnnounceForm" onsubmit="return false;">
+<!-- ETAPA 1: CEP EM PRIMEIRO LUGAR & LOCALIZAÇÃO -->
 <div class="space-y-4" id="formStep1">
-<!-- Tipo de Negócio -->
-<div>
-<label class="block text-slate-300 font-bold mb-2">1. Qual é a finalidade do imóvel?</label>
-<div class="grid grid-cols-3 gap-2">
-<label class="relative flex items-center justify-center p-2.5 rounded-xl border border-cyan-500/30 bg-[#0c2234] cursor-pointer hover:border-[#00e5b3] transition text-center font-bold">
-<input checked="" class="peer sr-only" name="dealType" type="radio" value="Aluguel"/>
-<span class="peer-checked:text-[#00e5b3]">🔑 Aluguel</span>
-<div class="absolute inset-0 rounded-xl border-2 border-[#00e5b3] pointer-events-none hidden peer-checked:block shadow-[0_0_10px_rgba(0,229,179,0.3)]"></div>
-</label>
-<label class="relative flex items-center justify-center p-2.5 rounded-xl border border-cyan-500/30 bg-[#0c2234] cursor-pointer hover:border-[#00e5b3] transition text-center font-bold">
-<input class="peer sr-only" name="dealType" type="radio" value="Venda"/>
-<span class="peer-checked:text-[#00e5b3]">🏷️ Venda</span>
-<div class="absolute inset-0 rounded-xl border-2 border-[#00e5b3] pointer-events-none hidden peer-checked:block shadow-[0_0_10px_rgba(0,229,179,0.3)]"></div>
-</label>
-<label class="relative flex items-center justify-center p-2.5 rounded-xl border border-cyan-500/30 bg-[#0c2234] cursor-pointer hover:border-[#00e5b3] transition text-center font-bold">
-<input class="peer sr-only" name="dealType" type="radio" value="Área de Lazer"/>
-<span class="peer-checked:text-[#00e5b3]">🏖️ Lazer</span>
-<div class="absolute inset-0 rounded-xl border-2 border-[#00e5b3] pointer-events-none hidden peer-checked:block shadow-[0_0_10px_rgba(0,229,179,0.3)]"></div>
-</label>
+<!-- 1. CEP PRIORITÁRIO COM BUSCA AUTOMÁTICA -->
+<div class="p-3.5 bg-[#071622] rounded-2xl border border-cyan-500/40 space-y-3">
+<div class="flex items-center justify-between">
+<label class="block text-[#00e6a8] font-bold text-xs flex items-center gap-1.5 font-['Space_Grotesk']">
+<svg class="w-4 h-4 shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+              1. CEP e Endereço do Imóvel
+            </label>
+<span class="text-[10px] text-[#00e6a8]" id="cepFeedback">Busca rápida</span>
 </div>
+<div class="flex gap-2 items-center">
+<div class="relative flex-1">
+<input autocomplete="postal-code" class="w-full bg-[#0c2234] border border-[#00e6a8]/60 focus:border-[#00e6a8] rounded-xl pl-9 pr-3 py-2 text-white font-bold tracking-wider placeholder-slate-500 focus:ring-1 focus:ring-[#00e6a8] text-xs font-['Space_Grotesk']" id="inputCep" maxlength="9" placeholder="CEP do imóvel" type="text" value=""/>
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 font-medium text-xs">📍</span>
 </div>
-<!-- Tipo de Imóvel -->
-<div>
-<label class="block text-slate-300 font-bold mb-2">2. Categoria do Imóvel</label>
-<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
-<label class="relative flex items-center justify-center p-2 rounded-xl border border-cyan-500/20 bg-[#071622] cursor-pointer hover:border-[#00e5b3] transition font-semibold text-center">
-<input checked="" class="peer sr-only" name="propertyType" type="radio" value="Casa"/>
-<span class="peer-checked:text-[#00e5b3]">🏡 Casa</span>
-<div class="absolute inset-0 rounded-xl border border-[#00e5b3] pointer-events-none hidden peer-checked:block"></div>
-</label>
-<label class="relative flex items-center justify-center p-2 rounded-xl border border-cyan-500/20 bg-[#071622] cursor-pointer hover:border-[#00e5b3] transition font-semibold text-center">
-<input class="peer sr-only" name="propertyType" type="radio" value="Apartamento"/>
-<span class="peer-checked:text-[#00e5b3]">🏢 Apartamento</span>
-<div class="absolute inset-0 rounded-xl border border-[#00e5b3] pointer-events-none hidden peer-checked:block"></div>
-</label>
-<label class="relative flex items-center justify-center p-2 rounded-xl border border-cyan-500/20 bg-[#071622] cursor-pointer hover:border-[#00e5b3] transition font-semibold text-center">
-<input class="peer sr-only" name="propertyType" type="radio" value="Chácara/Sítio"/>
-<span class="peer-checked:text-[#00e5b3]">🌳 Chácara</span>
-<div class="absolute inset-0 rounded-xl border border-[#00e5b3] pointer-events-none hidden peer-checked:block"></div>
-</label>
-<label class="relative flex items-center justify-center p-2 rounded-xl border border-cyan-500/20 bg-[#071622] cursor-pointer hover:border-[#00e5b3] transition font-semibold text-center">
-<input class="peer sr-only" name="propertyType" type="radio" value="Terreno"/>
-<span class="peer-checked:text-[#00e5b3]">📐 Terreno</span>
-<div class="absolute inset-0 rounded-xl border border-[#00e5b3] pointer-events-none hidden peer-checked:block"></div>
-</label>
+<button class="px-3.5 py-2 rounded-xl bg-[#00e6a8] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-bold text-xs transition flex items-center gap-1 shrink-0 cursor-pointer shadow-neon-cyan font-['Space_Grotesk']" id="btnBuscarCep" onclick="fetchCep()" type="button">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<span class="">Buscar CEP</span>
+</button>
 </div>
-</div>
-<!-- Localização -->
+<p class="text-[10px] text-slate-400">Todos os campos de endereço são 100% editáveis:</p>
+<!-- Campos de Endereço Editáveis -->
 <div class="space-y-2">
-<label class="block text-slate-300 font-bold">3. Endereço e Bairro</label>
-<div class="grid grid-cols-2 gap-2">
-<input class="bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3] text-xs" id="inputCity" placeholder="Cidade / Estado (ex: Natal / RN)" required="" type="text" value="Natal / RN"/>
-<input class="bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3] text-xs" id="inputDistrict" placeholder="Bairro (ex: Jardins / C. das Rosas)" required="" type="text" value="Jardins / Cidade das Rosas"/>
+<div>
+<span class="text-[10px] text-slate-300 block mb-0.5">Rua / Logradouro:</span>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputStreet" placeholder="Nome da rua" type="text" value=""/>
 </div>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3] text-xs" id="inputStreet" placeholder="Rua / Avenida e Número (opcional para privacidade)" type="text" value="Rua das Tulipas, 142"/>
-</div>
-<!-- Medidas -->
-<div class="space-y-1">
-<label class="block text-slate-300 font-bold">4. Metragem &amp; Dimensões</label>
 <div class="grid grid-cols-2 gap-2">
 <div>
-<span class="text-[10px] text-slate-400 block mb-0.5">Área Útil / Construída (m²)</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs" id="inputArea" placeholder="ex: 211" type="number" value="211"/>
+<span class="text-[10px] text-slate-300 block mb-0.5">Número:</span>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputNumber" placeholder="Número / Complemento" type="text" value=""/>
 </div>
 <div>
-<span class="text-[10px] text-slate-400 block mb-0.5">Dimensão do Terreno</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs" id="inputDimensions" placeholder="ex: 10x20m (200m²)" type="text" value="10x20m (200m²)"/>
+<span class="text-[10px] text-slate-300 block mb-0.5">Complemento:</span>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputComplement" placeholder="ex: Casa A, Apto 202" type="text" value=""/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<span class="text-[10px] text-slate-300 block mb-0.5">Bairro:</span>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputDistrict" placeholder="Bairro" required="" type="text" value=""/>
+</div>
+<div>
+<span class="text-[10px] text-slate-300 block mb-0.5">Cidade / UF:</span>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputCity" placeholder="Cidade - UF" required="" type="text" value=""/>
 </div>
 </div>
 </div>
 </div>
-<!-- STEP 2: Cômodos e Estrutura -->
+<!-- 2. Finalidade / Tipo de Imóvel -->
+<div class="p-3.5 bg-[#071622] rounded-2xl border border-cyan-500/30 space-y-2.5">
+<div class="flex items-center justify-between">
+<label class="block text-[#00e6a8] font-bold text-xs font-['Space_Grotesk']">2. Finalidade / Tipo de Imóvel</label>
+<span class="text-[10px] text-slate-400 font-medium">Selecione para definir o valor</span>
+</div>
+<div class="grid grid-cols-3 gap-2" id="dealTypeContainer">
+<label class="relative flex flex-col items-center justify-center p-3 rounded-xl border border-[#00e6a8] bg-[#0c2234] cursor-pointer hover:border-[#00e6a8] transition text-center font-bold select-none deal-option shadow-[0_0_12px_rgba(0,230,168,0.25)]" id="labelDealAluguel">
+<input checked="" class="peer sr-only" name="dealType" onchange="handleDealTypeChange(this.value)" type="radio" value="Aluguel"/>
+<span class="text-base mb-0.5">🔑</span>
+<span class="text-xs text-[#00e6a8] peer-checked:text-[#00e6a8] font-black tracking-wide" id="dealTextAluguel">Aluguel</span>
+<div class="absolute inset-0 rounded-xl border-2 border-[#00e6a8] pointer-events-none peer-checked:block shadow-[0_0_10px_rgba(0,230,168,0.4)]"></div>
+</label>
+<label class="relative flex flex-col items-center justify-center p-3 rounded-xl border border-cyan-500/30 bg-[#0c2234] cursor-pointer hover:border-[#00e6a8] transition text-center font-bold select-none deal-option" id="labelDealVenda">
+<input class="peer sr-only" name="dealType" onchange="handleDealTypeChange(this.value)" type="radio" value="Venda"/>
+<span class="text-base mb-0.5">🏷️</span>
+<span class="text-xs text-slate-300 peer-checked:text-[#00e6a8] font-bold tracking-wide" id="dealTextVenda">Venda</span>
+<div class="absolute inset-0 rounded-xl border-2 border-[#00e6a8] pointer-events-none hidden peer-checked:block shadow-[0_0_10px_rgba(0,230,168,0.4)]"></div>
+</label>
+<label class="relative flex flex-col items-center justify-center p-3 rounded-xl border border-cyan-500/30 bg-[#0c2234] cursor-pointer hover:border-[#00e6a8] transition text-center font-bold select-none deal-option" id="labelDealLazer">
+<input class="peer sr-only" name="dealType" onchange="handleDealTypeChange(this.value)" type="radio" value="Área de Lazer"/>
+<span class="text-base mb-0.5">🏖️</span>
+<span class="text-xs text-slate-300 peer-checked:text-[#00e6a8] font-bold tracking-wide" id="dealTextLazer">Lazer</span>
+<div class="absolute inset-0 rounded-xl border-2 border-[#00e6a8] pointer-events-none hidden peer-checked:block shadow-[0_0_10px_rgba(0,230,168,0.4)]"></div>
+</label>
+</div>
+</div>
+<!-- 3. Dimensões do Terreno & Área -->
+<div class="p-3.5 bg-[#071622] rounded-2xl border border-cyan-500/20 space-y-2">
+<label class="block text-[#00e6a8] font-bold text-xs font-['Space_Grotesk']">3. Dimensões do Terreno e Área</label>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<span class="text-[10px] text-slate-400 block mb-0.5">Dimensão do Terreno:</span>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e6a8]" id="inputDimensions" placeholder="Ex: 10x20m ou 200m²" type="text" value=""/>
+</div>
+<div>
+<span class="text-[10px] text-slate-400 block mb-0.5">Área Útil Construída (m²):</span>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e6a8] font-['Space_Grotesk']" id="inputArea" placeholder="ex: 211" type="number" value=""/>
+</div>
+</div>
+</div>
+</div>
+<!-- ETAPA 2: Cômodos, Terreno & Fotos -->
 <div class="space-y-4 hidden" id="formStep2">
-<label class="block text-slate-300 font-bold">5. Cômodos e Quantidades</label>
-<div class="grid grid-cols-2 gap-3">
+<!-- Cômodos e Quantidades -->
+<div>
+<label class="block text-slate-300 font-bold mb-2 font-['Space_Grotesk']">4. Cômodos e Estrutura</label>
+<div class="grid grid-cols-2 gap-2.5">
 <div class="bg-[#071622] p-2.5 rounded-xl border border-cyan-500/20 flex items-center justify-between">
 <span class="font-medium text-slate-300">Quartos</span>
-<select class="bg-[#0c2234] border border-cyan-500/40 text-[#00e5b3] font-bold rounded-lg px-2.5 py-1 text-xs" id="selectBedrooms">
+<select class="bg-[#0c2234] border border-cyan-500/40 text-[#00e6a8] font-bold rounded-lg px-2 py-1 text-xs" id="selectBedrooms">
 <option value="1">1 Quarto</option>
 <option value="2">2 Quartos</option>
 <option selected="" value="3">3 Quartos</option>
@@ -472,7 +482,7 @@
 </div>
 <div class="bg-[#071622] p-2.5 rounded-xl border border-cyan-500/20 flex items-center justify-between">
 <span class="font-medium text-slate-300">Banheiros</span>
-<select class="bg-[#0c2234] border border-cyan-500/40 text-[#00e5b3] font-bold rounded-lg px-2.5 py-1 text-xs" id="selectBathrooms">
+<select class="bg-[#0c2234] border border-cyan-500/40 text-[#00e6a8] font-bold rounded-lg px-2 py-1 text-xs" id="selectBathrooms">
 <option value="1">1 Banheiro</option>
 <option selected="" value="2">2 Banheiros</option>
 <option value="3">3 Banheiros</option>
@@ -481,238 +491,400 @@
 </div>
 <div class="bg-[#071622] p-2.5 rounded-xl border border-cyan-500/20 flex items-center justify-between">
 <span class="font-medium text-slate-300">Vagas Garagem</span>
-<select class="bg-[#0c2234] border border-cyan-500/40 text-[#00e5b3] font-bold rounded-lg px-2.5 py-1 text-xs" id="selectGarages">
-<option value="0">Sem garagem</option>
+<select class="bg-[#0c2234] border border-cyan-500/40 text-[#00e6a8] font-bold rounded-lg px-2 py-1 text-xs" id="selectGarages">
+<option value="0">Sem vaga</option>
 <option value="1">1 Vaga</option>
 <option selected="" value="2">2 Vagas</option>
 <option value="3+">3+ Vagas</option>
 </select>
 </div>
 <div class="bg-[#071622] p-2.5 rounded-xl border border-cyan-500/20 flex items-center justify-between">
-<span class="font-medium text-slate-300">Salas</span>
-<select class="bg-[#0c2234] border border-cyan-500/40 text-[#00e5b3] font-bold rounded-lg px-2.5 py-1 text-xs" id="selectLivingRooms">
-<option selected="" value="1">1 Sala</option>
-<option value="2">2 Salas</option>
-<option value="3+">3+ Salas</option>
+<span class="font-medium text-slate-300">Cozinhas</span>
+<select class="bg-[#0c2234] border border-cyan-500/40 text-[#00e6a8] font-bold rounded-lg px-2 py-1 text-xs" id="selectKitchens">
+<option selected="" value="1 Cozinha Planejada">1 Cozinha Planejada</option>
+<option value="1 Cozinha Tradicional">1 Tradicional</option>
+<option value="2 Cozinhas">2 Cozinhas</option>
 </select>
 </div>
 </div>
-<label class="block text-slate-300 font-bold pt-1">6. Áreas &amp; Diferenciais inclusos</label>
-<div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
-<label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkYard" type="checkbox"/>
-<span>Quintal privativo</span>
-</label>
-<label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkLaundry" type="checkbox"/>
-<span>Área de serviço</span>
-</label>
-<label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkKitchen" type="checkbox"/>
-<span>Cozinha planejada</span>
-</label>
-<label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkPool" type="checkbox"/>
-<span>Piscina / Deck</span>
-</label>
-<label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkBBQ" type="checkbox"/>
-<span>Churrasqueira</span>
-</label>
-<label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkSuite" type="checkbox"/>
-<span>Suíte Master</span>
-</label>
 </div>
-<!-- Seletor de fotos da casa -->
+<!-- Diferenciais / Quintal / Lavanderia -->
 <div>
-<label class="block text-slate-300 font-bold mb-1.5">7. Fotos Demonstrativas do Imóvel</label>
-<p class="text-[11px] text-slate-400 mb-2">Selecione uma foto principal para ilustrar seu anúncio:</p>
-<div class="grid grid-cols-4 gap-2" id="photoSelectionContainer">
-<div class="relative rounded-xl overflow-hidden aspect-square border-2 border-[#00e5b3] cursor-pointer group photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik">
-<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik"/>
-<span class="absolute top-1 right-1 w-4 h-4 bg-[#00e5b3] text-[#050c14] rounded-full flex items-center justify-center text-[10px] font-bold">✓</span>
+<label class="block text-slate-300 font-bold mb-1.5 font-['Space_Grotesk']">5. Áreas Adicionais &amp; Quintal</label>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
+<input checked="" class="rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="checkYard" type="checkbox"/>
+<span class="">Quintal amplo</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
+<input checked="" class="rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="checkLaundry" type="checkbox"/>
+<span class="">Área de serviço</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
+<input checked="" class="rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="checkKitchen" type="checkbox"/>
+<span class="">Cozinha planejada</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
+<input class="rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="checkPool" type="checkbox"/>
+<span class="">Piscina / Área Lazer</span>
+</label>
 </div>
-<div class="relative rounded-xl overflow-hidden aspect-square border border-cyan-500/30 cursor-pointer group photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWWKeevwFBpHbmRY-esN2jYVPnc4Wq-lnRjQytT3obsGIZdlOUMqcS5p3LDddD0NhKdjEgWnWBaqncUkNbhDsKJ71Z-_um4gL_bSiridPgrjPVbCzITESh9PEagTCYdg0U6Ndgc3XGc2S3TAYTGzx5SbqmQ8DACkmJ5ZwZtel-pCZdu3jQuxW1KsP0cp37MZQm-LXn__mAEiFIZCYCiDcFMpFo-2N0dZGbaGwp4wzMn5qTvx7aIRE5kXrCe3AAlZ77l1Qagfl9vzZiUc">
+</div>
+<!-- Fotos do Imóvel & Upload -->
+<div>
+<label class="block text-slate-300 font-bold mb-1 font-['Space_Grotesk']">6. Fotos do Imóvel</label>
+<p class="text-[11px] text-slate-400 mb-2">Selecione a foto de destaque ou envie novas fotos:</p>
+<div class="grid grid-cols-4 gap-2 mb-2" id="photoSelectionContainer">
+<div class="relative rounded-xl overflow-hidden aspect-square border-2 border-[#00e6a8] cursor-pointer photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik"/>
+<span class="absolute top-1 right-1 w-4 h-4 bg-[#00e6a8] text-[#050c14] rounded-full flex items-center justify-center text-[10px] font-bold check-mark">✓</span>
+</div>
+<div class="relative rounded-xl overflow-hidden aspect-square border border-cyan-500/30 cursor-pointer photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWWKeevwFBpHbmRY-esN2jYVPnc4Wq-lnRjQytT3obsGIZdlOUMqcS5p3LDddD0NhKdjEgWnWBaqncUkNbhDsKJ71Z-_um4gL_bSiridPgrjPVbCzITESh9PEagTCYdg0U6Ndgc3XGc2S3TAYTGzx5SbqmQ8DACkmJ5ZwZtel-pCZdu3jQuxW1KsP0cp37MZQm-LXn__mAEiFIZCYCiDcFMpFo-2N0dZGbaGwp4wzMn5qTvx7aIRE5kXrCe3AAlZ77l1Qagfl9vzZiUc">
 <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWWKeevwFBpHbmRY-esN2jYVPnc4Wq-lnRjQytT3obsGIZdlOUMqcS5p3LDddD0NhKdjEgWnWBaqncUkNbhDsKJ71Z-_um4gL_bSiridPgrjPVbCzITESh9PEagTCYdg0U6Ndgc3XGc2S3TAYTGzx5SbqmQ8DACkmJ5ZwZtel-pCZdu3jQuxW1KsP0cp37MZQm-LXn__mAEiFIZCYCiDcFMpFo-2N0dZGbaGwp4wzMn5qTvx7aIRE5kXrCe3AAlZ77l1Qagfl9vzZiUc"/>
 </div>
-<div class="relative rounded-xl overflow-hidden aspect-square border border-cyan-500/30 cursor-pointer group photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuCYN7ktoNmoZ02WFtoP1qJg8AL7G8RK9zkMCvf10A2tYwIB4tB2ETGPaxFy1-qn21uEz3VYE2KHa25tqPjHBsaGaoEmxShMmgrqiDGc4Azjwl7Bv7SCxmLnSsUKS68ZJIBUVQMkpTQCQVAqWXZTMeZKW_98C0P4cNXy5WdZV1JwDpcAQYBb6ACg6VYzpqgqJJb6FhjMJ1bF8M5y0uzF3w24kxN-sIoV61yO4Wtvzg0Hl82z_UzvxeP2CEoPjcDFcC50g_dX0RkxjXurR6U">
+<div class="relative rounded-xl overflow-hidden aspect-square border border-cyan-500/30 cursor-pointer photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuCYN7ktoNmoZ02WFtoP1qJg8AL7G8RK9zkMCvf10A2tYwIB4tB2ETGPaxFy1-qn21uEz3VYE2KHa25tqPjHBsaGaoEmxShMmgrqiDGc4Azjwl7Bv7SCxmLnSsUKS68ZJIBUVQMkpTQCQVAqWXZTMeZKW_98C0P4cNXy5WdZV1JwDpcAQYBb6ACg6VYzpqgqJJb6FhjMJ1bF8M5y0uzF3w24kxN-sIoV61yO4Wtvzg0Hl82z_UzvxeP2CEoPjcDFcC50g_dX0RkxjXurR6U">
 <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYN7ktoNmoZ02WFtoP1qJg8AL7G8RK9zkMCvf10A2tYwIB4tB2ETGPaxFy1-qn21uEz3VYE2KHa25tqPjHBsaGaoEmxShMmgrqiDGc4Azjwl7Bv7SCxmLnSsUKS68ZJIBUVQMkpTQCQVAqWXZTMeZKW_98C0P4cNXy5WdZV1JwDpcAQYBb6ACg6VYzpqgqJJb6FhjMJ1bF8M5y0uzF3w24kxN-sIoV61yO4Wtvzg0Hl82z_UzvxeP2CEoPjcDFcC50g_dX0RkxjXurR6U"/>
 </div>
-<div class="relative rounded-xl overflow-hidden aspect-square border border-cyan-500/30 cursor-pointer group photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuBRwDpZLPyLXHDS-Tnff0AoY4cf0hufOjqGd9sbMzS5JevfHqt4CbHbTts1qNmRKg6UktyBDutrWWp-A3jJJka3zeHzd-0uqG8PwVR73Ckn5gGOxLdgElBwYzXvGsbqYatyvpawADriTwA8xfBPo-m86XZ73chPGHja3GiDDPgj1ny2ZwACv9dOGeX0sdb8mEMcYz4TBoOwJbJcyWvixMeolhNs6SbCP8F4g-zpf9yDBBck1PBGYv3qrux1RrliUJQZoRXP_ppwimnYUZc">
+<div class="relative rounded-xl overflow-hidden aspect-square border border-cyan-500/30 cursor-pointer photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuBRwDpZLPyLXHDS-Tnff0AoY4cf0hufOjqGd9sbMzS5JevfHqt4CbHbTts1qNmRKg6UktyBDutrWWp-A3jJJka3zeHzd-0uqG8PwVR73Ckn5gGOxLdgElBwYzXvGsbqYatyvpawADriTwA8xfBPo-m86XZ73chPGHja3GiDDPgj1ny2ZwACv9dOGeX0sdb8mEMcYz4TBoOwJbJcyWvixMeolhNs6SbCP8F4g-zpf9yDBBck1PBGYv3qrux1RrliUJQZoRXP_ppwimnYUZc">
 <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRwDpZLPyLXHDS-Tnff0AoY4cf0hufOjqGd9sbMzS5JevfHqt4CbHbTts1qNmRKg6UktyBDutrWWp-A3jJJka3zeHzd-0uqG8PwVR73Ckn5gGOxLdgElBwYzXvGsbqYatyvpawADriTwA8xfBPo-m86XZ73chPGHja3GiDDPgj1ny2ZwACv9dOGeX0sdb8mEMcYz4TBoOwJbJcyWvixMeolhNs6SbCP8F4g-zpf9yDBBck1PBGYv3qrux1RrliUJQZoRXP_ppwimnYUZc"/>
 </div>
 </div>
+<!-- Upload customizado do celular -->
+<label class="w-full text-center py-2.5 px-3 bg-[#0c2234] border border-dashed border-[#00e6a8]/50 rounded-xl hover:border-[#00e6a8] text-[#00e6a8] text-xs font-semibold cursor-pointer transition flex items-center justify-center gap-1.5 font-['Space_Grotesk']">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="" id="uploadLabel">Enviar fotos da galeria ou câmera</span>
+<input accept="image/*" class="hidden" id="customPhotoInput" onchange="handlePhotoUpload(event)" type="file"/>
+</label>
 </div>
 </div>
-<!-- STEP 3: Valores & Contato do Proprietário -->
+<!-- ETAPA 3: Valores com Suporte Multimoedas & Contato do Proprietário -->
 <div class="space-y-4 hidden" id="formStep3">
+<!-- Bloco de Moeda e Valor com Máscara Automática -->
+<div class="p-3.5 bg-[#071622] rounded-2xl border border-cyan-500/30 space-y-3">
+<!-- 1. SELETOR DE MOEDA MUNDIAL -->
 <div>
-<label class="block text-slate-300 font-bold mb-1">8. Valor Pretendido (R$)</label>
-<div class="relative">
-<span class="absolute left-3.5 top-1/2 -translate-y-1/2 font-bold text-[#00e5b3]">R$</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/40 rounded-xl pl-11 pr-4 py-2.5 text-white font-extrabold text-sm focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3]" id="inputValue" placeholder="ex: 850,00 ou 250.000,00" required="" type="text" value="850,00"/>
+<div class="flex items-center justify-between mb-1.5">
+<label class="text-[#00e6a8] font-bold text-xs flex items-center gap-1.5 font-['Space_Grotesk']" for="selectCurrency">
+<span class="text-sm">🌐</span>
+<span>Moeda do Anúncio</span>
+</label>
+<span class="text-[10px] text-slate-400 font-medium">8 Moedas Globais</span>
 </div>
-<span class="text-[10px] text-slate-400 mt-1 block">Para aluguel, informe o valor mensal. Para venda, o valor total.</span>
+<div class="relative">
+<div class="absolute left-3 top-1/2 -translate-y-1/2 flex items-center pointer-events-none text-base" id="currencyFlagDisplay">
+🇧🇷
+</div>
+<select class="w-full bg-[#0c2234] border border-cyan-500/40 rounded-xl pl-9 pr-8 py-2.5 text-white font-bold text-xs focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] transition cursor-pointer font-['Space_Grotesk']" id="selectCurrency" onchange="handleCurrencyChange(this.value)">
+<option selected="" value="BRL">🇧🇷 Real Brasileiro (BRL - R$)</option>
+<option value="USD">🇺🇸 Dólar Americano (USD - US$)</option>
+<option value="EUR">🇪🇺 Euro (EUR - €)</option>
+<option value="GBP">🇬🇧 Libra Esterlina (GBP - £)</option>
+<option value="JPY">🇯🇵 Iene Japonês (JPY - ¥)</option>
+<option value="CHF">🇨🇭 Franco Suíço (CHF - CHF)</option>
+<option value="CAD">🇨🇦 Dólar Canadense (CAD - C$)</option>
+<option value="AUD">🇦🇺 Dólar Australiano (AUD - A$)</option>
+</select>
+<div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400 text-xs">
+▼
+</div>
+</div>
+</div>
+<!-- 2. CAMPO DE VALOR COM MÁSCARA AUTOMÁTICA EM TEMPO REAL -->
+<div class="pt-1 border-t border-cyan-500/15">
+<div class="flex items-center justify-between mb-1.5">
+<label class="block text-[#00e6a8] font-bold text-xs flex items-center gap-1.5 font-['Space_Grotesk']" id="labelPriceTitle">
+<span class="text-sm" id="labelPriceIcon">🔑</span>
+<span id="labelPriceText">Valor do Aluguel Mensal</span>
+</label>
+<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[#00e6a8]/20 text-[#00e6a8] border border-[#00e6a8]/40 font-['Space_Grotesk']" id="step3DealBadge">Aluguel</span>
+</div>
+<div class="relative">
+<span class="absolute left-3.5 top-1/2 -translate-y-1/2 font-extrabold text-[#00e6a8] text-sm font-['Space_Grotesk'] select-none" id="inputCurrencyPrefix">R$</span>
+<input autocomplete="off" class="w-full bg-[#0c2234] border border-cyan-500/40 rounded-xl pl-14 pr-4 py-2.5 text-white font-extrabold text-sm focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] font-['Space_Grotesk'] tracking-wide" id="inputValue" inputmode="numeric" placeholder="380,00" required="" type="text" value="380,00"/>
+</div>
+<div class="flex items-center justify-between text-[11px] text-slate-400 mt-1">
+<span id="subtextPrice">Valor mensal cobrado pelo aluguel do imóvel.</span>
+<span class="text-[10px] text-[#00e6a8] font-mono">Máscara: 1.000,00</span>
+</div>
+</div>
 </div>
 <div class="p-3.5 bg-[#071622] rounded-2xl border border-cyan-500/20 space-y-3">
-<label class="block text-[#00e5b3] font-bold">9. Dados do Proprietário / Responsável</label>
+<label class="block text-[#00e6a8] font-bold font-['Space_Grotesk']">8. Contato do Proprietário / Anunciante</label>
 <div>
 <span class="text-[11px] text-slate-300 block mb-1">Nome Completo:</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e5b3]" id="inputOwnerName" placeholder="Seu Nome ou Corretor" required="" type="text" value="Mariana Silva"/>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e6a8]" id="inputOwnerName" placeholder="Seu nome completo" required="" type="text" value=""/>
 </div>
 <div>
-<span class="text-[11px] text-slate-300 block mb-1">WhatsApp para Contato Direto:</span>
-<div class="relative">
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e5b3]" id="inputOwnerPhone" placeholder="(84) 98680-2229" required="" type="text" value="(84) 98680-2229"/>
-</div>
-<span class="text-[10px] text-slate-400 block mt-1">Interessados clicarão no botão e abrirão conversa direta no seu WhatsApp.</span>
+<span class="text-[11px] text-slate-300 block mb-1">WhatsApp com DDD (para contato direto):</span>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e6a8] font-['Space_Grotesk']" id="inputOwnerPhone" placeholder="Seu número (com DDD)" required="" type="text" value=""/>
+<span class="text-[10px] text-slate-400 block mt-1">Interessados clicarão no botão "Entrar em Contato" para falar diretamente neste número.</span>
 </div>
 </div>
-<!-- Termos de publicação -->
 <div class="flex items-start gap-2 pt-1">
-<input checked="" class="mt-0.5 rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="acceptTerms" required="" type="checkbox"/>
-<label class="text-[11px] text-slate-400" for="acceptTerms">Declaro que as informações do imóvel são verídicas e concordo em exibir o imóvel em destaque na OpenWord.</label>
+<input checked="" class="mt-0.5 rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="acceptTerms" required="" type="checkbox"/>
+<label class="text-[11px] text-slate-400" for="acceptTerms">Declaro que as informações são verídicas e desejo colocar este imóvel em destaque imediato na plataforma.</label>
 </div>
 </div>
 </form>
 <!-- Modal Footer Controls -->
-<div class="p-4 sm:p-5 border-t border-cyan-500/20 bg-[#071622] flex items-center justify-between gap-3">
-<button class="hidden px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs active:scale-95 transition" id="modalPrevStepBtn" type="button">
+<div class="p-4 sm:p-5 border-t border-cyan-500/20 bg-[#071622] flex items-center justify-between gap-3 shrink-0">
+<button class="hidden px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs active:scale-95 transition cursor-pointer font-['Space_Grotesk']" id="modalPrevStepBtn" onclick="prevStep()" type="button">
         ← Voltar
       </button>
 <div class="flex-1"></div>
-<button class="px-5 py-2.5 rounded-xl bg-[#00e5b3] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-extrabold text-xs tracking-wider uppercase shadow-neon-cyan transition flex items-center gap-1.5" id="modalNextStepBtn" type="button">
-<span>Avançar</span>
+<button class="px-5 py-2.5 rounded-xl bg-[#00e6a8] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-extrabold text-xs tracking-wider uppercase shadow-neon-cyan transition flex items-center gap-1.5 cursor-pointer font-['Space_Grotesk']" id="modalNextStepBtn" onclick="nextStep()" type="button">
+<span class="">Avançar para Fotos &amp; Cômodos</span>
 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </button>
-<button class="hidden px-6 py-3 rounded-xl bg-[#00e5b3] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-black text-xs tracking-wider uppercase shadow-neon-cyan transition flex items-center gap-2" id="modalSubmitBtn" type="button">
-<svg class="w-4 h-4 animate-spin hidden" id="submitSpinner" viewbox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path></svg>
-<span id="submitBtnText">PUBLICAR ANÚNCIO AGORA</span>
+<button class="hidden px-6 py-3 rounded-xl bg-[#00e6a8] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-black text-xs tracking-wider uppercase shadow-neon-cyan transition flex items-center gap-2 cursor-pointer font-['Space_Grotesk']" id="modalSubmitBtn" onclick="publishListing()" type="button">
+<svg class="w-4 h-4 animate-spin hidden" id="submitSpinner" viewbox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" fill="none" r="10" stroke-width="4"></circle><path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path></svg>
+<span class="" id="submitBtnText">PUBLICAR ANÚNCIO AGORA</span>
 </button>
 </div>
 </div>
 </div>
+<!-- FIM DO MODAL -->
 <!-- BEGIN: MainFooter -->
 <footer class="mt-12 pt-8 border-t border-cyan-500/15 px-4 text-center">
 <div class="max-w-md mx-auto space-y-5">
-<!-- Navegação no Rodapé -->
-<nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-semibold text-slate-300">
-<a class="hover:text-[#00e5b3] transition" href="#aluguel">Aluguéis</a>
-<a class="hover:text-[#00e5b3] transition" href="#venda">A venda</a>
-<a class="hover:text-[#00e5b3] transition" href="#lazer">Lazer</a>
-<a class="hover:text-[#00e5b3] transition" href="#suporte">Suporte</a>
-<a class="hover:text-[#00e5b3] transition" href="#termos">Termos &amp; Privacidade</a>
+<nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-semibold text-slate-300 font-['Space_Grotesk']">
+<a class="hover:text-[#00e6a8] transition" href="#destaque">Aluguéis</a>
+<a class="hover:text-[#00e6a8] transition" href="#destaque">A venda</a>
+<a class="hover:text-[#00e6a8] transition" href="#destaque">Lazer</a>
+<a class="hover:text-[#00e6a8] transition" href="#mapa">Suporte</a>
+<a class="hover:text-[#00e6a8] transition" href="#">Termos &amp; Privacidade</a>
 </nav>
-<!-- Logo e Descrição resumida -->
 <p class="text-xs text-slate-400 leading-relaxed">
-<strong class="text-white">OpenWord</strong> — Plataforma imobiliária global para locação, aquisição e investimentos com geolocalização por satélite.
-      </p>
-<!-- Direitos autorais -->
+<strong class="text-white font-['Space_Grotesk']">OpenWord</strong> — Plataforma imobiliária global para locação, aquisição e investimentos com geolocalização por satélite.
+    </p>
 <div class="text-[11px] text-slate-400">
-        © 2025 OpenWord Inc. Todos os direitos reservados.
-      </div>
+      © 2025 OpenWord Inc. Todos os direitos reservados.
+    </div>
 </div>
 </footer>
 <!-- END: MainFooter -->
 <!-- BEGIN: InteractiveScripts -->
-<script data-purpose="micro-interactions">
-    // Simulação sutil de feedback tátil e interativo em cliques
-    document.querySelectorAll('button, a').forEach(el => {
-      el.addEventListener('touchstart', () => {}, { passive: true });
+<script data-purpose="core-actions">
+  // ==========================================
+  // CONFIGURAÇÃO DE MOEDAS MUNDIAIS
+  // ==========================================
+  const CURRENCIES = {
+    'BRL': { symbol: 'R$', code: 'BRL', flag: '🇧🇷', name: 'Real Brasileiro', isZeroDecimal: false },
+    'USD': { symbol: 'US$', code: 'USD', flag: '🇺🇸', name: 'Dólar Americano', isZeroDecimal: false },
+    'EUR': { symbol: '€', code: 'EUR', flag: '🇪🇺', name: 'Euro', isZeroDecimal: false },
+    'GBP': { symbol: '£', code: 'GBP', flag: '🇬🇧', name: 'Libra Esterlina', isZeroDecimal: false },
+    'JPY': { symbol: '¥', code: 'JPY', flag: '🇯🇵', name: 'Iene Japonês', isZeroDecimal: true },
+    'CHF': { symbol: 'CHF', code: 'CHF', flag: '🇨🇭', name: 'Franco Suíço', isZeroDecimal: false },
+    'CAD': { symbol: 'C$', code: 'CAD', flag: '🇨🇦', name: 'Dólar Canadense', isZeroDecimal: false },
+    'AUD': { symbol: 'A$', code: 'AUD', flag: '🇦🇺', name: 'Dólar Australiano', isZeroDecimal: false }
+  };
+
+  let selectedCurrencyCode = 'BRL';
+
+  // ==========================================
+  // CONFIGURAÇÃO DINÂMICA DE TIPOS DE VALOR
+  // ==========================================
+  const DEAL_CONFIGS = {
+    'Aluguel': {
+      title: 'Valor do Aluguel Mensal',
+      defaultNumber: 380,
+      subtext: 'Valor mensal cobrado pelo aluguel do imóvel.',
+      cardLabel: 'Valor Mensal',
+      cardType: 'Aluguel:',
+      icon: '🔑',
+      badge: 'Aluguel',
+      suffixMap: '/ mês'
+    },
+    'Venda': {
+      title: 'Valor Total de Venda',
+      defaultNumber: 250000,
+      subtext: 'Valor total e único para a compra do imóvel.',
+      cardLabel: 'Preço de Venda',
+      cardType: 'Venda:',
+      icon: '🏷️',
+      badge: 'Venda',
+      suffixMap: ''
+    },
+    'Área de Lazer': {
+      title: 'Valor da Diária de Lazer',
+      defaultNumber: 400,
+      subtext: 'Valor cobrado por dia de locação para eventos e lazer.',
+      cardLabel: 'Diária',
+      cardType: 'Lazer:',
+      icon: '🏖️',
+      badge: 'Lazer',
+      suffixMap: '/ dia'
+    }
+  };
+
+  let selectedDealType = 'Aluguel';
+  let currentStep = 1;
+  let selectedPhotoUrl = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik';
+
+  // ==========================================
+  // MÁSCARA AUTOMÁTICA DE MOEDA (MILHAR . E CENTAVOS ,)
+  // ==========================================
+  function formatMoneyString(value, isZeroDecimal = false) {
+    if (!value && value !== 0) return '';
+    // Extrai apenas dígitos numéricos
+    const digits = String(value).replace(/\D/g, '');
+    if (!digits) return '';
+
+    if (isZeroDecimal) {
+      // Ex: JPY ¥ 1.000 (sem casas decimais)
+      const num = parseInt(digits, 10);
+      return num.toLocaleString('pt-BR');
+    }
+
+    // Centavos com 2 dígitos: divide por 100
+    const numberVal = (parseInt(digits, 10) / 100);
+    return numberVal.toLocaleString('pt-BR', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    });
+  }
+
+  function handleCurrencyChange(currencyCode) {
+    selectedCurrencyCode = currencyCode || 'BRL';
+    const curr = CURRENCIES[selectedCurrencyCode] || CURRENCIES['BRL'];
+    
+    // Atualiza ícone da bandeira
+    const flagEl = document.getElementById('currencyFlagDisplay');
+    if (flagEl) flagEl.textContent = curr.flag;
+
+    // Atualiza prefixo do input
+    const prefixEl = document.getElementById('inputCurrencyPrefix');
+    if (prefixEl) prefixEl.textContent = curr.symbol;
+
+    // Re-formata o input atual
+    const inputVal = document.getElementById('inputValue');
+    if (inputVal && inputVal.value) {
+      inputVal.value = formatMoneyString(inputVal.value, curr.isZeroDecimal);
+    }
+  }
+
+  function setupCurrencyInputMask() {
+    const inputVal = document.getElementById('inputValue');
+    if (!inputVal) return;
+
+    inputVal.addEventListener('input', (e) => {
+      const curr = CURRENCIES[selectedCurrencyCode] || CURRENCIES['BRL'];
+      const raw = e.target.value;
+      if (!raw) return;
+      const formatted = formatMoneyString(raw, curr.isZeroDecimal);
+      e.target.value = formatted;
     });
 
-    // Carousel Slider Logic
-    const slider = document.getElementById('propertySlider');
-    const prevBtn = document.getElementById('carouselPrevBtn');
-    const nextBtn = document.getElementById('carouselNextBtn');
-    const counter = document.getElementById('carouselCounter');
-    const dots = document.querySelectorAll('#carouselDots button');
-    const totalSlides = 4;
+    inputVal.addEventListener('blur', (e) => {
+      const curr = CURRENCIES[selectedCurrencyCode] || CURRENCIES['BRL'];
+      if (!e.target.value.trim()) {
+        const config = DEAL_CONFIGS[selectedDealType] || DEAL_CONFIGS['Aluguel'];
+        e.target.value = formatMoneyString(config.defaultNumber * 100, curr.isZeroDecimal);
+      }
+    });
+  }
 
-    function updateActiveSlide(index) {
-      if (counter) counter.textContent = `${index + 1}/${totalSlides}`;
-      dots.forEach((dot, idx) => {
-        if (idx === index) {
-          dot.className = 'w-2 h-2 rounded-full bg-[#00e5b3] transition-all shadow-[0_0_6px_#00e5b3]';
-        } else {
-          dot.className = 'w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all';
+  function handleDealTypeChange(type) {
+    selectedDealType = type;
+    updateDealTypeUI(type);
+    updateStep3PricingUI(type);
+  }
+
+  function updateDealTypeUI(type) {
+    const deals = [
+      { id: 'labelDealAluguel', textId: 'dealTextAluguel', val: 'Aluguel' },
+      { id: 'labelDealVenda', textId: 'dealTextVenda', val: 'Venda' },
+      { id: 'labelDealLazer', textId: 'dealTextLazer', val: 'Área de Lazer' }
+    ];
+
+    deals.forEach(item => {
+      const el = document.getElementById(item.id);
+      const textEl = document.getElementById(item.textId);
+      if (!el) return;
+      const isSelected = item.val === type;
+      if (isSelected) {
+        el.className = 'relative flex flex-col items-center justify-center p-3 rounded-xl border border-[#00e6a8] bg-[#0c2234] cursor-pointer hover:border-[#00e6a8] transition text-center font-bold select-none deal-option shadow-[0_0_12px_rgba(0,230,168,0.25)]';
+        if (textEl) {
+          textEl.className = 'text-xs text-[#00e6a8] font-black tracking-wide';
         }
-      });
-    }
-
-    if (slider) {
-      let scrollTimeout;
-      slider.addEventListener('scroll', () => {
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-          const slideWidth = slider.clientWidth;
-          const currentIndex = Math.round(slider.scrollLeft / slideWidth);
-          updateActiveSlide(Math.min(Math.max(currentIndex, 0), totalSlides - 1));
-        }, 50);
-      });
-
-      if (prevBtn) {
-        prevBtn.addEventListener('click', () => {
-          const slideWidth = slider.clientWidth;
-          const currentIndex = Math.round(slider.scrollLeft / slideWidth);
-          const targetIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-          slider.scrollTo({ left: targetIndex * slideWidth, behavior: 'smooth' });
-          updateActiveSlide(targetIndex);
-        });
-      }
-
-      if (nextBtn) {
-        nextBtn.addEventListener('click', () => {
-          const slideWidth = slider.clientWidth;
-          const currentIndex = Math.round(slider.scrollLeft / slideWidth);
-          const targetIndex = (currentIndex + 1) % totalSlides;
-          slider.scrollTo({ left: targetIndex * slideWidth, behavior: 'smooth' });
-          updateActiveSlide(targetIndex);
-        });
-      }
-
-      dots.forEach(dot => {
-        dot.addEventListener('click', () => {
-          const targetIdx = parseInt(dot.getAttribute('data-index') || '0', 10);
-          const slideWidth = slider.clientWidth;
-          slider.scrollTo({ left: targetIdx * slideWidth, behavior: 'smooth' });
-          updateActiveSlide(targetIdx);
-        });
-      });
-    }
-
-    // Favoritar Toggle
-    let isFavorited = false;
-    function toggleFavorite() {
-      isFavorited = !isFavorited;
-      const btn = document.getElementById('favoriteBtn');
-      const icon = document.getElementById('favoriteIcon');
-      const label = document.getElementById('favoriteLabel');
-      if (isFavorited) {
-        icon.setAttribute('fill', '#00e5b3');
-        icon.classList.remove('text-slate-400');
-        icon.classList.add('text-[#00e5b3]');
-        label.textContent = 'Salvo';
-        btn.classList.add('border-[#00e5b3]');
       } else {
-        icon.setAttribute('fill', 'none');
-        icon.classList.remove('text-[#00e5b3]');
-        icon.classList.add('text-slate-400');
-        label.textContent = 'Favoritar';
-        btn.classList.remove('border-[#00e5b3]');
+        el.className = 'relative flex flex-col items-center justify-center p-3 rounded-xl border border-cyan-500/30 bg-[#0c2234] cursor-pointer hover:border-[#00e6a8] transition text-center font-bold select-none deal-option';
+        if (textEl) {
+          textEl.className = 'text-xs text-slate-300 font-bold tracking-wide';
+        }
       }
+    });
+  }
+
+  function updateStep3PricingUI(type) {
+    const config = DEAL_CONFIGS[type] || DEAL_CONFIGS['Aluguel'];
+    const curr = CURRENCIES[selectedCurrencyCode] || CURRENCIES['BRL'];
+    
+    const titleEl = document.getElementById('labelPriceText');
+    const iconEl = document.getElementById('labelPriceIcon');
+    const inputEl = document.getElementById('inputValue');
+    const subtextEl = document.getElementById('subtextPrice');
+    const badgeEl = document.getElementById('step3DealBadge');
+    const prefixEl = document.getElementById('inputCurrencyPrefix');
+
+    if (titleEl) titleEl.textContent = config.title;
+    if (iconEl) iconEl.textContent = config.icon;
+    if (badgeEl) badgeEl.textContent = config.badge;
+    if (subtextEl) subtextEl.textContent = config.subtext;
+    if (prefixEl) prefixEl.textContent = curr.symbol;
+
+    if (inputEl) {
+      // Se estiver vazio ou for padrão, preenche formatado
+      const currentDigits = inputEl.value.replace(/\D/g, '');
+      if (!currentDigits || currentDigits === '38000' || currentDigits === '25000000' || currentDigits === '40000') {
+        inputEl.value = formatMoneyString(config.defaultNumber * 100, curr.isZeroDecimal);
+      }
+      inputEl.placeholder = formatMoneyString(config.defaultNumber * 100, curr.isZeroDecimal);
     }
+  }
 
-    // ==========================================
-    // MODAL / ABA DE ANÚNCIO LOGIC
-    // ==========================================
-    const publishModal = document.getElementById('publishModal');
-    const modalDialog = document.getElementById('publishModalDialog');
-    const openHeroBtn = document.getElementById('openPublishModalHeroBtn');
-    const openHeaderBtn = document.getElementById('openPublishModalHeaderBtn');
-    const closeModalBtn = document.getElementById('closePublishModalBtn');
+  // ==========================================
+  // FUNÇÕES GLOBAIS DE ABERTURA E FECHAMENTO DO MODAL
+  // ==========================================
+  function openModal() {
+    const modal = document.getElementById('modal-anuncio');
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.style.display = 'flex';
+      document.body.classList.add('overflow-hidden');
+      // Sincroniza estado inicial do formulário
+      const checkedRadio = document.querySelector('input[name="dealType"]:checked');
+      if (checkedRadio) {
+        handleDealTypeChange(checkedRadio.value);
+      } else {
+        handleDealTypeChange('Aluguel');
+      }
+      const selectCur = document.getElementById('selectCurrency');
+      if (selectCur) {
+        handleCurrencyChange(selectCur.value);
+      }
+      goToStep(1);
+    }
+  }
 
+  function closeModal() {
+    const modal = document.getElementById('modal-anuncio');
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.style.display = 'none';
+      document.body.classList.remove('overflow-hidden');
+    }
+  }
+
+  function handleBackdropClick(e) {
+    if (e.target.id === 'modal-anuncio') {
+      closeModal();
+    }
+  }
+
+  // Navegação entre etapas (1, 2, 3)
+  function goToStep(step) {
+    currentStep = step;
     const formStep1 = document.getElementById('formStep1');
     const formStep2 = document.getElementById('formStep2');
     const formStep3 = document.getElementById('formStep3');
@@ -721,230 +893,383 @@
     const stepTab2 = document.getElementById('stepTab2');
     const stepTab3 = document.getElementById('stepTab3');
 
-    const prevStepBtn = document.getElementById('modalPrevStepBtn');
-    const nextStepBtn = document.getElementById('modalNextStepBtn');
+    const stepDot1 = document.getElementById('stepDot1');
+    const stepDot2 = document.getElementById('stepDot2');
+    const stepDot3 = document.getElementById('stepDot3');
+
+    const prevBtn = document.getElementById('modalPrevStepBtn');
+    const nextBtn = document.getElementById('modalNextStepBtn');
     const submitBtn = document.getElementById('modalSubmitBtn');
-    const submitSpinner = document.getElementById('submitSpinner');
-    const submitBtnText = document.getElementById('submitBtnText');
 
-    let currentStep = 1;
-    let selectedPhotoUrl = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik';
-
-    function openModal() {
-      publishModal.classList.remove('opacity-0', 'pointer-events-none');
-      publishModal.classList.add('opacity-100');
-      modalDialog.classList.remove('translate-y-8');
-      modalDialog.classList.add('translate-y-0');
-      document.body.classList.add('overflow-hidden');
-    }
-
-    function closeModal() {
-      publishModal.classList.remove('opacity-100');
-      publishModal.classList.add('opacity-0', 'pointer-events-none');
-      modalDialog.classList.remove('translate-y-0');
-      modalDialog.classList.add('translate-y-8');
-      document.body.classList.remove('overflow-hidden');
-    }
-
-    if (openHeroBtn) openHeroBtn.addEventListener('click', openModal);
-    if (openHeaderBtn) openHeaderBtn.addEventListener('click', openModal);
-    if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
-
-    publishModal.addEventListener('click', (e) => {
-      if (e.target === publishModal) closeModal();
-    });
-
-    // Step Navigation
-    function setStep(step) {
-      currentStep = step;
-      formStep1.classList.toggle('hidden', step !== 1);
-      formStep2.classList.toggle('hidden', step !== 2);
+    if (formStep1) formStep1.classList.toggle('hidden', step !== 1);
+    if (formStep2) formStep2.classList.toggle('hidden', step !== 2);
+    if (formStep3) {
       formStep3.classList.toggle('hidden', step !== 3);
-
-      // Indicator updates
-      stepTab1.className = step === 1 ? 'py-2.5 text-center text-[#00e5b3] border-b-2 border-[#00e5b3] flex items-center justify-center gap-1.5' : 'py-2.5 text-center text-slate-400 border-b-2 border-transparent flex items-center justify-center gap-1.5';
-      stepTab2.className = step === 2 ? 'py-2.5 text-center text-[#00e5b3] border-b-2 border-[#00e5b3] flex items-center justify-center gap-1.5' : 'py-2.5 text-center text-slate-400 border-b-2 border-transparent flex items-center justify-center gap-1.5';
-      stepTab3.className = step === 3 ? 'py-2.5 text-center text-[#00e5b3] border-b-2 border-[#00e5b3] flex items-center justify-center gap-1.5' : 'py-2.5 text-center text-slate-400 border-b-2 border-transparent flex items-center justify-center gap-1.5';
-
-      prevStepBtn.classList.toggle('hidden', step === 1);
-      nextStepBtn.classList.toggle('hidden', step === 3);
-      submitBtn.classList.toggle('hidden', step !== 3);
+      if (step === 3) {
+        const currentDeal = document.querySelector('input[name="dealType"]:checked')?.value || selectedDealType;
+        updateStep3PricingUI(currentDeal);
+      }
     }
 
-    nextStepBtn.addEventListener('click', () => {
-      if (currentStep < 3) setStep(currentStep + 1);
-    });
+    // Atualiza Abas do Stepper
+    if (stepTab1) stepTab1.className = step === 1 ? 'py-2.5 text-center text-[#00e6a8] border-b-2 border-[#00e6a8] flex items-center justify-center gap-1.5 transition cursor-pointer' : 'py-2.5 text-center text-slate-400 border-b-2 border-transparent flex items-center justify-center gap-1.5 transition cursor-pointer';
+    if (stepTab2) stepTab2.className = step === 2 ? 'py-2.5 text-center text-[#00e6a8] border-b-2 border-[#00e6a8] flex items-center justify-center gap-1.5 transition cursor-pointer' : 'py-2.5 text-center text-slate-400 border-b-2 border-transparent flex items-center justify-center gap-1.5 transition cursor-pointer';
+    if (stepTab3) stepTab3.className = step === 3 ? 'py-2.5 text-center text-[#00e6a8] border-b-2 border-[#00e6a8] flex items-center justify-center gap-1.5 transition cursor-pointer' : 'py-2.5 text-center text-slate-400 border-b-2 border-transparent flex items-center justify-center gap-1.5 transition cursor-pointer';
 
-    prevStepBtn.addEventListener('click', () => {
-      if (currentStep > 1) setStep(currentStep - 1);
-    });
+    if (stepDot1) stepDot1.className = step === 1 ? 'w-5 h-5 rounded-full bg-[#00e6a8] text-[#050c14] inline-flex items-center justify-center text-[10px] font-black' : 'w-5 h-5 rounded-full bg-slate-700 text-slate-300 inline-flex items-center justify-center text-[10px] font-black';
+    if (stepDot2) stepDot2.className = step === 2 ? 'w-5 h-5 rounded-full bg-[#00e6a8] text-[#050c14] inline-flex items-center justify-center text-[10px] font-black' : 'w-5 h-5 rounded-full bg-slate-700 text-slate-300 inline-flex items-center justify-center text-[10px] font-black';
+    if (stepDot3) stepDot3.className = step === 3 ? 'w-5 h-5 rounded-full bg-[#00e6a8] text-[#050c14] inline-flex items-center justify-center text-[10px] font-black' : 'w-5 h-5 rounded-full bg-slate-700 text-slate-300 inline-flex items-center justify-center text-[10px] font-black';
 
-    // Photo Selection
-    const photoChoices = document.querySelectorAll('.photo-choice');
-    photoChoices.forEach(choice => {
-      choice.addEventListener('click', () => {
-        photoChoices.forEach(c => {
-          c.classList.remove('border-2', 'border-[#00e5b3]');
-          c.classList.add('border', 'border-cyan-500/30');
-          const check = c.querySelector('span');
-          if (check) check.remove();
-        });
-        choice.classList.remove('border', 'border-cyan-500/30');
-        choice.classList.add('border-2', 'border-[#00e5b3]');
-        
-        const checkSpan = document.createElement('span');
-        checkSpan.className = 'absolute top-1 right-1 w-4 h-4 bg-[#00e5b3] text-[#050c14] rounded-full flex items-center justify-center text-[10px] font-bold';
-        checkSpan.textContent = '✓';
-        choice.appendChild(checkSpan);
+    if (prevBtn) prevBtn.classList.toggle('hidden', step === 1);
+    if (nextBtn) {
+      nextBtn.classList.toggle('hidden', step === 3);
+      nextBtn.querySelector('span').textContent = step === 1 ? 'Avançar para Fotos & Cômodos' : 'Avançar para Preço & Contato';
+    }
+    if (submitBtn) submitBtn.classList.toggle('hidden', step !== 3);
+  }
 
-        selectedPhotoUrl = choice.getAttribute('data-photo');
+  function nextStep() {
+    if (currentStep < 3) goToStep(currentStep + 1);
+  }
+
+  function prevStep() {
+    if (currentStep > 1) goToStep(currentStep - 1);
+  }
+
+  // Busca Inteligente de CEP (ViaCEP com fallback seguro)
+  async function fetchCep() {
+    const cepInput = document.getElementById('inputCep');
+    const feedback = document.getElementById('cepFeedback');
+    const street = document.getElementById('inputStreet');
+    const district = document.getElementById('inputDistrict');
+    const city = document.getElementById('inputCity');
+
+    const cleanCep = (cepInput.value || '').replace(/\D/g, '');
+    if (cleanCep.length !== 8) {
+      if (feedback) feedback.textContent = 'CEP inválido (8 dígitos)';
+      return;
+    }
+
+    if (feedback) feedback.textContent = 'Buscando endereço...';
+
+    try {
+      const res = await fetch(`https://viacep.com.br/ws/${cleanCep}/json/`);
+      const data = await res.json();
+      if (!data.erro) {
+        if (street && data.logradouro) street.value = data.logradouro;
+        if (district && data.bairro) district.value = data.bairro;
+        if (city && data.localidade) city.value = `${data.localidade} / ${data.uf}`;
+        if (feedback) feedback.textContent = '✓ Endereço encontrado!';
+      } else {
+        if (feedback) feedback.textContent = 'CEP não encontrado. Preencha manual:';
+      }
+    } catch (e) {
+      if (feedback) feedback.textContent = 'Preencha manual abaixo:';
+    }
+  }
+
+  // Seleção e Upload de Foto
+  document.querySelectorAll('.photo-choice').forEach(choice => {
+    choice.addEventListener('click', () => {
+      document.querySelectorAll('.photo-choice').forEach(c => {
+        c.classList.remove('border-2', 'border-[#00e6a8]');
+        c.classList.add('border', 'border-cyan-500/30');
+        const m = c.querySelector('.check-mark');
+        if (m) m.remove();
       });
+      choice.classList.remove('border', 'border-cyan-500/30');
+      choice.classList.add('border-2', 'border-[#00e6a8]');
+      const badge = document.createElement('span');
+      badge.className = 'absolute top-1 right-1 w-4 h-4 bg-[#00e6a8] text-[#050c14] rounded-full flex items-center justify-center text-[10px] font-bold check-mark';
+      badge.textContent = '✓';
+      choice.appendChild(badge);
+      selectedPhotoUrl = choice.getAttribute('data-photo');
     });
+  });
 
-    // Toast Handling
-    function showToast() {
-      const toast = document.getElementById('toastSuccess');
+  function handlePhotoUpload(event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        selectedPhotoUrl = e.target.result;
+        const uploadLabel = document.getElementById('uploadLabel');
+        if (uploadLabel) uploadLabel.textContent = `Foto pronta: ${file.name.slice(0, 18)}...`;
+      };
+      reader.readAsDataURL(file);
+    }
+  }
+
+  // Notificações Toast
+  function showToast() {
+    const toast = document.getElementById('toastSuccess');
+    if (toast) {
       toast.classList.remove('-translate-y-28', 'opacity-0', 'pointer-events-none');
       toast.classList.add('translate-y-0', 'opacity-100');
-      setTimeout(() => hideToast(), 6500);
+      setTimeout(hideToast, 6000);
     }
+  }
 
-    function hideToast() {
-      const toast = document.getElementById('toastSuccess');
+  function hideToast() {
+    const toast = document.getElementById('toastSuccess');
+    if (toast) {
       toast.classList.add('-translate-y-28', 'opacity-0', 'pointer-events-none');
       toast.classList.remove('translate-y-0', 'opacity-100');
     }
+  }
 
-    // FORM SUBMIT -> DYNAMICALLY UPDATE "IMÓVEL EM DESTAQUE"
-    submitBtn.addEventListener('click', () => {
-      // Trigger loading state
-      submitSpinner.classList.remove('hidden');
-      submitBtnText.textContent = 'PUBLICANDO...';
-      submitBtn.disabled = true;
+  // PUBLICAR ANÚNCIO AGORA: Atualiza dados na página e fecha modal
+  function publishListing() {
+    const submitBtn = document.getElementById('modalSubmitBtn');
+    const spinner = document.getElementById('submitSpinner');
+    const submitText = document.getElementById('submitBtnText');
 
-      setTimeout(() => {
-        // Collect form data
-        const dealType = document.querySelector('input[name="dealType"]:checked')?.value || 'Aluguel';
-        const propertyType = document.querySelector('input[name="propertyType"]:checked')?.value || 'Casa';
-        const city = document.getElementById('inputCity').value.trim() || 'Natal / RN';
-        const district = document.getElementById('inputDistrict').value.trim() || 'Jardins / Cidade das Rosas';
-        const area = document.getElementById('inputArea').value.trim() || '211';
-        const dimensions = document.getElementById('inputDimensions').value.trim() || '10x20m (200m²)';
-        const bedrooms = document.getElementById('selectBedrooms').value;
-        const bathrooms = document.getElementById('selectBathrooms').value;
-        const garages = document.getElementById('selectGarages').value;
-        const livingRooms = document.getElementById('selectLivingRooms').value;
+    if (spinner) spinner.classList.remove('hidden');
+    if (submitText) submitText.textContent = 'PUBLICANDO...';
+    if (submitBtn) submitBtn.disabled = true;
 
-        const hasYard = document.getElementById('checkYard').checked;
-        const hasLaundry = document.getElementById('checkLaundry').checked;
-        const hasKitchen = document.getElementById('checkKitchen').checked;
-        const hasPool = document.getElementById('checkPool').checked;
-        const hasBBQ = document.getElementById('checkBBQ').checked;
-        const hasSuite = document.getElementById('checkSuite').checked;
+    setTimeout(() => {
+      // Coletar dados informados
+      const dealType = document.querySelector('input[name="dealType"]:checked')?.value || selectedDealType;
+      const config = DEAL_CONFIGS[dealType] || DEAL_CONFIGS['Aluguel'];
+      const currency = CURRENCIES[selectedCurrencyCode] || CURRENCIES['BRL'];
 
-        const rawValue = document.getElementById('inputValue').value.trim() || '850,00';
-        const ownerName = document.getElementById('inputOwnerName').value.trim() || 'Mariana Silva';
-        const ownerPhone = document.getElementById('inputOwnerPhone').value.trim() || '(84) 98680-2229';
+      const city = document.getElementById('inputCity')?.value.trim() || 'São Gonçalo do Amarante / RN';
+      const district = document.getElementById('inputDistrict')?.value.trim() || 'Jardins / Cidade das Rosas';
+      const area = document.getElementById('inputArea')?.value.trim() || '211';
+      const dimensions = document.getElementById('inputDimensions')?.value.trim() || '10x20m (200m²)';
+      const bedrooms = document.getElementById('selectBedrooms')?.value || '3';
+      const bathrooms = document.getElementById('selectBathrooms')?.value || '2';
+      const garages = document.getElementById('selectGarages')?.value || '2';
+      const kitchens = document.getElementById('selectKitchens')?.value || '1 Cozinha Planejada';
 
-        // 1. Update Card Badge & Location
-        const badgeLoc = document.getElementById('propertyBadgeLocation');
-        badgeLoc.textContent = `${district}`;
+      const hasYard = document.getElementById('checkYard')?.checked;
+      const hasLaundry = document.getElementById('checkLaundry')?.checked;
+      
+      let rawValue = document.getElementById('inputValue')?.value.trim();
+      if (!rawValue) {
+        rawValue = formatMoneyString(config.defaultNumber * 100, currency.isZeroDecimal);
+      } else {
+        rawValue = formatMoneyString(rawValue, currency.isZeroDecimal);
+      }
+      
+      const ownerName = document.getElementById('inputOwnerName')?.value.trim() || 'Ronaldo Londres';
+      const ownerPhone = document.getElementById('inputOwnerPhone')?.value.trim() || '(84) 98680-2229';
 
-        const newListingBadge = document.getElementById('newListingTag');
-        if (newListingBadge) newListingBadge.classList.remove('hidden');
+      // 1. Atualizar Badge & Localização
+      const badgeLoc = document.getElementById('propertyBadgeLocation');
+      if (badgeLoc) badgeLoc.textContent = district;
 
-        // 2. Update Image Carousel Slide 1
-        const mainImg1 = document.getElementById('mainPropertyImg1');
-        if (mainImg1 && selectedPhotoUrl) {
-          mainImg1.src = selectedPhotoUrl;
-        }
-        if (slider) slider.scrollTo({ left: 0, behavior: 'smooth' });
-        updateActiveSlide(0);
+      const newListingBadge = document.getElementById('newListingTag');
+      if (newListingBadge) newListingBadge.classList.remove('hidden');
 
-        // 3. Update Owner Profile
-        const ownerNameEl = document.getElementById('propertyOwnerName');
-        ownerNameEl.textContent = ownerName;
+      // 2. Atualizar Imagem no slide 1
+      const mainImg1 = document.getElementById('mainPropertyImg1');
+      if (mainImg1 && selectedPhotoUrl) {
+        mainImg1.src = selectedPhotoUrl;
+      }
+      const slider = document.getElementById('propertySlider');
+      if (slider) slider.scrollTo({ left: 0, behavior: 'smooth' });
 
-        const ownerRoleEl = document.getElementById('propertyOwnerRole');
-        ownerRoleEl.textContent = `${propertyType} anunciado por`;
+      // 3. Atualizar Proprietário
+      const ownerNameEl = document.getElementById('propertyOwnerName');
+      if (ownerNameEl) ownerNameEl.textContent = ownerName;
 
-        const phoneLink = document.getElementById('propertyOwnerPhoneLink');
-        const phoneText = document.getElementById('propertyOwnerPhoneText');
-        const cleanPhone = ownerPhone.replace(/\D/g, '');
-        phoneLink.href = `tel:+55${cleanPhone}`;
-        phoneText.textContent = ownerPhone;
+      const cleanPhone = ownerPhone.replace(/\D/g, '');
+      const phoneLink = document.getElementById('propertyOwnerPhoneLink');
+      const phoneText = document.getElementById('propertyOwnerPhoneText');
+      if (phoneLink) phoneLink.href = `tel:+55${cleanPhone}`;
+      if (phoneText) phoneText.textContent = ownerPhone;
 
-        // 4. Update Price & Area
-        const priceLabel = document.getElementById('propertyPriceLabel');
-        const priceType = document.getElementById('propertyPriceType');
-        const priceValue = document.getElementById('propertyPriceValue');
-        
-        priceLabel.textContent = dealType === 'Aluguel' ? 'Valor Mensal' : 'Valor Total';
-        priceType.textContent = `${dealType}:`;
-        priceValue.textContent = rawValue.includes('R$') ? rawValue : `R$ ${rawValue}`;
+      // 4. Atualizar Preço e Área conforme a Finalidade & Moeda
+      const priceLabel = document.getElementById('propertyPriceLabel');
+      const priceType = document.getElementById('propertyPriceType');
+      const priceValue = document.getElementById('propertyPriceValue');
+      const currBadge = document.getElementById('propertyPriceCurrencyBadge');
+      
+      if (priceLabel) priceLabel.textContent = config.cardLabel;
+      if (priceType) priceType.textContent = config.cardType;
+      if (currBadge) currBadge.textContent = currency.code;
+      
+      // Exibição clara e padronizada: "US$ 1.200,00" ou "R$ 380,00"
+      const formattedCurrencyDisplay = `${currency.symbol} ${rawValue}`;
+      if (priceValue) priceValue.textContent = formattedCurrencyDisplay;
 
-        const areaMetrics = document.getElementById('propertyAreaMetrics');
-        areaMetrics.textContent = `Metros: ${area} m² (${dimensions})`;
+      const areaMetrics = document.getElementById('propertyAreaMetrics');
+      if (areaMetrics) areaMetrics.textContent = `Metros: ${area} m² (${dimensions})`;
 
-        // 5. Update Features Grid
-        const featBed = document.getElementById('featBedrooms');
-        featBed.textContent = `${bedrooms} Quartos ${hasSuite ? '(c/ Suíte)' : ''}`;
+      // 5. Atualizar Cômodos
+      const featBed = document.getElementById('featBedrooms');
+      if (featBed) featBed.textContent = `${bedrooms} Quartos`;
 
-        const featBath = document.getElementById('featBathrooms');
-        featBath.textContent = `${bathrooms} Banheiros`;
+      const featBath = document.getElementById('featBathrooms');
+      if (featBath) featBath.textContent = `${bathrooms} Banheiros`;
 
-        const featGar = document.getElementById('featGarage');
-        featGar.textContent = garages === '0' ? 'Sem Garagem' : `${garages} Vagas Cobertas`;
+      const featGar = document.getElementById('featGarage');
+      if (featGar) featGar.textContent = garages === '0' ? 'Sem Garagem' : `${garages} Vagas de Garagem`;
 
-        const featYard = document.getElementById('featYard');
-        featYard.textContent = hasYard ? '1 Quintal Espaçoso' : 'Sem Quintal';
+      const featYard = document.getElementById('featYard');
+      if (featYard) featYard.textContent = hasYard ? '1 Quintal' : 'Sem Quintal';
 
-        const featLaundry = document.getElementById('featLaundry');
-        featLaundry.textContent = hasLaundry ? '1 Área de Serviço' : 'Espaço Lavanderia';
+      const featLaundry = document.getElementById('featLaundry');
+      if (featLaundry) featLaundry.textContent = hasLaundry ? '1 Área de Serviço' : 'Sem Lavanderia';
 
-        const featKitchen = document.getElementById('featKitchen');
-        if (hasPool) {
-          featKitchen.textContent = 'Piscina & Lazer';
-        } else if (hasKitchen) {
-          featKitchen.textContent = 'Cozinha Planejada';
-        } else if (hasBBQ) {
-          featKitchen.textContent = 'Churrasqueira Gourmet';
-        } else {
-          featKitchen.textContent = `${livingRooms} Sala(s)`;
-        }
+      const featKitchen = document.getElementById('featKitchen');
+      if (featKitchen) featKitchen.textContent = kitchens;
 
-        // 6. Update WhatsApp Direct Button with pre-filled message
-        const waBtn = document.getElementById('propertyWhatsappBtn');
-        const whatsappNumber = cleanPhone.length >= 10 ? `55${cleanPhone}` : '5584986802229';
-        const message = encodeURIComponent(`Olá ${ownerName}, vi o anúncio do seu imóvel (${dealType} - ${propertyType} no bairro ${district}) na OpenWord por R$ ${rawValue}. Ainda está disponível?`);
-        waBtn.href = `https://wa.me/${whatsappNumber}?text=${message}`;
+      // 6. Atualizar WhatsApp wa.me direto com o texto exato
+      const waBtn = document.getElementById('propertyWhatsappBtn');
+      if (waBtn) {
+        const destPhone = cleanPhone.length >= 10 ? `55${cleanPhone}` : '5584986802229';
+        const dealTextWa = dealType === 'Aluguel' ? 'do aluguel' : (dealType === 'Venda' ? 'da venda' : 'da diária de lazer');
+        const msg = encodeURIComponent(`Olá, vi o anúncio ${dealTextWa} (${formattedCurrencyDisplay}) do seu imóvel, ainda está disponível?`);
+        waBtn.href = `https://wa.me/${destPhone}?text=${msg}`;
+      }
 
-        // 7. Update Map Pin Badge
-        const mapPin = document.getElementById('mapPinBadge');
-        if (mapPin) {
-          mapPin.textContent = dealType === 'Aluguel' ? `R$ ${rawValue} / mês` : `R$ ${rawValue}`;
-        }
+      // 7. Atualizar Mapa Pin
+      const mapPin = document.getElementById('mapPinBadge');
+      if (mapPin) {
+        const suffix = config.suffixMap ? ` ${config.suffixMap}` : '';
+        mapPin.textContent = `${formattedCurrencyDisplay}${suffix}`;
+      }
 
-        // 8. Reset modal button state & close
-        submitSpinner.classList.add('hidden');
-        submitBtnText.textContent = 'PUBLICAR ANÚNCIO AGORA';
-        submitBtn.disabled = false;
-        closeModal();
+      // Resetar botão e fechar modal
+      if (spinner) spinner.classList.add('hidden');
+      if (submitText) submitText.textContent = 'PUBLICAR ANÚNCIO AGORA';
+      if (submitBtn) submitBtn.disabled = false;
+      closeModal();
 
-        // 9. Show celebration toast & scroll smoothly to Destaque
-        showToast();
-        const destaqueSection = document.getElementById('destaque');
-        const card = document.getElementById('featuredPropertyCard');
-        if (destaqueSection) {
-          destaqueSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-        if (card) {
-          card.classList.add('highlight-card-anim');
-          setTimeout(() => card.classList.remove('highlight-card-anim'), 2500);
-        }
+      // Feedback visual e scroll suave para o imóvel em destaque
+      showToast();
+      const destaqueSection = document.getElementById('destaque');
+      const card = document.getElementById('featuredPropertyCard');
+      if (destaqueSection) {
+        destaqueSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      if (card) {
+        card.classList.add('highlight-card-anim');
+        setTimeout(() => card.classList.remove('highlight-card-anim'), 2500);
+      }
+    }, 600);
+  }
 
-      }, 800);
+  // ==========================================
+  // CARROSSEL DE FOTOS DO CARD DESTAQUE
+  // ==========================================
+  const slider = document.getElementById('propertySlider');
+  const prevBtn = document.getElementById('carouselPrevBtn');
+  const nextBtn = document.getElementById('carouselNextBtn');
+  const counter = document.getElementById('carouselCounter');
+  const dots = document.querySelectorAll('#carouselDots button');
+  const totalSlides = 4;
+
+  function updateActiveSlide(index) {
+    if (counter) counter.textContent = `${index + 1}/${totalSlides}`;
+    dots.forEach((dot, idx) => {
+      if (idx === index) {
+        dot.className = 'w-2 h-2 rounded-full bg-[#00e6a8] transition-all shadow-[0_0_6px_#00e6a8]';
+      } else {
+        dot.className = 'w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all';
+      }
     });
-  </script>
+  }
+
+  if (slider) {
+    let scrollTimeout;
+    slider.addEventListener('scroll', () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        const slideWidth = slider.clientWidth;
+        const currentIndex = Math.round(slider.scrollLeft / slideWidth);
+        updateActiveSlide(Math.min(Math.max(currentIndex, 0), totalSlides - 1));
+      }, 50);
+    });
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        const slideWidth = slider.clientWidth;
+        const currentIndex = Math.round(slider.scrollLeft / slideWidth);
+        const targetIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        slider.scrollTo({ left: targetIndex * slideWidth, behavior: 'smooth' });
+        updateActiveSlide(targetIndex);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        const slideWidth = slider.clientWidth;
+        const currentIndex = Math.round(slider.scrollLeft / slideWidth);
+        const targetIndex = (currentIndex + 1) % totalSlides;
+        slider.scrollTo({ left: targetIndex * slideWidth, behavior: 'smooth' });
+        updateActiveSlide(targetIndex);
+      });
+    }
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const targetIdx = parseInt(dot.getAttribute('data-index') || '0', 10);
+        const slideWidth = slider.clientWidth;
+        slider.scrollTo({ left: targetIdx * slideWidth, behavior: 'smooth' });
+        updateActiveSlide(targetIdx);
+      });
+    });
+  }
+
+  // Toggle Favoritar
+  let isFavorited = false;
+  function toggleFavorite() {
+    isFavorited = !isFavorited;
+    const btn = document.getElementById('favoriteBtn');
+    const icon = document.getElementById('favoriteIcon');
+    const label = document.getElementById('favoriteLabel');
+    if (isFavorited) {
+      icon.setAttribute('fill', '#00e6a8');
+      icon.classList.remove('text-slate-400');
+      icon.classList.add('text-[#00e6a8]');
+      label.textContent = 'Salvo';
+      btn.classList.add('border-[#00e6a8]');
+    } else {
+      icon.setAttribute('fill', 'none');
+      icon.classList.remove('text-[#00e6a8]');
+      icon.classList.add('text-slate-400');
+      label.textContent = 'Favoritar';
+      btn.classList.remove('border-[#00e6a8]');
+    }
+  }
+
+  // Zoom do mapa interativo
+  let currentZoom = 1;
+  function zoomMap(factor) {
+    currentZoom = Math.max(0.9, Math.min(currentZoom * factor, 1.8));
+    const img = document.getElementById('mapSatelliteImg');
+    if (img) {
+      img.style.transform = `scale(${currentZoom})`;
+    }
+  }
+
+  function openMapInteractive() {
+    const mapa = document.getElementById('mapa');
+    if (mapa) {
+      mapa.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      zoomMap(1.2);
+    }
+  }
+
+  function filterType(type) {
+    const destaque = document.getElementById('destaque');
+    if (destaque) destaque.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  // Inicialização e Listeners
+  document.addEventListener('DOMContentLoaded', () => {
+    const heroBtn = document.getElementById('openPublishModalHeroBtn');
+    const headerBtn = document.getElementById('openPublishModalHeaderBtn');
+    if (heroBtn) heroBtn.addEventListener('click', openModal);
+    if (headerBtn) headerBtn.addEventListener('click', openModal);
+
+    // Ativa máscara monetária automática
+    setupCurrencyInputMask();
+  });
+</script>
 <!-- END: InteractiveScripts -->
 </body></html>
