@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-
-<html class="dark" lang="pt-BR"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<!DOCTYPE html><html class="dark" lang="pt-BR" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 <title>OpenWord - Encontre seu Imóvel Ideal &amp; Anuncie</title>
 <!-- Tailwind CSS CDN com plugins -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -32,10 +30,10 @@
     };
   </script>
 <!-- Google Fonts Inter & Plus Jakarta Sans -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
 <style data-purpose="base-styling">
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
@@ -91,11 +89,11 @@
     }
   </style>
 </head>
-<body class="min-h-screen bg-[#050c14] text-slate-100 antialiased overflow-x-hidden pb-12">
+<body class="min-h-screen bg-[#050c14] text-slate-100 antialiased overflow-x-hidden pb-12 overflow-hidden">
 <!-- Toast de Sucesso Notificação -->
 <div class="fixed top-5 left-1/2 -translate-x-1/2 z-[100] max-w-[92vw] w-[420px] bg-[#0c2234] border-2 border-[#00e5b3] text-white px-4 py-3.5 rounded-2xl shadow-[0_10px_35px_rgba(0,229,179,0.35)] flex items-center gap-3 transition-all duration-300 transform -translate-y-28 opacity-0 pointer-events-none" id="toastSuccess">
 <div class="w-10 h-10 rounded-xl bg-[#00e5b3]/20 text-[#00e5b3] flex items-center justify-center shrink-0">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </div>
 <div class="flex-1 text-xs">
 <p class="font-extrabold text-[#00e5b3] text-sm">🎉 Anúncio Publicado com Sucesso!</p>
@@ -118,8 +116,8 @@
 <a class="hover:text-[#00e5b3] transition-colors" href="#mapa">Mapa</a>
 </nav>
 <button class="bg-[#00e5b3] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-bold text-xs sm:text-sm px-4 sm:px-5 py-2 rounded-full uppercase tracking-wider shadow-neon-cyan transition-all flex items-center gap-1.5" id="openPublishModalHeaderBtn">
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>Anunciar</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<span class="">Anunciar</span>
 </button>
 </div>
 </header>
@@ -132,12 +130,12 @@
 </div>
 <!-- Efeito visual de pins no mapa de fundo -->
 <div class="absolute top-10 right-8 pin-glow pointer-events-none opacity-80">
-<svg class="w-6 h-6 text-[#00e5b3]" fill="currentColor" viewbox="0 0 24 24">
+<svg class="w-6 h-6 text-[#00e5b3]" fill="currentColor" viewBox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
 <div class="absolute bottom-6 right-20 pin-glow pointer-events-none opacity-60" style="animation-delay: 1.2s;">
-<svg class="w-5 h-5 text-[#00e5b3]" fill="currentColor" viewbox="0 0 24 24">
+<svg class="w-5 h-5 text-[#00e5b3]" fill="currentColor" viewBox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
@@ -147,7 +145,7 @@
           Imóveis Exclusivos no Mundo Inteiro
         </div>
 <h1 class="text-3xl sm:text-4xl font-black tracking-tight text-white leading-tight">
-          Encontre seu <br/>
+          Encontre seu <br>
 <span class="text-[#00e5b3] drop-shadow-[0_0_15px_rgba(0,229,179,0.35)]">imóvel ideal.</span>
 </h1>
 <p class="mt-3 text-sm text-slate-300 leading-relaxed max-w-xs">
@@ -156,8 +154,8 @@
 <!-- Botão Principal de Conversão Hero (Atualizado para ANUNCIE SEU IMÓVEL) -->
 <div class="mt-6 flex flex-col sm:flex-row gap-3">
 <button class="w-full text-center bg-[#00e5b3] hover:bg-[#00cfa2] active:scale-98 text-[#050c14] font-extrabold text-sm py-3.5 px-6 rounded-2xl tracking-wide shadow-neon-cyan transition-all flex items-center justify-center gap-2" id="openPublishModalHeroBtn">
-<svg class="w-5 h-5 text-[#050c14]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
-<span>ANUNCIE SEU IMÓVEL</span>
+<svg class="w-5 h-5 text-[#050c14]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<span class="">ANUNCIE SEU IMÓVEL</span>
 </button>
 </div>
 </div>
@@ -168,26 +166,26 @@
 <div class="max-w-md mx-auto">
 <!-- Barra de Busca Rápida -->
 <div class="relative mb-4">
-<input class="w-full bg-[#0c2234]/80 text-sm text-slate-100 placeholder-slate-400 pl-11 pr-4 py-3 rounded-2xl border border-cyan-500/30 focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3] focus:outline-none transition" placeholder="Buscar por cidade, bairro ou país..." type="text"/>
-<svg class="w-5 h-5 text-[#00e5b3] absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<input class="w-full bg-[#0c2234]/80 text-sm text-slate-100 placeholder-slate-400 pl-11 pr-4 py-3 rounded-2xl border border-cyan-500/30 focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3] focus:outline-none transition" placeholder="Buscar por cidade, bairro ou país..." type="text">
+<svg class="w-5 h-5 text-[#00e5b3] absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </div>
 <!-- Tags Categorias -->
 <div class="p-2 rounded-2xl bg-[#091b29]/90 border border-[#00dfb2]/40 backdrop-blur-md flex flex-wrap items-center justify-around gap-1.5 shadow-inner">
 <button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0">
-<svg class="w-4 h-4 text-[#00e5b3] shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
-<span>Casas a venda</span>
+<svg class="w-4 h-4 text-[#00e5b3] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+<span class="">Casas a venda</span>
 </button>
 <div class="hidden sm:block w-px h-5 bg-slate-700"></div>
 <button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0">
-<svg class="w-4 h-4 text-[#0ea5e9] shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
-<span>Casas de Aluguel</span>
+<svg class="w-4 h-4 text-[#0ea5e9] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+<span class="">Casas de Aluguel</span>
 </button>
 <div class="hidden sm:block w-px h-5 bg-slate-700"></div>
 <button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0">
-<svg class="w-4 h-4 text-[#eab308] shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
-<span>Área de Lazer</span>
+<svg class="w-4 h-4 text-[#eab308] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+<span class="">Área de Lazer</span>
 </button>
 </div>
 </div>
@@ -199,7 +197,7 @@
 <div class="flex items-center justify-between mb-2">
 <div class="text-xs uppercase tracking-wider text-[#00e5b3] font-bold flex items-center gap-1.5">
 <span class="w-2 h-2 rounded-full bg-[#00e5b3] animate-pulse"></span>
-<span id="featuredSectionBadge">Imóvel em Destaque</span>
+<span id="featuredSectionBadge" class="">Imóvel em Destaque</span>
 </div>
 <span class="hidden text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-md bg-[#00e5b3]/20 text-[#00e5b3] border border-[#00e5b3]/40 tracking-wider" id="newListingTag">
     Recém Publicado
@@ -213,27 +211,27 @@
 <div class="flex w-full h-full overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar" id="propertySlider">
 <!-- Slide 1: Fachada / Exterior Original -->
 <div class="w-full h-full shrink-0 snap-center relative">
-<img alt="Fachada e acesso do imóvel" class="w-full h-full object-cover select-none" id="mainPropertyImg1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik"/>
+<img alt="Fachada e acesso do imóvel" class="w-full h-full object-cover select-none" id="mainPropertyImg1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik">
 </div>
 <!-- Slide 2: Sala de Estar e Cozinha Gourmet Integradas -->
 <div class="w-full h-full shrink-0 snap-center relative">
-<img alt="Modern luxury living room and gourmet kitchen open concept" class="w-full h-full object-cover select-none" id="mainPropertyImg2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWWKeevwFBpHbmRY-esN2jYVPnc4Wq-lnRjQytT3obsGIZdlOUMqcS5p3LDddD0NhKdjEgWnWBaqncUkNbhDsKJ71Z-_um4gL_bSiridPgrjPVbCzITESh9PEagTCYdg0U6Ndgc3XGc2S3TAYTGzx5SbqmQ8DACkmJ5ZwZtel-pCZdu3jQuxW1KsP0cp37MZQm-LXn__mAEiFIZCYCiDcFMpFo-2N0dZGbaGwp4wzMn5qTvx7aIRE5kXrCe3AAlZ77l1Qagfl9vzZiUc"/>
+<img alt="Modern luxury living room and gourmet kitchen open concept" class="w-full h-full object-cover select-none" id="mainPropertyImg2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWWKeevwFBpHbmRY-esN2jYVPnc4Wq-lnRjQytT3obsGIZdlOUMqcS5p3LDddD0NhKdjEgWnWBaqncUkNbhDsKJ71Z-_um4gL_bSiridPgrjPVbCzITESh9PEagTCYdg0U6Ndgc3XGc2S3TAYTGzx5SbqmQ8DACkmJ5ZwZtel-pCZdu3jQuxW1KsP0cp37MZQm-LXn__mAEiFIZCYCiDcFMpFo-2N0dZGbaGwp4wzMn5qTvx7aIRE5kXrCe3AAlZ77l1Qagfl9vzZiUc">
 </div>
 <!-- Slide 3: Quarto Master Suíte -->
 <div class="w-full h-full shrink-0 snap-center relative">
-<img alt="Modern cozy bedroom interior of a luxury rental house" class="w-full h-full object-cover select-none" id="mainPropertyImg3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYN7ktoNmoZ02WFtoP1qJg8AL7G8RK9zkMCvf10A2tYwIB4tB2ETGPaxFy1-qn21uEz3VYE2KHa25tqPjHBsaGaoEmxShMmgrqiDGc4Azjwl7Bv7SCxmLnSsUKS68ZJIBUVQMkpTQCQVAqWXZTMeZKW_98C0P4cNXy5WdZV1JwDpcAQYBb6ACg6VYzpqgqJJb6FhjMJ1bF8M5y0uzF3w24kxN-sIoV61yO4Wtvzg0Hl82z_UzvxeP2CEoPjcDFcC50g_dX0RkxjXurR6U"/>
+<img alt="Modern cozy bedroom interior of a luxury rental house" class="w-full h-full object-cover select-none" id="mainPropertyImg3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYN7ktoNmoZ02WFtoP1qJg8AL7G8RK9zkMCvf10A2tYwIB4tB2ETGPaxFy1-qn21uEz3VYE2KHa25tqPjHBsaGaoEmxShMmgrqiDGc4Azjwl7Bv7SCxmLnSsUKS68ZJIBUVQMkpTQCQVAqWXZTMeZKW_98C0P4cNXy5WdZV1JwDpcAQYBb6ACg6VYzpqgqJJb6FhjMJ1bF8M5y0uzF3w24kxN-sIoV61yO4Wtvzg0Hl82z_UzvxeP2CEoPjcDFcC50g_dX0RkxjXurR6U">
 </div>
 <!-- Slide 4: Área Externa com Quintal e Piscina -->
 <div class="w-full h-full shrink-0 snap-center relative">
-<img alt="Backyard patio with swimming pool, wooden deck and garden" class="w-full h-full object-cover select-none" id="mainPropertyImg4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRwDpZLPyLXHDS-Tnff0AoY4cf0hufOjqGd9sbMzS5JevfHqt4CbHbTts1qNmRKg6UktyBDutrWWp-A3jJJka3zeHzd-0uqG8PwVR73Ckn5gGOxLdgElBwYzXvGsbqYatyvpawADriTwA8xfBPo-m86XZ73chPGHja3GiDDPgj1ny2ZwACv9dOGeX0sdb8mEMcYz4TBoOwJbJcyWvixMeolhNs6SbCP8F4g-zpf9yDBBck1PBGYv3qrux1RrliUJQZoRXP_ppwimnYUZc"/>
+<img alt="Backyard patio with swimming pool, wooden deck and garden" class="w-full h-full object-cover select-none" id="mainPropertyImg4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRwDpZLPyLXHDS-Tnff0AoY4cf0hufOjqGd9sbMzS5JevfHqt4CbHbTts1qNmRKg6UktyBDutrWWp-A3jJJka3zeHzd-0uqG8PwVR73Ckn5gGOxLdgElBwYzXvGsbqYatyvpawADriTwA8xfBPo-m86XZ73chPGHja3GiDDPgj1ny2ZwACv9dOGeX0sdb8mEMcYz4TBoOwJbJcyWvixMeolhNs6SbCP8F4g-zpf9yDBBck1PBGYv3qrux1RrliUJQZoRXP_ppwimnYUZc">
 </div>
 </div>
 <!-- Controles do carrossel (< e >) -->
 <button aria-label="Imagem anterior" class="absolute left-2.5 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#00e5b3] hover:text-[#050c14] text-white p-2 rounded-full backdrop-blur-sm transition active:scale-90" id="carouselPrevBtn" type="button">
-<svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </button>
 <button aria-label="Próxima imagem" class="absolute right-2.5 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#00e5b3] hover:text-[#050c14] text-white p-2 rounded-full backdrop-blur-sm transition active:scale-90" id="carouselNextBtn" type="button">
-<svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </button>
 <!-- Tag de Localização sobre a Imagem -->
 <div class="absolute bottom-2.5 left-2.5 z-20 bg-[#050c14]/85 backdrop-blur-md px-3 py-1 rounded-xl border border-cyan-500/30 text-xs font-bold text-[#00e5b3] max-w-[70%] truncate" id="propertyBadgeLocation">
@@ -253,15 +251,15 @@
 <!-- Perfil da Corretora / Anfitrião -->
 <div class="flex items-center gap-3.5 pt-1 border-b border-cyan-500/15 pb-4">
 <div class="relative shrink-0">
-<img alt="Foto de perfil do proprietário" class="w-14 h-14 rounded-full object-cover border-2 border-[#00e5b3] shadow-[0_0_10px_rgba(0,229,179,0.3)]" id="propertyOwnerAvatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbbIM0ad81i2lbIub5bmxKAYHUh6UWRvXdbUmtIAsKSh0Obf7hgqh6xFDwEVD_NNjR7v3R2vkcE6EJ5hfZ-LNcZc9BhYQYMILMCw_OpW6lncqy7bL7x_56nBiwE8RPfJEWEJif6n05j2B-evKzNrRUpVnBek6wwztlBy7zGJNV375Q0Wl4ev_ZQOQFeK0oKpmHkthG3nth5UTC37PcG4Y0sxKBr10ZoTy6Fyc0kj8bJHy_UdAVgcFzxHCQHR0Uy0FZA5QVlCOrXVMAf1E"/>
+<img alt="Foto de perfil do proprietário" class="w-14 h-14 rounded-full object-cover border-2 border-[#00e5b3] shadow-[0_0_10px_rgba(0,229,179,0.3)]" id="propertyOwnerAvatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbbIM0ad81i2lbIub5bmxKAYHUh6UWRvXdbUmtIAsKSh0Obf7hgqh6xFDwEVD_NNjR7v3R2vkcE6EJ5hfZ-LNcZc9BhYQYMILMCw_OpW6lncqy7bL7x_56nBiwE8RPfJEWEJif6n05j2B-evKzNrRUpVnBek6wwztlBy7zGJNV375Q0Wl4ev_ZQOQFeK0oKpmHkthG3nth5UTC37PcG4Y0sxKBr10ZoTy6Fyc0kj8bJHy_UdAVgcFzxHCQHR0Uy0FZA5QVlCOrXVMAf1E">
 <span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-emerald-500 border-2 border-[#0a1f2e]"></span>
 </div>
 <div class="min-w-0 flex-1">
 <p class="text-xs text-slate-400 font-medium" id="propertyOwnerRole">Proprietário Responsável</p>
 <h2 class="text-base font-bold text-white leading-tight truncate" id="propertyOwnerName">Ronaldo Londres</h2>
 <a class="text-xs font-semibold text-[#00e5b3] hover:underline flex items-center gap-1 mt-0.5 truncate" href="tel:+5584986802229" id="propertyOwnerPhoneLink">
-<svg class="w-3.5 h-3.5 shrink-0" fill="currentColor" viewbox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
-<span id="propertyOwnerPhoneText">(84) 98680-2229</span>
+<svg class="w-3.5 h-3.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
+<span id="propertyOwnerPhoneText" class="">(84) 98680-2229</span>
 </a>
 </div>
 </div>
@@ -269,7 +267,7 @@
 <div class="bg-[#071622] rounded-2xl p-3.5 border border-cyan-500/20 flex flex-wrap items-center justify-between gap-2">
 <div>
 <span class="text-xs text-slate-400 block font-medium" id="propertyPriceLabel">Valor Mensal</span>
-<span class="text-base sm:text-lg font-black text-white"><span id="propertyPriceType">Aluguel:</span> <span class="text-[#00e5b3]" id="propertyPriceValue">R$ 380,00</span></span>
+<span class="text-base sm:text-lg font-black text-white"><span id="propertyPriceType" class="">Aluguel:</span> <span class="text-[#00e5b3]" id="propertyPriceValue">R$ 380,00</span></span>
 </div>
 <div class="text-right">
 <span class="text-xs text-slate-400 block font-medium">Área Útil</span>
@@ -288,12 +286,12 @@
 <!-- Botões de Ação do Imóvel -->
 <div class="pt-2 flex flex-wrap gap-2.5 sm:gap-3">
 <a class="flex-1 min-w-[140px] text-center bg-[#00e5b3] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-bold text-xs py-3 px-2 rounded-xl tracking-wider shadow-neon-cyan transition-all uppercase whitespace-nowrap flex items-center justify-center gap-2" href="https://wa.me/5584986802229?text=Ol%C3%A1%2C%20vi%20o%20anuncio%20do%20aluguel%20da%20sua%20casa%2C%20ela%20ainda%20est%C3%A1%20disponivel%20%3F" id="propertyWhatsappBtn" rel="noopener noreferrer" target="_blank">
-<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
-<span>ENTRAR EM CONTATO</span>
+<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+<span class="">ENTRAR EM CONTATO</span>
 </a>
 <button class="px-4 py-3 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold active:scale-95 transition shrink-0 flex items-center gap-1.5" id="favoriteBtn" onclick="toggleFavorite()">
-<svg class="w-4 h-4 text-slate-400 transition" fill="none" id="favoriteIcon" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-<span id="favoriteLabel">Favoritar</span>
+<svg class="w-4 h-4 text-slate-400 transition" fill="none" id="favoriteIcon" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span id="favoriteLabel" class="">Favoritar</span>
 </button>
 </div>
 </article>
@@ -313,7 +311,7 @@
 <!-- Moldura do Mapa Satélite Estilizado -->
 <div class="relative bg-[#0c2234] border-2 border-[#00dfb2] rounded-3xl overflow-hidden shadow-neon-glow aspect-video sm:aspect-[16/10]">
 <!-- Representação visual do mapa de satélite urbano -->
-<img alt="Visão de satélite cartográfico e demarcação de rota" class="w-full h-full object-cover brightness-75 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMUGxeQ3hAKNuBpPVha5ot27sL_nrmgPk0Fh6uOjVe1gy86eXdlOq3-yjz5zFyNm0BJHNi9Y8Nu3G99FI9lwMvOj1tHCxy8vGvVELYej8-PDWQjQcjAngB7a0BXxDQOtvXD7BdcQqvPW07m_iYSHiwRcuZiwVdYZUIRMHsBTjvuxOgLNd6ekYKR9IlPEFPX6tAn7VJ5yB16eWk576qgrU3YiMbVBszFcu59ni9uzwrfwjbbmtRJCLOAw"/>
+<img alt="Visão de satélite cartográfico e demarcação de rota" class="w-full h-full object-cover brightness-75 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMUGxeQ3hAKNuBpPVha5ot27sL_nrmgPk0Fh6uOjVe1gy86eXdlOq3-yjz5zFyNm0BJHNi9Y8Nu3G99FI9lwMvOj1tHCxy8vGvVELYej8-PDWQjQcjAngB7a0BXxDQOtvXD7BdcQqvPW07m_iYSHiwRcuZiwVdYZUIRMHsBTjvuxOgLNd6ekYKR9IlPEFPX6tAn7VJ5yB16eWk576qgrU3YiMbVBszFcu59ni9uzwrfwjbbmtRJCLOAw">
 <!-- Camada de overlay escuro e pins luminosos -->
 <div class="absolute inset-0 bg-[#050c14]/40 pointer-events-none"></div>
 <!-- Pin Central de Alta Visibilidade -->
@@ -321,13 +319,13 @@
 <div class="bg-[#00e5b3] text-[#050c14] font-extrabold text-[10px] px-2 py-0.5 rounded-full shadow-md whitespace-nowrap mb-1" id="mapPinBadge">
   R$ 380 / mês
 </div>
-<svg class="w-8 h-8 text-[#00e5b3] drop-shadow-[0_0_12px_#00e5b3]" fill="currentColor" viewbox="0 0 24 24">
+<svg class="w-8 h-8 text-[#00e5b3] drop-shadow-[0_0_12px_#00e5b3]" fill="currentColor" viewBox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
 <!-- Pin secundário adjacente -->
 <div class="absolute top-1/4 left-1/4 flex flex-col items-center opacity-85">
-<svg class="w-5 h-5 text-[#0ea5e9] drop-shadow-[0_0_8px_#0ea5e9]" fill="currentColor" viewbox="0 0 24 24">
+<svg class="w-5 h-5 text-[#0ea5e9] drop-shadow-[0_0_8px_#0ea5e9]" fill="currentColor" viewBox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
@@ -351,13 +349,13 @@
 <!-- ========================================== -->
 <!-- MODAL / ABA DE PERGUNTAS: ANUNCIAR IMÓVEL  -->
 <!-- ========================================== -->
-<div class="fixed inset-0 z-[90] bg-[#050c14]/85 backdrop-blur-lg flex flex-col justify-end sm:justify-center items-center p-0 sm:p-4 opacity-0 pointer-events-none transition-opacity duration-300" id="publishModal">
-<div class="w-full sm:max-w-xl bg-[#091b29] border-t sm:border-2 border-[#00dfb2] rounded-t-3xl sm:rounded-3xl shadow-[0_0_50px_rgba(0,229,179,0.3)] flex flex-col max-h-[92vh] overflow-hidden transform translate-y-8 transition-transform duration-300" id="publishModalDialog">
+<div class="fixed inset-0 z-[90] bg-[#050c14]/85 backdrop-blur-lg flex flex-col justify-end sm:justify-center items-center p-0 sm:p-4 transition-opacity duration-300 opacity-100" id="publishModal">
+<div class="w-full sm:max-w-xl bg-[#091b29] border-t sm:border-2 border-[#00dfb2] rounded-t-3xl sm:rounded-3xl shadow-[0_0_50px_rgba(0,229,179,0.3)] flex flex-col max-h-[92vh] overflow-hidden transform transition-transform duration-300 translate-y-0" id="publishModalDialog">
 <!-- Modal Header -->
 <div class="p-4 sm:p-5 border-b border-cyan-500/20 flex items-center justify-between bg-[#071622]">
 <div class="flex items-center gap-2.5">
 <div class="w-8 h-8 rounded-full bg-[#00e5b3]/20 flex items-center justify-center text-[#00e5b3]">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </div>
 <div>
 <h3 class="text-base font-extrabold text-white leading-tight">Anuncie Seu Imóvel</h3>
@@ -368,39 +366,39 @@
 </div>
 <!-- Stepper Indicator -->
 <div class="grid grid-cols-3 bg-[#05111b] border-b border-cyan-500/20 text-[11px] font-bold">
-<div class="py-2.5 text-center text-[#00e5b3] border-b-2 border-[#00e5b3] flex items-center justify-center gap-1.5" id="stepTab1">
+<div class="py-2.5 text-center text-slate-400 border-b-2 border-transparent flex items-center justify-center gap-1.5" id="stepTab1">
 <span class="w-4 h-4 rounded-full bg-[#00e5b3] text-[#050c14] inline-flex items-center justify-center text-[10px]">1</span>
-<span>Tipo &amp; Local</span>
+<span class="">Tipo &amp; Local</span>
 </div>
 <div class="py-2.5 text-center text-slate-400 border-b-2 border-transparent flex items-center justify-center gap-1.5" id="stepTab2">
 <span class="w-4 h-4 rounded-full bg-slate-700 text-slate-300 inline-flex items-center justify-center text-[10px]">2</span>
-<span>Cômodos &amp; Fotos</span>
+<span class="">Cômodos &amp; Fotos</span>
 </div>
-<div class="py-2.5 text-center text-slate-400 border-b-2 border-transparent flex items-center justify-center gap-1.5" id="stepTab3">
+<div class="py-2.5 text-center text-[#00e5b3] border-b-2 border-[#00e5b3] flex items-center justify-center gap-1.5" id="stepTab3">
 <span class="w-4 h-4 rounded-full bg-slate-700 text-slate-300 inline-flex items-center justify-center text-[10px]">3</span>
-<span>Valores &amp; Dono</span>
+<span class="">Valores &amp; Dono</span>
 </div>
 </div>
 <!-- Modal Form Body -->
 <form class="flex-1 overflow-y-auto p-4 sm:p-5 space-y-5 text-xs text-slate-200" id="propertyAnnounceForm">
 <!-- STEP 1: Tipo & Localização -->
-<div class="space-y-4" id="formStep1">
+<div class="space-y-4 hidden" id="formStep1">
 <!-- Tipo de Negócio -->
 <div>
 <label class="block text-slate-300 font-bold mb-2">1. Qual é a finalidade do imóvel?</label>
 <div class="grid grid-cols-3 gap-2">
 <label class="relative flex items-center justify-center p-2.5 rounded-xl border border-cyan-500/30 bg-[#0c2234] cursor-pointer hover:border-[#00e5b3] transition text-center font-bold">
-<input checked="" class="peer sr-only" name="dealType" type="radio" value="Aluguel"/>
+<input checked="" class="peer sr-only" name="dealType" type="radio" value="Aluguel">
 <span class="peer-checked:text-[#00e5b3]">🔑 Aluguel</span>
 <div class="absolute inset-0 rounded-xl border-2 border-[#00e5b3] pointer-events-none hidden peer-checked:block shadow-[0_0_10px_rgba(0,229,179,0.3)]"></div>
 </label>
 <label class="relative flex items-center justify-center p-2.5 rounded-xl border border-cyan-500/30 bg-[#0c2234] cursor-pointer hover:border-[#00e5b3] transition text-center font-bold">
-<input class="peer sr-only" name="dealType" type="radio" value="Venda"/>
+<input class="peer sr-only" name="dealType" type="radio" value="Venda">
 <span class="peer-checked:text-[#00e5b3]">🏷️ Venda</span>
 <div class="absolute inset-0 rounded-xl border-2 border-[#00e5b3] pointer-events-none hidden peer-checked:block shadow-[0_0_10px_rgba(0,229,179,0.3)]"></div>
 </label>
 <label class="relative flex items-center justify-center p-2.5 rounded-xl border border-cyan-500/30 bg-[#0c2234] cursor-pointer hover:border-[#00e5b3] transition text-center font-bold">
-<input class="peer sr-only" name="dealType" type="radio" value="Área de Lazer"/>
+<input class="peer sr-only" name="dealType" type="radio" value="Área de Lazer">
 <span class="peer-checked:text-[#00e5b3]">🏖️ Lazer</span>
 <div class="absolute inset-0 rounded-xl border-2 border-[#00e5b3] pointer-events-none hidden peer-checked:block shadow-[0_0_10px_rgba(0,229,179,0.3)]"></div>
 </label>
@@ -411,22 +409,22 @@
 <label class="block text-slate-300 font-bold mb-2">2. Categoria do Imóvel</label>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
 <label class="relative flex items-center justify-center p-2 rounded-xl border border-cyan-500/20 bg-[#071622] cursor-pointer hover:border-[#00e5b3] transition font-semibold text-center">
-<input checked="" class="peer sr-only" name="propertyType" type="radio" value="Casa"/>
+<input checked="" class="peer sr-only" name="propertyType" type="radio" value="Casa">
 <span class="peer-checked:text-[#00e5b3]">🏡 Casa</span>
 <div class="absolute inset-0 rounded-xl border border-[#00e5b3] pointer-events-none hidden peer-checked:block"></div>
 </label>
 <label class="relative flex items-center justify-center p-2 rounded-xl border border-cyan-500/20 bg-[#071622] cursor-pointer hover:border-[#00e5b3] transition font-semibold text-center">
-<input class="peer sr-only" name="propertyType" type="radio" value="Apartamento"/>
+<input class="peer sr-only" name="propertyType" type="radio" value="Apartamento">
 <span class="peer-checked:text-[#00e5b3]">🏢 Apartamento</span>
 <div class="absolute inset-0 rounded-xl border border-[#00e5b3] pointer-events-none hidden peer-checked:block"></div>
 </label>
 <label class="relative flex items-center justify-center p-2 rounded-xl border border-cyan-500/20 bg-[#071622] cursor-pointer hover:border-[#00e5b3] transition font-semibold text-center">
-<input class="peer sr-only" name="propertyType" type="radio" value="Chácara/Sítio"/>
+<input class="peer sr-only" name="propertyType" type="radio" value="Chácara/Sítio">
 <span class="peer-checked:text-[#00e5b3]">🌳 Chácara</span>
 <div class="absolute inset-0 rounded-xl border border-[#00e5b3] pointer-events-none hidden peer-checked:block"></div>
 </label>
 <label class="relative flex items-center justify-center p-2 rounded-xl border border-cyan-500/20 bg-[#071622] cursor-pointer hover:border-[#00e5b3] transition font-semibold text-center">
-<input class="peer sr-only" name="propertyType" type="radio" value="Terreno"/>
+<input class="peer sr-only" name="propertyType" type="radio" value="Terreno">
 <span class="peer-checked:text-[#00e5b3]">📐 Terreno</span>
 <div class="absolute inset-0 rounded-xl border border-[#00e5b3] pointer-events-none hidden peer-checked:block"></div>
 </label>
@@ -436,10 +434,10 @@
 <div class="space-y-2">
 <label class="block text-slate-300 font-bold">3. Endereço e Bairro</label>
 <div class="grid grid-cols-2 gap-2">
-<input class="bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3] text-xs" id="inputCity" placeholder="Cidade / Estado (ex: Natal / RN)" required="" type="text" value="Natal / RN"/>
-<input class="bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3] text-xs" id="inputDistrict" placeholder="Bairro (ex: Jardins / C. das Rosas)" required="" type="text" value="Jardins / Cidade das Rosas"/>
+<input class="bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3] text-xs" id="inputCity" placeholder="Cidade" required="" type="text" value="Natal / RN">
+<input class="bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3] text-xs" id="inputDistrict" placeholder="Bairro" required="" type="text" value="Jardins / Cidade das Rosas">
 </div>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3] text-xs" id="inputStreet" placeholder="Rua / Avenida e Número (opcional para privacidade)" type="text" value="Rua das Tulipas, 142"/>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3] text-xs" id="inputStreet" placeholder="Rua / Avenida e Número ( imóvel )" type="text" value="Rua das Tulipas, 142">
 </div>
 <!-- Medidas -->
 <div class="space-y-1">
@@ -447,11 +445,11 @@
 <div class="grid grid-cols-2 gap-2">
 <div>
 <span class="text-[10px] text-slate-400 block mb-0.5">Área Útil / Construída (m²)</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs" id="inputArea" placeholder="ex: 211" type="number" value="211"/>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs" id="inputArea" placeholder="ex: 211" type="number" value="211">
 </div>
 <div>
 <span class="text-[10px] text-slate-400 block mb-0.5">Dimensão do Terreno</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs" id="inputDimensions" placeholder="ex: 10x20m (200m²)" type="text" value="10x20m (200m²)"/>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs" id="inputDimensions" placeholder="ex: 10x20m (200m²)" type="text" value="10x20m (200m²)">
 </div>
 </div>
 </div>
@@ -500,28 +498,28 @@
 <label class="block text-slate-300 font-bold pt-1">6. Áreas &amp; Diferenciais inclusos</label>
 <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
 <label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkYard" type="checkbox"/>
-<span>Quintal privativo</span>
+<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkYard" type="checkbox">
+<span class="">Quintal privativo</span>
 </label>
 <label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkLaundry" type="checkbox"/>
-<span>Área de serviço</span>
+<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkLaundry" type="checkbox">
+<span class="">Área de serviço</span>
 </label>
 <label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkKitchen" type="checkbox"/>
-<span>Cozinha planejada</span>
+<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkKitchen" type="checkbox">
+<span class="">Cozinha planejada</span>
 </label>
 <label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkPool" type="checkbox"/>
-<span>Piscina / Deck</span>
+<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkPool" type="checkbox">
+<span class="">Piscina / Deck</span>
 </label>
 <label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkBBQ" type="checkbox"/>
-<span>Churrasqueira</span>
+<input class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkBBQ" type="checkbox">
+<span class="">Churrasqueira</span>
 </label>
 <label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkSuite" type="checkbox"/>
-<span>Suíte Master</span>
+<input checked="" class="rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="checkSuite" type="checkbox">
+<span class="">Suíte Master</span>
 </label>
 </div>
 <!-- Seção Interativa de Upload de Fotos -->
@@ -533,10 +531,10 @@
 <p class="text-[11px] text-slate-400">Envie as melhores fotos reais do imóvel (você pode selecionar várias de uma vez):</p>
 <!-- Zona de Drag & Drop / Seleção de Arquivo -->
 <div class="relative border-2 border-dashed border-[#00dfb2]/50 hover:border-[#00e5b3] bg-[#071622]/90 hover:bg-[#0c2234] rounded-2xl p-4 sm:p-5 text-center transition-all cursor-pointer group shadow-inner" id="dropZoneContainer">
-<input accept="image/*" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" id="photoFileInput" multiple="" type="file"/>
+<input accept="image/*" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" id="photoFileInput" multiple="" type="file">
 <div class="flex flex-col items-center justify-center gap-2 pointer-events-none">
 <div class="w-12 h-12 rounded-2xl bg-[#00e5b3]/15 border border-[#00e5b3]/30 text-[#00e5b3] flex items-center justify-center group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(0,229,179,0.35)] transition-transform">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </div>
 <div class="text-xs">
 <p class="font-bold text-white"><span class="text-[#00e5b3] underline underline-offset-2">Clique para escolher</span> ou arraste as fotos aqui</p>
@@ -559,29 +557,29 @@
 <p class="text-[11px] text-slate-400 mb-1.5">Ou escolha entre fotos modelo para teste:</p>
 <div class="grid grid-cols-4 gap-2" id="photoSelectionContainer">
 <div class="relative rounded-xl overflow-hidden aspect-square border-2 border-[#00e5b3] cursor-pointer group photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik">
-<img alt="Exemplo Fachada" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik"/>
+<img alt="Exemplo Fachada" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik">
 <span class="absolute top-1 right-1 w-4 h-4 bg-[#00e5b3] text-[#050c14] rounded-full flex items-center justify-center text-[10px] font-bold">✓</span>
 </div>
 <div class="relative rounded-xl overflow-hidden aspect-square border border-cyan-500/30 cursor-pointer group photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWWKeevwFBpHbmRY-esN2jYVPnc4Wq-lnRjQytT3obsGIZdlOUMqcS5p3LDddD0NhKdjEgWnWBaqncUkNbhDsKJ71Z-_um4gL_bSiridPgrjPVbCzITESh9PEagTCYdg0U6Ndgc3XGc2S3TAYTGzx5SbqmQ8DACkmJ5ZwZtel-pCZdu3jQuxW1KsP0cp37MZQm-LXn__mAEiFIZCYCiDcFMpFo-2N0dZGbaGwp4wzMn5qTvx7aIRE5kXrCe3AAlZ77l1Qagfl9vzZiUc">
-<img alt="Exemplo Sala" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWWKeevwFBpHbmRY-esN2jYVPnc4Wq-lnRjQytT3obsGIZdlOUMqcS5p3LDddD0NhKdjEgWnWBaqncUkNbhDsKJ71Z-_um4gL_bSiridPgrjPVbCzITESh9PEagTCYdg0U6Ndgc3XGc2S3TAYTGzx5SbqmQ8DACkmJ5ZwZtel-pCZdu3jQuxW1KsP0cp37MZQm-LXn__mAEiFIZCYCiDcFMpFo-2N0dZGbaGwp4wzMn5qTvx7aIRE5kXrCe3AAlZ77l1Qagfl9vzZiUc"/>
+<img alt="Exemplo Sala" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWWKeevwFBpHbmRY-esN2jYVPnc4Wq-lnRjQytT3obsGIZdlOUMqcS5p3LDddD0NhKdjEgWnWBaqncUkNbhDsKJ71Z-_um4gL_bSiridPgrjPVbCzITESh9PEagTCYdg0U6Ndgc3XGc2S3TAYTGzx5SbqmQ8DACkmJ5ZwZtel-pCZdu3jQuxW1KsP0cp37MZQm-LXn__mAEiFIZCYCiDcFMpFo-2N0dZGbaGwp4wzMn5qTvx7aIRE5kXrCe3AAlZ77l1Qagfl9vzZiUc">
 </div>
 <div class="relative rounded-xl overflow-hidden aspect-square border border-cyan-500/30 cursor-pointer group photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuCYN7ktoNmoZ02WFtoP1qJg8AL7G8RK9zkMCvf10A2tYwIB4tB2ETGPaxFy1-qn21uEz3VYE2KHa25tqPjHBsaGaoEmxShMmgrqiDGc4Azjwl7Bv7SCxmLnSsUKS68ZJIBUVQMkpTQCQVAqWXZTMeZKW_98C0P4cNXy5WdZV1JwDpcAQYBb6ACg6VYzpqgqJJb6FhjMJ1bF8M5y0uzF3w24kxN-sIoV61yO4Wtvzg0Hl82z_UzvxeP2CEoPjcDFcC50g_dX0RkxjXurR6U">
-<img alt="Exemplo Quarto" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYN7ktoNmoZ02WFtoP1qJg8AL7G8RK9zkMCvf10A2tYwIB4tB2ETGPaxFy1-qn21uEz3VYE2KHa25tqPjHBsaGaoEmxShMmgrqiDGc4Azjwl7Bv7SCxmLnSsUKS68ZJIBUVQMkpTQCQVAqWXZTMeZKW_98C0P4cNXy5WdZV1JwDpcAQYBb6ACg6VYzpqgqJJb6FhjMJ1bF8M5y0uzF3w24kxN-sIoV61yO4Wtvzg0Hl82z_UzvxeP2CEoPjcDFcC50g_dX0RkxjXurR6U"/>
+<img alt="Exemplo Quarto" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYN7ktoNmoZ02WFtoP1qJg8AL7G8RK9zkMCvf10A2tYwIB4tB2ETGPaxFy1-qn21uEz3VYE2KHa25tqPjHBsaGaoEmxShMmgrqiDGc4Azjwl7Bv7SCxmLnSsUKS68ZJIBUVQMkpTQCQVAqWXZTMeZKW_98C0P4cNXy5WdZV1JwDpcAQYBb6ACg6VYzpqgqJJb6FhjMJ1bF8M5y0uzF3w24kxN-sIoV61yO4Wtvzg0Hl82z_UzvxeP2CEoPjcDFcC50g_dX0RkxjXurR6U">
 </div>
 <div class="relative rounded-xl overflow-hidden aspect-square border border-cyan-500/30 cursor-pointer group photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuBRwDpZLPyLXHDS-Tnff0AoY4cf0hufOjqGd9sbMzS5JevfHqt4CbHbTts1qNmRKg6UktyBDutrWWp-A3jJJka3zeHzd-0uqG8PwVR73Ckn5gGOxLdgElBwYzXvGsbqYatyvpawADriTwA8xfBPo-m86XZ73chPGHja3GiDDPgj1ny2ZwACv9dOGeX0sdb8mEMcYz4TBoOwJbJcyWvixMeolhNs6SbCP8F4g-zpf9yDBBck1PBGYv3qrux1RrliUJQZoRXP_ppwimnYUZc">
-<img alt="Exemplo Quintal" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRwDpZLPyLXHDS-Tnff0AoY4cf0hufOjqGd9sbMzS5JevfHqt4CbHbTts1qNmRKg6UktyBDutrWWp-A3jJJka3zeHzd-0uqG8PwVR73Ckn5gGOxLdgElBwYzXvGsbqYatyvpawADriTwA8xfBPo-m86XZ73chPGHja3GiDDPgj1ny2ZwACv9dOGeX0sdb8mEMcYz4TBoOwJbJcyWvixMeolhNs6SbCP8F4g-zpf9yDBBck1PBGYv3qrux1RrliUJQZoRXP_ppwimnYUZc"/>
+<img alt="Exemplo Quintal" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRwDpZLPyLXHDS-Tnff0AoY4cf0hufOjqGd9sbMzS5JevfHqt4CbHbTts1qNmRKg6UktyBDutrWWp-A3jJJka3zeHzd-0uqG8PwVR73Ckn5gGOxLdgElBwYzXvGsbqYatyvpawADriTwA8xfBPo-m86XZ73chPGHja3GiDDPgj1ny2ZwACv9dOGeX0sdb8mEMcYz4TBoOwJbJcyWvixMeolhNs6SbCP8F4g-zpf9yDBBck1PBGYv3qrux1RrliUJQZoRXP_ppwimnYUZc">
 </div>
 </div>
 </div>
 </div>
 </div>
 <!-- STEP 3: Valores & Contato do Proprietário -->
-<div class="space-y-4 hidden" id="formStep3">
+<div class="space-y-4" id="formStep3">
 <div>
 <label class="block text-slate-300 font-bold mb-1">8. Valor Pretendido (R$)</label>
 <div class="relative">
 <span class="absolute left-3.5 top-1/2 -translate-y-1/2 font-bold text-[#00e5b3]">R$</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/40 rounded-xl pl-11 pr-4 py-2.5 text-white font-extrabold text-sm focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3]" id="inputValue" placeholder="ex: 850,00 ou 250.000,00" required="" type="text" value="850,00"/>
+<input class="w-full bg-[#0c2234] border border-cyan-500/40 rounded-xl pl-11 pr-4 py-2.5 text-white font-extrabold text-sm focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3]" id="inputValue" placeholder="ex: 850,00 ou 250.000,00" required="" type="text" value="850,00">
 </div>
 <span class="text-[10px] text-slate-400 mt-1 block">Para aluguel, informe o valor mensal. Para venda, o valor total.</span>
 </div>
@@ -589,36 +587,36 @@
 <label class="block text-[#00e5b3] font-bold">9. Dados do Proprietário / Responsável</label>
 <div>
 <span class="text-[11px] text-slate-300 block mb-1">Nome Completo:</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e5b3]" id="inputOwnerName" placeholder="Seu Nome ou Corretor" required="" type="text" value="Mariana Silva"/>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e5b3]" id="inputOwnerName" placeholder="Seu Nome ou Corretor" required="" type="text" value="Mariana Silva">
 </div>
 <div>
 <span class="text-[11px] text-slate-300 block mb-1">WhatsApp para Contato Direto:</span>
 <div class="relative">
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e5b3]" id="inputOwnerPhone" placeholder="(84) 98680-2229" required="" type="text" value="(84) 98680-2229"/>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e5b3]" id="inputOwnerPhone" placeholder="Seu numero lembre-se do DDD Ex: ( 84 )" required="" type="text" value="(84) 98680-2229">
 </div>
 <span class="text-[10px] text-slate-400 block mt-1">Interessados clicarão no botão e abrirão conversa direta no seu WhatsApp.</span>
 </div>
 </div>
 <!-- Termos de publicação -->
 <div class="flex items-start gap-2 pt-1">
-<input checked="" class="mt-0.5 rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="acceptTerms" required="" type="checkbox"/>
+<input checked="" class="mt-0.5 rounded border-cyan-500/40 text-[#00e5b3] focus:ring-0" id="acceptTerms" required="" type="checkbox">
 <label class="text-[11px] text-slate-400" for="acceptTerms">Declaro que as informações do imóvel são verídicas e concordo em exibir o imóvel em destaque na OpenWord.</label>
 </div>
 </div>
 </form>
 <!-- Modal Footer Controls -->
 <div class="p-4 sm:p-5 border-t border-cyan-500/20 bg-[#071622] flex items-center justify-between gap-3">
-<button class="hidden px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs active:scale-95 transition" id="modalPrevStepBtn" type="button">
+<button class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs active:scale-95 transition" id="modalPrevStepBtn" type="button">
         ← Voltar
       </button>
 <div class="flex-1"></div>
-<button class="px-5 py-2.5 rounded-xl bg-[#00e5b3] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-extrabold text-xs tracking-wider uppercase shadow-neon-cyan transition flex items-center gap-1.5" id="modalNextStepBtn" type="button">
-<span>Avançar</span>
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<button class="px-5 py-2.5 rounded-xl bg-[#00e5b3] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-extrabold text-xs tracking-wider uppercase shadow-neon-cyan transition flex items-center gap-1.5 hidden" id="modalNextStepBtn" type="button">
+<span class="">Avançar</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </button>
-<button class="hidden px-6 py-3 rounded-xl bg-[#00e5b3] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-black text-xs tracking-wider uppercase shadow-neon-cyan transition flex items-center gap-2" id="modalSubmitBtn" type="button">
-<svg class="w-4 h-4 animate-spin hidden" id="submitSpinner" viewbox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path></svg>
-<span id="submitBtnText">PUBLICAR ANÚNCIO AGORA</span>
+<button class="px-6 py-3 rounded-xl bg-[#00e5b3] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-black text-xs tracking-wider uppercase shadow-neon-cyan transition flex items-center gap-2" id="modalSubmitBtn" type="button">
+<svg class="w-4 h-4 animate-spin hidden" id="submitSpinner" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path></svg>
+<span id="submitBtnText" class="">PUBLICAR ANÚNCIO AGORA</span>
 </button>
 </div>
 </div>
@@ -1124,4 +1122,6 @@
     });
   </script>
 <!-- END: InteractiveScripts -->
+
+
 </body></html>
