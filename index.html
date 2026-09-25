@@ -1,6 +1,8 @@
-<!DOCTYPE html><html class="dark" lang="pt-BR" style=""><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
 <title>OpenWord - Encontre seu Imóvel Ideal</title>
 <!-- Tailwind CSS CDN com plugins -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -30,9 +32,9 @@
     };
   </script>
 <!-- Google Fonts Inter -->
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <style data-purpose="base-styling">
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
@@ -48,6 +50,13 @@
     ::-webkit-scrollbar-thumb {
       background: #00e5b3;
       border-radius: 9999px;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
     }
   </style>
 <style data-purpose="custom-animations">
@@ -95,12 +104,12 @@
 </div>
 <!-- Efeito visual de pins no mapa de fundo -->
 <div class="absolute top-10 right-8 pin-glow pointer-events-none opacity-80">
-<svg class="w-6 h-6 text-[#00e5b3]" fill="currentColor" viewBox="0 0 24 24">
+<svg class="w-6 h-6 text-[#00e5b3]" fill="currentColor" viewbox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
 <div class="absolute bottom-6 right-20 pin-glow pointer-events-none opacity-60" style="animation-delay: 1.2s;">
-<svg class="w-5 h-5 text-[#00e5b3]" fill="currentColor" viewBox="0 0 24 24">
+<svg class="w-5 h-5 text-[#00e5b3]" fill="currentColor" viewbox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
@@ -110,7 +119,7 @@
           Imóveis Exclusivos no Mundo Inteiro
         </div>
 <h1 class="text-3xl sm:text-4xl font-black tracking-tight text-white leading-tight">
-          Encontre seu <br>
+          Encontre seu <br/>
 <span class="text-[#00e5b3] drop-shadow-[0_0_15px_rgba(0,229,179,0.35)]">imóvel ideal.</span>
 </h1>
 <p class="mt-3 text-sm text-slate-300 leading-relaxed max-w-xs">
@@ -130,13 +139,13 @@
 <div class="max-w-md mx-auto">
 <!-- Barra de Busca Rápida -->
 <div class="relative mb-4">
-<input class="w-full bg-[#0c2234]/80 text-sm text-slate-100 placeholder-slate-400 pl-11 pr-4 py-3 rounded-2xl border border-cyan-500/30 focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3] focus:outline-none transition" placeholder="Buscar por cidade, bairro ou país..." type="text">
-<svg class="w-5 h-5 text-[#00e5b3] absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<input class="w-full bg-[#0c2234]/80 text-sm text-slate-100 placeholder-slate-400 pl-11 pr-4 py-3 rounded-2xl border border-cyan-500/30 focus:border-[#00e5b3] focus:ring-1 focus:ring-[#00e5b3] focus:outline-none transition" placeholder="Buscar por cidade, bairro ou país..." type="text"/>
+<svg class="w-5 h-5 text-[#00e5b3] absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </div>
 <!-- Tags Categorias idênticas às imagens de referência -->
-<div class="p-2 rounded-2xl bg-[#091b29]/90 border border-[#00dfb2]/40 backdrop-blur-md flex flex-wrap items-center justify-around gap-1.5 shadow-inner"><button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0"><svg class="w-4 h-4 text-[#00e5b3] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg><span class="">Casas a venda</span></button><div class="hidden sm:block w-px h-5 bg-slate-700"></div><button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0"><svg class="w-4 h-4 text-[#0ea5e9] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg><span class="">Casas de Aluguel</span></button><div class="hidden sm:block w-px h-5 bg-slate-700"></div><button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0"><svg class="w-4 h-4 text-[#eab308] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg><span class="">Área de Lazer</span></button></div>
+<div class="p-2 rounded-2xl bg-[#091b29]/90 border border-[#00dfb2]/40 backdrop-blur-md flex flex-wrap items-center justify-around gap-1.5 shadow-inner"><button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0"><svg class="w-4 h-4 text-[#00e5b3] shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg><span class="">Casas a venda</span></button><div class="hidden sm:block w-px h-5 bg-slate-700"></div><button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0"><svg class="w-4 h-4 text-[#0ea5e9] shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg><span class="">Casas de Aluguel</span></button><div class="hidden sm:block w-px h-5 bg-slate-700"></div><button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0"><svg class="w-4 h-4 text-[#eab308] shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg><span class="">Área de Lazer</span></button></div>
 </div>
 </section>
 <!-- END: QuickFiltersSection -->
@@ -149,30 +158,58 @@
         </div>
 <!-- Card Principal Estilo Cockpit Dark Navy com Borda Ciano -->
 <article class="bg-[#0a1f2e] border-2 border-[#00dfb2] rounded-3xl p-4 sm:p-5 shadow-neon-glow space-y-4">
-<!-- Carrossel de Fotos do Imóvel -->
-<div class="relative rounded-2xl overflow-hidden bg-slate-900 border border-cyan-500/20 aspect-[4/3] group">
-<img alt="Foto interna aconchegante da suíte master com lareira" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZzHBwQDe2i9XzRTGWC8cGffrBx7ei7s1US2CJKQoRpFLUNIyzOwAu370rfp2khtv5CviVkcOwYJesuizWaMr2fkn4d6G4cg-E0YJfjkODhXlmGu-RLvCXndKeQa_ukK5k84yc4O-jXR0xZRQejtc0SsD8B5jcUKnTHceQRlhqXfbCQhs0BDqAAVwYibDOvTe6dI6YnUPXVMEyynZUyW0F6u13whnN205NajrSssTT33xkWH___VzItQbqTzGGqpxPL9QF7yKXnGO5Kw0">
-<!-- Controles do carrossel (< e >) como nas imagens -->
-<button aria-label="Imagem anterior" class="absolute left-2.5 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-2 rounded-full backdrop-blur-sm transition active:scale-90">
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<!-- Carrossel de Fotos do Imóvel Interativo -->
+<div class="relative rounded-2xl overflow-hidden bg-slate-900 border border-cyan-500/20 aspect-[4/3] group" id="propertyCarouselContainer">
+<!-- Slider container com scroll horizontal suave & snap -->
+<div class="flex w-full h-full overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar" id="propertySlider">
+<!-- Slide 1: Fachada / Exterior Original -->
+<div class="w-full h-full shrink-0 snap-center relative">
+<img alt="Fachada e acesso do imóvel" class="w-full h-full object-cover select-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZzHBwQDe2i9XzRTGWC8cGffrBx7ei7s1US2CJKQoRpFLUNIyzOwAu370rfp2khtv5CviVkcOwYJesuizWaMr2fkn4d6G4cg-E0YJfjkODhXlmGu-RLvCXndKeQa_ukK5k84yc4O-jXR0xZRQejtc0SsD8B5jcUKnTHceQRlhqXfbCQhs0BDqAAVwYibDOvTe6dI6YnUPXVMEyynZUyW0F6u13whnN205NajrSssTT33xkWH___VzItQbqTzGGqpxPL9QF7yKXnGO5Kw0"/>
+</div>
+<!-- Slide 2: Sala de Estar e Cozinha Gourmet Integradas -->
+<div class="w-full h-full shrink-0 snap-center relative">
+<img alt="Modern luxury living room and gourmet kitchen open concept" class="w-full h-full object-cover select-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB8iCiqwnbZKl3wonVi1FHXCrVnzNJdCi8VY8CdPAPQenloM5Ufvsu4rTUGOFgTZhBmzoPhGxxqEK3vwXxzZcQQ0RPpPi9AP-i6K8Ya5g53s1yeAvDy3pZUzqNIBc4PWjbWXbFoR4qwWQH-fkG6mQ9lP5JU1D_1MZ6rV9-NR7Cr6KOPRVICisBtUrmlAUD2OPbQUYjY9TK-jcgYfRZLpENB579JKrnYkvXMte9nfoalxZEcLjcPo1LuQ"/>
+</div>
+<!-- Slide 3: Quarto Master Suíte -->
+<div class="w-full h-full shrink-0 snap-center relative">
+<img alt="Modern cozy bedroom interior of a luxury rental house" class="w-full h-full object-cover select-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZVMJ8sf0zeoExgPBDUV_O6Loi2R7s32Qbnaq6CeOmKIvNtk6D2PO2m5intWWSbMXoKUgRf-pD7TtUv1M9CjMX6njYSNUdaSW4PIIyqsxJyCHWLjBPAU7MD4wecA1TozhRntqOPhaWTnTjudlG6eOu4ArLvGlduvUD00PWfojoOa4gGK5RCkQf2rmuHhdW-tDA9aAYsy5j7irhXM7gB3GgbGjuyt0zNL3Qrp1GvjgJxdNdCeoHqCDiZQ"/>
+</div>
+<!-- Slide 4: Área Externa com Quintal e Piscina -->
+<div class="w-full h-full shrink-0 snap-center relative">
+<img alt="Backyard patio with swimming pool, wooden deck and garden" class="w-full h-full object-cover select-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9kjBcLqakrUc_obEQ7cSChFhRfiuoGsN3I4dO5638ku4gpfyDnW2SZQnQ8Awa3zkdfTPf3dyS5EpI5nwFOrP1W50njXLvRtr_VxJbZ6QLAKfkOZ8bYfOegB9FX3wprNXDc0tMRSFQWg4DMaAKzDs9wPUEY5bkkTTYOUbmlI5GVh2gWotKQjtOZ88XlYsSjT9XvaOdyaYz78JXblY2rGliP7z9Sjux48-E7XAh_IhadeLrl84xvCEBYg"/>
+</div>
+</div>
+<!-- Controles do carrossel (< e >) -->
+<button aria-label="Imagem anterior" class="absolute left-2.5 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#00e5b3] hover:text-[#050c14] text-white p-2 rounded-full backdrop-blur-sm transition active:scale-90" id="carouselPrevBtn" type="button">
+<svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </button>
-<button aria-label="Próxima imagem" class="absolute right-2.5 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-2 rounded-full backdrop-blur-sm transition active:scale-90">
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<button aria-label="Próxima imagem" class="absolute right-2.5 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#00e5b3] hover:text-[#050c14] text-white p-2 rounded-full backdrop-blur-sm transition active:scale-90" id="carouselNextBtn" type="button">
+<svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </button>
-<!-- Tag de Preço Rápido sobre a Imagem -->
-<div class="absolute bottom-2.5 left-2.5 bg-[#050c14]/85 backdrop-blur-md px-3 py-1 rounded-xl border border-cyan-500/30 text-xs font-bold text-[#00e5b3]">Jardins / Cidade das Rosas</div>
+<!-- Tag de Localização sobre a Imagem -->
+<div class="absolute bottom-2.5 left-2.5 z-20 bg-[#050c14]/85 backdrop-blur-md px-3 py-1 rounded-xl border border-cyan-500/30 text-xs font-bold text-[#00e5b3]">Jardins / Cidade das Rosas</div>
+<!-- Indicador de Paginação (Contador Numérico & Pontos Indicadores) -->
+<div class="absolute top-2.5 right-2.5 z-20 bg-[#050c14]/85 backdrop-blur-md px-2.5 py-1 rounded-xl border border-cyan-500/30 flex items-center gap-1.5">
+<span class="text-[11px] font-bold text-slate-100" id="carouselCounter">1/4</span>
+<div class="flex items-center gap-1 pl-1 border-l border-white/20" id="carouselDots">
+<button aria-label="Ir para foto 1" class="w-2 h-2 rounded-full bg-[#00e5b3] transition-all shadow-[0_0_6px_#00e5b3]" data-index="0"></button>
+<button aria-label="Ir para foto 2" class="w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all" data-index="1"></button>
+<button aria-label="Ir para foto 3" class="w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all" data-index="2"></button>
+<button aria-label="Ir para foto 4" class="w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all" data-index="3"></button>
+</div>
+</div>
 </div>
 <!-- Perfil da Corretora / Anfitrião -->
 <div class="flex items-center gap-3.5 pt-1 border-b border-cyan-500/15 pb-4">
 <div class="relative shrink-0">
-<img alt="Foto de perfil de Ronaldi Londrina" class="w-14 h-14 rounded-full object-cover border-2 border-[#00e5b3] shadow-[0_0_10px_rgba(0,229,179,0.3)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbbIM0ad81i2lbIub5bmxKAYHUh6UWRvXdbUmtIAsKSh0Obf7hgqh6xFDwEVD_NNjR7v3R2vkcE6EJ5hfZ-LNcZc9BhYQYMILMCw_OpW6lncqy7bL7x_56nBiwE8RPfJEWEJif6n05j2B-evKzNrRUpVnBek6wwztlBy7zGJNV375Q0Wl4ev_ZQOQFeK0oKpmHkthG3nth5UTC37PcG4Y0sxKBr10ZoTy6Fyc0kj8bJHy_UdAVgcFzxHCQHR0Uy0FZA5QVlCOrXVMAf1E">
+<img alt="Foto de perfil de Ronaldi Londrina" class="w-14 h-14 rounded-full object-cover border-2 border-[#00e5b3] shadow-[0_0_10px_rgba(0,229,179,0.3)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbbIM0ad81i2lbIub5bmxKAYHUh6UWRvXdbUmtIAsKSh0Obf7hgqh6xFDwEVD_NNjR7v3R2vkcE6EJ5hfZ-LNcZc9BhYQYMILMCw_OpW6lncqy7bL7x_56nBiwE8RPfJEWEJif6n05j2B-evKzNrRUpVnBek6wwztlBy7zGJNV375Q0Wl4ev_ZQOQFeK0oKpmHkthG3nth5UTC37PcG4Y0sxKBr10ZoTy6Fyc0kj8bJHy_UdAVgcFzxHCQHR0Uy0FZA5QVlCOrXVMAf1E"/>
 <span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-emerald-500 border-2 border-[#0a1f2e]"></span>
 </div>
 <div>
 <p class="text-xs text-slate-400 font-medium">Propietario Responsável</p>
 <h2 class="text-base font-bold text-white leading-tight">Ronaldo Londres</h2>
 <a class="text-xs font-semibold text-[#00e5b3] hover:underline flex items-center gap-1 mt-0.5" href="tel:84988888888">
-<svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
+<svg class="w-3.5 h-3.5" fill="currentColor" viewbox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
                 (84) 98680-2229</a>
 </div>
 </div>
@@ -199,7 +236,7 @@
 <!-- Moldura do Mapa Satélite Estilizado -->
 <div class="relative bg-[#0c2234] border-2 border-[#00dfb2] rounded-3xl overflow-hidden shadow-neon-glow aspect-video sm:aspect-[16/10]">
 <!-- Representação visual do mapa de satélite urbano -->
-<img alt="Visão de satélite cartográfico e demarcação de rota" class="w-full h-full object-cover brightness-75 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMUGxeQ3hAKNuBpPVha5ot27sL_nrmgPk0Fh6uOjVe1gy86eXdlOq3-yjz5zFyNm0BJHNi9Y8Nu3G99FI9lwMvOj1tHCxy8vGvVELYej8-PDWQjQcjAngB7a0BXxDQOtvXD7BdcQqvPW07m_iYSHiwRcuZiwVdYZUIRMHsBTjvuxOgLNd6ekYKR9IlPEFPX6tAn7VJ5yB16eWk576qgrU3YiMbVBszFcu59ni9uzwrfwjbbmtRJCLOAw">
+<img alt="Visão de satélite cartográfico e demarcação de rota" class="w-full h-full object-cover brightness-75 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMUGxeQ3hAKNuBpPVha5ot27sL_nrmgPk0Fh6uOjVe1gy86eXdlOq3-yjz5zFyNm0BJHNi9Y8Nu3G99FI9lwMvOj1tHCxy8vGvVELYej8-PDWQjQcjAngB7a0BXxDQOtvXD7BdcQqvPW07m_iYSHiwRcuZiwVdYZUIRMHsBTjvuxOgLNd6ekYKR9IlPEFPX6tAn7VJ5yB16eWk576qgrU3YiMbVBszFcu59ni9uzwrfwjbbmtRJCLOAw"/>
 <!-- Camada de overlay escuro e pins luminosos -->
 <div class="absolute inset-0 bg-[#050c14]/40 pointer-events-none"></div>
 <!-- Pin Central de Alta Visibilidade -->
@@ -207,13 +244,13 @@
 <div class="bg-[#00e5b3] text-[#050c14] font-extrabold text-[10px] px-2 py-0.5 rounded-full shadow-md whitespace-nowrap mb-1">
               R$ 380 / mês
             </div>
-<svg class="w-8 h-8 text-[#00e5b3] drop-shadow-[0_0_12px_#00e5b3]" fill="currentColor" viewBox="0 0 24 24">
+<svg class="w-8 h-8 text-[#00e5b3] drop-shadow-[0_0_12px_#00e5b3]" fill="currentColor" viewbox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
 <!-- Pin secundário adjacente -->
 <div class="absolute top-1/4 left-1/4 flex flex-col items-center opacity-85">
-<svg class="w-5 h-5 text-[#0ea5e9] drop-shadow-[0_0_8px_#0ea5e9]" fill="currentColor" viewBox="0 0 24 24">
+<svg class="w-5 h-5 text-[#0ea5e9] drop-shadow-[0_0_8px_#0ea5e9]" fill="currentColor" viewbox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
@@ -262,8 +299,66 @@
     document.querySelectorAll('button, a').forEach(el => {
       el.addEventListener('touchstart', () => {}, { passive: true });
     });
+
+    // Carousel Slider Logic
+    const slider = document.getElementById('propertySlider');
+    const prevBtn = document.getElementById('carouselPrevBtn');
+    const nextBtn = document.getElementById('carouselNextBtn');
+    const counter = document.getElementById('carouselCounter');
+    const dots = document.querySelectorAll('#carouselDots button');
+    const totalSlides = 4;
+
+    function updateActiveSlide(index) {
+      if (counter) counter.textContent = `${index + 1}/${totalSlides}`;
+      dots.forEach((dot, idx) => {
+        if (idx === index) {
+          dot.className = 'w-2 h-2 rounded-full bg-[#00e5b3] transition-all shadow-[0_0_6px_#00e5b3]';
+        } else {
+          dot.className = 'w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all';
+        }
+      });
+    }
+
+    if (slider) {
+      let scrollTimeout;
+      slider.addEventListener('scroll', () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          const slideWidth = slider.clientWidth;
+          const currentIndex = Math.round(slider.scrollLeft / slideWidth);
+          updateActiveSlide(Math.min(Math.max(currentIndex, 0), totalSlides - 1));
+        }, 50);
+      });
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          const slideWidth = slider.clientWidth;
+          const currentIndex = Math.round(slider.scrollLeft / slideWidth);
+          const targetIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+          slider.scrollTo({ left: targetIndex * slideWidth, behavior: 'smooth' });
+          updateActiveSlide(targetIndex);
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          const slideWidth = slider.clientWidth;
+          const currentIndex = Math.round(slider.scrollLeft / slideWidth);
+          const targetIndex = (currentIndex + 1) % totalSlides;
+          slider.scrollTo({ left: targetIndex * slideWidth, behavior: 'smooth' });
+          updateActiveSlide(targetIndex);
+        });
+      }
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+          const targetIdx = parseInt(dot.getAttribute('data-index') || '0', 10);
+          const slideWidth = slider.clientWidth;
+          slider.scrollTo({ left: targetIdx * slideWidth, behavior: 'smooth' });
+          updateActiveSlide(targetIdx);
+        });
+      });
+    }
   </script>
 <!-- END: InteractiveScripts -->
-
-
 </body></html>
