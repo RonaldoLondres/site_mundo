@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-
-<html class="dark" lang="pt-BR"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<!DOCTYPE html><html class="dark" lang="pt-BR" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 <title>OpenWord - Encontre seu Imóvel Ideal &amp; Anuncie</title>
 <!-- Tailwind CSS CDN com plugins -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -32,10 +30,10 @@
     };
   </script>
 <!-- Google Fonts Inter & Plus Jakarta Sans -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
 <style data-purpose="base-styling">
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
@@ -87,7 +85,7 @@
 <!-- Toast de Sucesso Notificação -->
 <div class="fixed top-5 left-1/2 -translate-x-1/2 z-[100] max-w-[92vw] w-[420px] bg-[#0c2234] border-2 border-[#00e6a8] text-white px-4 py-3.5 rounded-2xl shadow-[0_10px_35px_rgba(0,230,168,0.35)] flex items-center gap-3 transition-all duration-300 transform -translate-y-28 opacity-0 pointer-events-none" id="toastSuccess">
 <div class="w-10 h-10 rounded-xl bg-[#00e6a8]/20 text-[#00e6a8] flex items-center justify-center shrink-0">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </div>
 <div class="flex-1 text-xs">
 <p class="font-extrabold text-[#00e6a8] text-sm">🎉 Anúncio Publicado com Sucesso!</p>
@@ -111,7 +109,7 @@
 </nav>
 <!-- Botão Topo: com onclick direto para garantia absoluta de abertura -->
 <button class="bg-[#00e6a8] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-extrabold text-xs sm:text-sm px-4 sm:px-5 py-2 rounded-full uppercase tracking-wider shadow-neon-cyan transition-all flex items-center gap-1.5 cursor-pointer font-['Space_Grotesk']" id="openPublishModalHeaderBtn" onclick="openModal()" type="button">
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 <span class="">Anunciar</span>
 </button>
 </div>
@@ -122,12 +120,12 @@
 <section class="relative px-4 pt-8 pb-10 overflow-hidden" data-purpose="hero-banner">
 <div class="absolute inset-0 -z-10 opacity-35 bg-center bg-cover pointer-events-none" style="background-image: radial-gradient(circle at 60% 30%, rgba(0, 230, 168, 0.25) 0%, transparent 60%), radial-gradient(circle at 20% 80%, rgba(14, 165, 233, 0.2) 0%, #050c14 80%);"></div>
 <div class="absolute top-10 right-8 pin-glow pointer-events-none opacity-80">
-<svg class="w-6 h-6 text-[#00e6a8]" fill="currentColor" viewbox="0 0 24 24">
+<svg class="w-6 h-6 text-[#00e6a8]" fill="currentColor" viewBox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
 <div class="absolute bottom-6 right-20 pin-glow pointer-events-none opacity-60" style="animation-delay: 1.2s;">
-<svg class="w-5 h-5 text-[#00e6a8]" fill="currentColor" viewbox="0 0 24 24">
+<svg class="w-5 h-5 text-[#00e6a8]" fill="currentColor" viewBox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
@@ -137,7 +135,7 @@
         Imóveis Exclusivos no Mundo Inteiro
       </div>
 <h1 class="text-3xl sm:text-4xl font-black tracking-tight text-white leading-tight font-['Space_Grotesk']">
-        Encontre seu <br/>
+        Encontre seu <br>
 <span class="text-[#00e6a8] drop-shadow-[0_0_15px_rgba(0,230,168,0.35)]">imóvel ideal.</span>
 </h1>
 <p class="mt-3 text-sm text-slate-300 leading-relaxed max-w-xs">
@@ -146,7 +144,7 @@
 <!-- Botão Hero com onclick direto garantido -->
 <div class="mt-6 flex flex-col sm:flex-row gap-3">
 <button class="w-full text-center bg-[#00e6a8] hover:bg-[#00cfa2] active:scale-98 text-[#050c14] font-extrabold text-sm py-3.5 px-6 rounded-2xl tracking-wide shadow-neon-cyan transition-all flex items-center justify-center gap-2 cursor-pointer font-['Space_Grotesk']" id="openPublishModalHeroBtn" onclick="openModal()" type="button">
-<svg class="w-5 h-5 text-[#050c14]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<svg class="w-5 h-5 text-[#050c14]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 <span class="">ANUNCIE SEU IMÓVEL</span>
 </button>
 </div>
@@ -157,24 +155,24 @@
 <section class="px-4" data-purpose="category-badges">
 <div class="max-w-md mx-auto">
 <div class="relative mb-4">
-<input class="w-full bg-[#0c2234]/80 text-sm text-slate-100 placeholder-slate-400 pl-11 pr-4 py-3 rounded-2xl border border-cyan-500/30 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] focus:outline-none transition" placeholder="Buscar por cidade, bairro ou país..." type="text"/>
-<svg class="w-5 h-5 text-[#00e6a8] absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<input class="w-full bg-[#0c2234]/80 text-sm text-slate-100 placeholder-slate-400 pl-11 pr-4 py-3 rounded-2xl border border-cyan-500/30 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] focus:outline-none transition" placeholder="Buscar por cidade, bairro ou país..." type="text">
+<svg class="w-5 h-5 text-[#00e6a8] absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </div>
 <div class="p-2 rounded-2xl bg-[#091b29]/90 border border-[#00e6a8]/40 backdrop-blur-md flex flex-wrap items-center justify-around gap-1.5 shadow-inner">
 <button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0" onclick="filterType('Venda')" type="button">
-<svg class="w-4 h-4 text-[#00e6a8] shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+<svg class="w-4 h-4 text-[#00e6a8] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
 <span class="">Casas a venda</span>
 </button>
 <div class="hidden sm:block w-px h-5 bg-slate-700"></div>
 <button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0" onclick="filterType('Aluguel')" type="button">
-<svg class="w-4 h-4 text-[#0ea5e9] shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+<svg class="w-4 h-4 text-[#0ea5e9] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
 <span class="">Casas de Aluguel</span>
 </button>
 <div class="hidden sm:block w-px h-5 bg-slate-700"></div>
 <button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/5 active:scale-95 transition text-xs font-semibold text-slate-200 shrink-0" onclick="filterType('Lazer')" type="button">
-<svg class="w-4 h-4 text-[#eab308] shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+<svg class="w-4 h-4 text-[#eab308] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
 <span class="">Área de Lazer</span>
 </button>
 </div>
@@ -200,27 +198,27 @@
 <div class="flex w-full h-full overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar" id="propertySlider">
 <!-- Slide 1: Fachada Principal -->
 <div class="w-full h-full shrink-0 snap-center relative">
-<img alt="Fachada e acesso do imóvel" class="w-full h-full object-cover select-none" id="mainPropertyImg1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik"/>
+<img alt="Fachada e acesso do imóvel" class="w-full h-full object-cover select-none" id="mainPropertyImg1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik">
 </div>
 <!-- Slide 2: Sala de Estar e Cozinha Integradas -->
 <div class="w-full h-full shrink-0 snap-center relative">
-<img alt="Modern luxury living room and gourmet kitchen open concept" class="w-full h-full object-cover select-none" id="mainPropertyImg2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWWKeevwFBpHbmRY-esN2jYVPnc4Wq-lnRjQytT3obsGIZdlOUMqcS5p3LDddD0NhKdjEgWnWBaqncUkNbhDsKJ71Z-_um4gL_bSiridPgrjPVbCzITESh9PEagTCYdg0U6Ndgc3XGc2S3TAYTGzx5SbqmQ8DACkmJ5ZwZtel-pCZdu3jQuxW1KsP0cp37MZQm-LXn__mAEiFIZCYCiDcFMpFo-2N0dZGbaGwp4wzMn5qTvx7aIRE5kXrCe3AAlZ77l1Qagfl9vzZiUc"/>
+<img alt="Modern luxury living room and gourmet kitchen open concept" class="w-full h-full object-cover select-none" id="mainPropertyImg2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWWKeevwFBpHbmRY-esN2jYVPnc4Wq-lnRjQytT3obsGIZdlOUMqcS5p3LDddD0NhKdjEgWnWBaqncUkNbhDsKJ71Z-_um4gL_bSiridPgrjPVbCzITESh9PEagTCYdg0U6Ndgc3XGc2S3TAYTGzx5SbqmQ8DACkmJ5ZwZtel-pCZdu3jQuxW1KsP0cp37MZQm-LXn__mAEiFIZCYCiDcFMpFo-2N0dZGbaGwp4wzMn5qTvx7aIRE5kXrCe3AAlZ77l1Qagfl9vzZiUc">
 </div>
 <!-- Slide 3: Quarto Master Suíte -->
 <div class="w-full h-full shrink-0 snap-center relative">
-<img alt="Modern cozy bedroom interior of a luxury rental house" class="w-full h-full object-cover select-none" id="mainPropertyImg3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYN7ktoNmoZ02WFtoP1qJg8AL7G8RK9zkMCvf10A2tYwIB4tB2ETGPaxFy1-qn21uEz3VYE2KHa25tqPjHBsaGaoEmxShMmgrqiDGc4Azjwl7Bv7SCxmLnSsUKS68ZJIBUVQMkpTQCQVAqWXZTMeZKW_98C0P4cNXy5WdZV1JwDpcAQYBb6ACg6VYzpqgqJJb6FhjMJ1bF8M5y0uzF3w24kxN-sIoV61yO4Wtvzg0Hl82z_UzvxeP2CEoPjcDFcC50g_dX0RkxjXurR6U"/>
+<img alt="Modern cozy bedroom interior of a luxury rental house" class="w-full h-full object-cover select-none" id="mainPropertyImg3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYN7ktoNmoZ02WFtoP1qJg8AL7G8RK9zkMCvf10A2tYwIB4tB2ETGPaxFy1-qn21uEz3VYE2KHa25tqPjHBsaGaoEmxShMmgrqiDGc4Azjwl7Bv7SCxmLnSsUKS68ZJIBUVQMkpTQCQVAqWXZTMeZKW_98C0P4cNXy5WdZV1JwDpcAQYBb6ACg6VYzpqgqJJb6FhjMJ1bF8M5y0uzF3w24kxN-sIoV61yO4Wtvzg0Hl82z_UzvxeP2CEoPjcDFcC50g_dX0RkxjXurR6U">
 </div>
 <!-- Slide 4: Área Externa com Quintal e Piscina -->
 <div class="w-full h-full shrink-0 snap-center relative">
-<img alt="Backyard patio with swimming pool, wooden deck and garden" class="w-full h-full object-cover select-none" id="mainPropertyImg4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRwDpZLPyLXHDS-Tnff0AoY4cf0hufOjqGd9sbMzS5JevfHqt4CbHbTts1qNmRKg6UktyBDutrWWp-A3jJJka3zeHzd-0uqG8PwVR73Ckn5gGOxLdgElBwYzXvGsbqYatyvpawADriTwA8xfBPo-m86XZ73chPGHja3GiDDPgj1ny2ZwACv9dOGeX0sdb8mEMcYz4TBoOwJbJcyWvixMeolhNs6SbCP8F4g-zpf9yDBBck1PBGYv3qrux1RrliUJQZoRXP_ppwimnYUZc"/>
+<img alt="Backyard patio with swimming pool, wooden deck and garden" class="w-full h-full object-cover select-none" id="mainPropertyImg4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRwDpZLPyLXHDS-Tnff0AoY4cf0hufOjqGd9sbMzS5JevfHqt4CbHbTts1qNmRKg6UktyBDutrWWp-A3jJJka3zeHzd-0uqG8PwVR73Ckn5gGOxLdgElBwYzXvGsbqYatyvpawADriTwA8xfBPo-m86XZ73chPGHja3GiDDPgj1ny2ZwACv9dOGeX0sdb8mEMcYz4TBoOwJbJcyWvixMeolhNs6SbCP8F4g-zpf9yDBBck1PBGYv3qrux1RrliUJQZoRXP_ppwimnYUZc">
 </div>
 </div>
 <!-- Controles do carrossel (< e >) -->
 <button aria-label="Imagem anterior" class="absolute left-2.5 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#00e6a8] hover:text-[#050c14] text-white p-2 rounded-full backdrop-blur-sm transition active:scale-90" id="carouselPrevBtn" type="button">
-<svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </button>
 <button aria-label="Próxima imagem" class="absolute right-2.5 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#00e6a8] hover:text-[#050c14] text-white p-2 rounded-full backdrop-blur-sm transition active:scale-90" id="carouselNextBtn" type="button">
-<svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 </button>
 <!-- Tag de Localização sobre a Imagem -->
 <div class="absolute bottom-2.5 left-2.5 z-20 bg-[#050c14]/85 backdrop-blur-md px-3 py-1 rounded-xl border border-cyan-500/30 text-xs font-bold text-[#00e6a8] max-w-[70%] truncate" id="propertyBadgeLocation">
@@ -240,14 +238,14 @@
 <!-- Perfil do Anunciante / Proprietário -->
 <div class="flex items-center gap-3.5 pt-1 border-b border-cyan-500/15 pb-4">
 <div class="relative shrink-0">
-<img alt="Foto de perfil do proprietário" class="w-14 h-14 rounded-full object-cover border-2 border-[#00e6a8] shadow-[0_0_10px_rgba(0,230,168,0.3)]" id="propertyOwnerAvatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbbIM0ad81i2lbIub5bmxKAYHUh6UWRvXdbUmtIAsKSh0Obf7hgqh6xFDwEVD_NNjR7v3R2vkcE6EJ5hfZ-LNcZc9BhYQYMILMCw_OpW6lncqy7bL7x_56nBiwE8RPfJEWEJif6n05j2B-evKzNrRUpVnBek6wwztlBy7zGJNV375Q0Wl4ev_ZQOQFeK0oKpmHkthG3nth5UTC37PcG4Y0sxKBr10ZoTy6Fyc0kj8bJHy_UdAVgcFzxHCQHR0Uy0FZA5QVlCOrXVMAf1E"/>
+<img alt="Foto de perfil do proprietário" class="w-14 h-14 rounded-full object-cover border-2 border-[#00e6a8] shadow-[0_0_10px_rgba(0,230,168,0.3)]" id="propertyOwnerAvatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbbIM0ad81i2lbIub5bmxKAYHUh6UWRvXdbUmtIAsKSh0Obf7hgqh6xFDwEVD_NNjR7v3R2vkcE6EJ5hfZ-LNcZc9BhYQYMILMCw_OpW6lncqy7bL7x_56nBiwE8RPfJEWEJif6n05j2B-evKzNrRUpVnBek6wwztlBy7zGJNV375Q0Wl4ev_ZQOQFeK0oKpmHkthG3nth5UTC37PcG4Y0sxKBr10ZoTy6Fyc0kj8bJHy_UdAVgcFzxHCQHR0Uy0FZA5QVlCOrXVMAf1E">
 <span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-emerald-500 border-2 border-[#0a1f2e]"></span>
 </div>
 <div class="min-w-0 flex-1">
 <p class="text-xs text-slate-400 font-medium" id="propertyOwnerRole">Proprietário Responsável</p>
 <h2 class="text-base font-bold text-white leading-tight truncate" id="propertyOwnerName">Ronaldo Londres</h2>
 <a class="text-xs font-semibold text-[#00e6a8] hover:underline flex items-center gap-1 mt-0.5 truncate" href="tel:+5584986802229" id="propertyOwnerPhoneLink">
-<svg class="w-3.5 h-3.5 shrink-0" fill="currentColor" viewbox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
+<svg class="w-3.5 h-3.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
 <span class="" id="propertyOwnerPhoneText">(84) 98680-2229</span>
 </a>
 </div>
@@ -274,16 +272,16 @@
 <div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e6a8] shrink-0"></span><span class="truncate" id="featLaundry">1 Área de Serviço</span></div>
 <div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e6a8] shrink-0"></span><span class="truncate" id="featKitchen">1 Cozinha Planejada</span></div>
 <div class="flex items-center gap-2 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-[#00e6a8] shrink-0"></span><span class="truncate" id="featGarage">2 Vagas de Garagem</span></div>
-</div>
+</div><div class="p-3 rounded-2xl bg-[#071622] border border-cyan-500/20 space-y-2" id="propertyDescriptionContainer"><div class="flex items-center justify-between"><span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider font-['Space_Grotesk']">Descrição</span><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-[10px] font-bold text-[#00e6a8] font-['Space_Grotesk']" id="propertySolarBadge"><span class="">🌤️</span><span id="propertySolarText" class="">Lado da Sombra</span></span></div><p class="text-xs text-slate-300 leading-relaxed" id="propertyDescriptionText">Excelente imóvel com acabamento de primeira, ótima ventilação e localização privilegiada no bairro Jardins / Cidade das Rosas.</p></div>
 <!-- Botões de Ação do Imóvel -->
 <div class="pt-2 flex flex-wrap gap-2.5 sm:gap-3">
 <!-- WhatsApp Link oficial wa.me -->
 <a class="flex-1 min-w-[140px] text-center bg-[#00e6a8] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-bold text-xs py-3 px-2 rounded-xl tracking-wider shadow-neon-cyan transition-all uppercase whitespace-nowrap flex items-center justify-center gap-2 font-['Space_Grotesk']" href="https://wa.me/5584986802229?text=Ol%C3%A1%2C%20vi%20o%20anuncio%20do%20aluguel%20da%20sua%20casa%2C%20ela%20ainda%20est%C3%A1%20disponivel%20%3F" id="propertyWhatsappBtn" rel="noopener noreferrer" target="_blank">
-<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
 <span class="">ENTRAR EM CONTATO</span>
 </a>
 <button class="px-4 py-3 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold active:scale-95 transition shrink-0 flex items-center gap-1.5" id="favoriteBtn" onclick="toggleFavorite()" type="button">
-<svg class="w-4 h-4 text-slate-400 transition" fill="none" id="favoriteIcon" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<svg class="w-4 h-4 text-slate-400 transition" fill="none" id="favoriteIcon" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 <span class="" id="favoriteLabel">Favoritar</span>
 </button>
 </div>
@@ -303,20 +301,20 @@
 </div>
 <!-- Moldura do Mapa Satélite Estilizado -->
 <div class="relative bg-[#0c2234] border-2 border-[#00e6a8] rounded-3xl overflow-hidden shadow-neon-glow aspect-video sm:aspect-[16/10]" id="mapVisualContainer">
-<img alt="Visão de satélite cartográfico e demarcação de rota" class="w-full h-full object-cover brightness-75 contrast-125 transition-transform duration-300" id="mapSatelliteImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMUGxeQ3hAKNuBpPVha5ot27sL_nrmgPk0Fh6uOjVe1gy86eXdlOq3-yjz5zFyNm0BJHNi9Y8Nu3G99FI9lwMvOj1tHCxy8vGvVELYej8-PDWQjQcjAngB7a0BXxDQOtvXD7BdcQqvPW07m_iYSHiwRcuZiwVdYZUIRMHsBTjvuxOgLNd6ekYKR9IlPEFPX6tAn7VJ5yB16eWk576qgrU3YiMbVBszFcu59ni9uzwrfwjbbmtRJCLOAw"/>
+<img alt="Visão de satélite cartográfico e demarcação de rota" class="w-full h-full object-cover brightness-75 contrast-125 transition-transform duration-300" id="mapSatelliteImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMUGxeQ3hAKNuBpPVha5ot27sL_nrmgPk0Fh6uOjVe1gy86eXdlOq3-yjz5zFyNm0BJHNi9Y8Nu3G99FI9lwMvOj1tHCxy8vGvVELYej8-PDWQjQcjAngB7a0BXxDQOtvXD7BdcQqvPW07m_iYSHiwRcuZiwVdYZUIRMHsBTjvuxOgLNd6ekYKR9IlPEFPX6tAn7VJ5yB16eWk576qgrU3YiMbVBszFcu59ni9uzwrfwjbbmtRJCLOAw">
 <div class="absolute inset-0 bg-[#050c14]/40 pointer-events-none"></div>
 <!-- Pin Central de Alta Visibilidade -->
 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pin-glow">
 <div class="bg-[#00e6a8] text-[#050c14] font-extrabold text-[10px] px-2 py-0.5 rounded-full shadow-md whitespace-nowrap mb-1 font-['Space_Grotesk']" id="mapPinBadge">
             R$ 380,00 / mês
           </div>
-<svg class="w-8 h-8 text-[#00e6a8] drop-shadow-[0_0_12px_#00e6a8]" fill="currentColor" viewbox="0 0 24 24">
+<svg class="w-8 h-8 text-[#00e6a8] drop-shadow-[0_0_12px_#00e6a8]" fill="currentColor" viewBox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
 <!-- Pin secundário adjacente -->
 <div class="absolute top-1/4 left-1/4 flex flex-col items-center opacity-85">
-<svg class="w-5 h-5 text-[#0ea5e9] drop-shadow-[0_0_8px_#0ea5e9]" fill="currentColor" viewbox="0 0 24 24">
+<svg class="w-5 h-5 text-[#0ea5e9] drop-shadow-[0_0_8px_#0ea5e9]" fill="currentColor" viewBox="0 0 24 24">
 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 </svg>
 </div>
@@ -345,7 +343,7 @@
 <div class="p-4 sm:p-5 border-b border-cyan-500/20 flex items-center justify-between bg-[#071622] shrink-0">
 <div class="flex items-center gap-2.5">
 <div class="w-8 h-8 rounded-full bg-[#00e6a8]/20 flex items-center justify-center text-[#00e6a8]">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </div>
 <div>
 <h3 class="text-base font-extrabold text-white leading-tight font-['Space_Grotesk']">Anuncie Seu Imóvel</h3>
@@ -377,72 +375,44 @@
 <!-- 1. CEP PRIORITÁRIO COM BUSCA AUTOMÁTICA -->
 <div class="p-3.5 bg-[#071622] rounded-2xl border border-cyan-500/40 space-y-3">
 <div class="flex items-center justify-between">
-<label class="block text-[#00e6a8] font-bold text-xs flex items-center gap-1.5 font-['Space_Grotesk']">
-<svg class="w-4 h-4 shrink-0" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
-              1. CEP e Endereço do Imóvel
-            </label>
+<label class="block text-[#00e6a8] font-bold text-xs flex items-center gap-1.5 font-['Space_Grotesk']"><svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg> 1. CEP e Endereço do Imóvel <span class="text-rose-400 font-bold ml-0.5">*</span></label>
 <span class="text-[10px] text-[#00e6a8]" id="cepFeedback">Busca rápida</span>
 </div>
 <div class="flex gap-2 items-center">
 <div class="relative flex-1">
-<input autocomplete="postal-code" class="w-full bg-[#0c2234] border border-[#00e6a8]/60 focus:border-[#00e6a8] rounded-xl pl-9 pr-3 py-2 text-white font-bold tracking-wider placeholder-slate-500 focus:ring-1 focus:ring-[#00e6a8] text-xs font-['Space_Grotesk']" id="inputCep" maxlength="9" placeholder="CEP do imóvel" type="text" value=""/>
+<input autocomplete="postal-code" class="w-full bg-[#0c2234] border border-[#00e6a8]/60 focus:border-[#00e6a8] rounded-xl pl-9 pr-3 py-2 text-white font-bold tracking-wider placeholder-slate-500 focus:ring-1 focus:ring-[#00e6a8] text-xs font-['Space_Grotesk']" id="inputCep" maxlength="9" placeholder="CEP do imóvel" type="text" value="">
 <span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 font-medium text-xs">📍</span>
 </div>
 <button class="px-3.5 py-2 rounded-xl bg-[#00e6a8] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-bold text-xs transition flex items-center gap-1 shrink-0 cursor-pointer shadow-neon-cyan font-['Space_Grotesk']" id="btnBuscarCep" onclick="fetchCep()" type="button">
-<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
 <span class="">Buscar CEP</span>
 </button>
 </div>
 <p class="text-[10px] text-slate-400">Todos os campos de endereço são 100% editáveis:</p>
 <!-- Campos de Endereço Editáveis -->
-<div class="space-y-2">
-<div>
-<span class="text-[10px] text-slate-300 block mb-0.5">Rua / Logradouro:</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputStreet" placeholder="Nome da rua" type="text" value=""/>
-</div>
-<div class="grid grid-cols-2 gap-2">
-<div>
-<span class="text-[10px] text-slate-300 block mb-0.5">Número:</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputNumber" placeholder="Número / Complemento" type="text" value=""/>
-</div>
-<div>
-<span class="text-[10px] text-slate-300 block mb-0.5">Complemento:</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputComplement" placeholder="ex: Casa A, Apto 202" type="text" value=""/>
-</div>
-</div>
-<div class="grid grid-cols-2 gap-2">
-<div>
-<span class="text-[10px] text-slate-300 block mb-0.5">Bairro:</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputDistrict" placeholder="Bairro" required="" type="text" value=""/>
-</div>
-<div>
-<span class="text-[10px] text-slate-300 block mb-0.5">Cidade / UF:</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputCity" placeholder="Cidade - UF" required="" type="text" value=""/>
-</div>
-</div>
-</div>
+<div class="space-y-2"><div><span class="text-[10px] text-slate-300 block mb-0.5">Rua / Logradouro <span class="text-rose-400 font-bold">*</span>:</span><input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputStreet" placeholder="Nome da rua" type="text" value=""></div><div class="grid grid-cols-2 gap-2"><div><span class="text-[10px] text-slate-300 block mb-0.5">Número <span class="text-slate-500 text-[9px]">(Opcional)</span>:</span><input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputNumber" placeholder="Número / Complemento" type="text" value=""></div><div><span class="text-[10px] text-slate-300 block mb-0.5">Complemento <span class="text-slate-500 text-[9px]">(Opcional)</span>:</span><input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputComplement" placeholder="ex: Casa A, Apto 202" type="text" value=""></div></div><div class="grid grid-cols-2 gap-2"><div><span class="text-[10px] text-slate-300 block mb-0.5">Bairro <span class="text-rose-400 font-bold">*</span>:</span><input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputDistrict" placeholder="Bairro" required="" type="text" value=""></div><div><span class="text-[10px] text-slate-300 block mb-0.5">Cidade / UF <span class="text-rose-400 font-bold">*</span>:</span><input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] text-xs" id="inputCity" placeholder="Cidade - UF" required="" type="text" value=""></div></div></div>
 </div>
 <!-- 2. Finalidade / Tipo de Imóvel -->
 <div class="p-3.5 bg-[#071622] rounded-2xl border border-cyan-500/30 space-y-2.5">
 <div class="flex items-center justify-between">
-<label class="block text-[#00e6a8] font-bold text-xs font-['Space_Grotesk']">2. Finalidade / Tipo de Imóvel</label>
+<label class="block text-[#00e6a8] font-bold text-xs font-['Space_Grotesk']"><svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg> 1. CEP e Endereço do Imóvel <span class="text-rose-400 font-bold ml-0.5">*</span></label>
 <span class="text-[10px] text-slate-400 font-medium">Selecione para definir o valor</span>
 </div>
 <div class="grid grid-cols-3 gap-2" id="dealTypeContainer">
 <label class="relative flex flex-col items-center justify-center p-3 rounded-xl border border-[#00e6a8] bg-[#0c2234] cursor-pointer hover:border-[#00e6a8] transition text-center font-bold select-none deal-option shadow-[0_0_12px_rgba(0,230,168,0.25)]" id="labelDealAluguel">
-<input checked="" class="peer sr-only" name="dealType" onchange="handleDealTypeChange(this.value)" type="radio" value="Aluguel"/>
+<input checked="" class="peer sr-only" name="dealType" onchange="handleDealTypeChange(this.value)" type="radio" value="Aluguel">
 <span class="text-base mb-0.5">🔑</span>
 <span class="text-xs text-[#00e6a8] peer-checked:text-[#00e6a8] font-black tracking-wide" id="dealTextAluguel">Aluguel</span>
 <div class="absolute inset-0 rounded-xl border-2 border-[#00e6a8] pointer-events-none peer-checked:block shadow-[0_0_10px_rgba(0,230,168,0.4)]"></div>
 </label>
 <label class="relative flex flex-col items-center justify-center p-3 rounded-xl border border-cyan-500/30 bg-[#0c2234] cursor-pointer hover:border-[#00e6a8] transition text-center font-bold select-none deal-option" id="labelDealVenda">
-<input class="peer sr-only" name="dealType" onchange="handleDealTypeChange(this.value)" type="radio" value="Venda"/>
+<input class="peer sr-only" name="dealType" onchange="handleDealTypeChange(this.value)" type="radio" value="Venda">
 <span class="text-base mb-0.5">🏷️</span>
 <span class="text-xs text-slate-300 peer-checked:text-[#00e6a8] font-bold tracking-wide" id="dealTextVenda">Venda</span>
 <div class="absolute inset-0 rounded-xl border-2 border-[#00e6a8] pointer-events-none hidden peer-checked:block shadow-[0_0_10px_rgba(0,230,168,0.4)]"></div>
 </label>
 <label class="relative flex flex-col items-center justify-center p-3 rounded-xl border border-cyan-500/30 bg-[#0c2234] cursor-pointer hover:border-[#00e6a8] transition text-center font-bold select-none deal-option" id="labelDealLazer">
-<input class="peer sr-only" name="dealType" onchange="handleDealTypeChange(this.value)" type="radio" value="Área de Lazer"/>
+<input class="peer sr-only" name="dealType" onchange="handleDealTypeChange(this.value)" type="radio" value="Área de Lazer">
 <span class="text-base mb-0.5">🏖️</span>
 <span class="text-xs text-slate-300 peer-checked:text-[#00e6a8] font-bold tracking-wide" id="dealTextLazer">Lazer</span>
 <div class="absolute inset-0 rounded-xl border-2 border-[#00e6a8] pointer-events-none hidden peer-checked:block shadow-[0_0_10px_rgba(0,230,168,0.4)]"></div>
@@ -450,20 +420,8 @@
 </div>
 </div>
 <!-- 3. Dimensões do Terreno & Área -->
-<div class="p-3.5 bg-[#071622] rounded-2xl border border-cyan-500/20 space-y-2">
-<label class="block text-[#00e6a8] font-bold text-xs font-['Space_Grotesk']">3. Dimensões do Terreno e Área</label>
-<div class="grid grid-cols-2 gap-2">
-<div>
-<span class="text-[10px] text-slate-400 block mb-0.5">Dimensão do Terreno:</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e6a8]" id="inputDimensions" placeholder="Ex: 10x20m ou 200m²" type="text" value=""/>
-</div>
-<div>
-<span class="text-[10px] text-slate-400 block mb-0.5">Área Útil Construída (m²):</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e6a8] font-['Space_Grotesk']" id="inputArea" placeholder="ex: 211" type="number" value=""/>
-</div>
-</div>
-</div>
-</div>
+<div class="p-3.5 bg-[#071622] rounded-2xl border border-cyan-500/20 space-y-3"><div class="space-y-1.5"><div class="flex items-center justify-between"><label class="block text-[#00e6a8] font-bold text-xs font-['Space_Grotesk']"><svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg> 1. CEP e Endereço do Imóvel <span class="text-rose-400 font-bold ml-0.5">*</span></label><span class="text-[10px] text-slate-400 font-medium">Ventilação &amp; Iluminação</span></div><div class="grid grid-cols-2 gap-2"><label class="flex items-center gap-2 p-2.5 rounded-xl border border-[#00e6a8] bg-[#0c2234] cursor-pointer solar-option shadow-[0_0_10px_rgba(0,230,168,0.2)]" id="labelSolarSombra"><input checked="" class="peer sr-only" name="solarPosition" onchange="handleSolarChange(this.value)" type="radio" value="Lado da Sombra"><span class="text-base">🌤️</span><div><span class="text-xs text-[#00e6a8] font-bold block" id="solarTextSombra">Lado da Sombra</span><span class="text-[9px] text-slate-400 block">Mais fresco e ventilado</span></div></label><label class="flex items-center gap-2 p-2.5 rounded-xl border border-cyan-500/30 bg-[#0c2234] cursor-pointer solar-option" id="labelSolarSol"><input class="peer sr-only" name="solarPosition" onchange="handleSolarChange(this.value)" type="radio" value="Lado do Sol"><span class="text-base">☀️</span><div><span class="text-xs text-slate-300 font-bold block" id="solarTextSol">Lado do Sol</span><span class="text-[9px] text-slate-400 block">Alta iluminação solar</span></div></label></div></div><div class="pt-2 border-t border-cyan-500/15 space-y-2"><label class="block text-[#00e6a8] font-bold text-xs font-['Space_Grotesk']" id="labelDimensionsTitle"><svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg> 1. CEP e Endereço do Imóvel <span class="text-rose-400 font-bold ml-0.5">*</span></label><div class="grid grid-cols-2 gap-2" id="dimensionsGridWrapper"><div><span class="text-[10px] text-slate-400 block mb-0.5" id="labelDimensionsTerreno">Dimensão do Terreno <span class="text-rose-400 font-bold">*</span>:</span><input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e6a8]" id="inputDimensions" placeholder="Ex: 10x20m ou 200m²" type="text" value=""></div><div id="wrapperBuiltArea"><span class="text-[10px] text-slate-400 block mb-0.5">Área Útil Construída (m²) <span class="text-rose-400 font-bold">*</span>:</span><input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e6a8] font-['Space_Grotesk']" id="inputArea" placeholder="ex: 211" type="number" value=""></div></div></div></div>
+<div class="hidden p-3 rounded-xl bg-rose-500/10 border border-rose-500/40 text-rose-300 text-xs flex items-center gap-2" id="step1ValidationError"><svg class="w-4 h-4 text-rose-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span id="step1ValidationMsg" class="">Preencha os campos obrigatórios marcados com * para avançar.</span></div></div>
 <!-- ETAPA 2: Cômodos, Terreno & Fotos -->
 <div class="space-y-4 hidden" id="formStep2">
 <!-- Cômodos e Quantidades -->
@@ -513,19 +471,19 @@
 <label class="block text-slate-300 font-bold mb-1.5 font-['Space_Grotesk']">5. Áreas Adicionais &amp; Quintal</label>
 <div class="grid grid-cols-2 gap-2">
 <label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input checked="" class="rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="checkYard" type="checkbox"/>
+<input checked="" class="rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="checkYard" type="checkbox">
 <span class="">Quintal amplo</span>
 </label>
 <label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input checked="" class="rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="checkLaundry" type="checkbox"/>
+<input checked="" class="rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="checkLaundry" type="checkbox">
 <span class="">Área de serviço</span>
 </label>
 <label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input checked="" class="rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="checkKitchen" type="checkbox"/>
+<input checked="" class="rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="checkKitchen" type="checkbox">
 <span class="">Cozinha planejada</span>
 </label>
 <label class="flex items-center gap-2 p-2 rounded-xl bg-[#071622] border border-cyan-500/20 cursor-pointer">
-<input class="rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="checkPool" type="checkbox"/>
+<input class="rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="checkPool" type="checkbox">
 <span class="">Piscina / Área Lazer</span>
 </label>
 </div>
@@ -536,27 +494,27 @@
 <p class="text-[11px] text-slate-400 mb-2">Selecione a foto de destaque ou envie novas fotos:</p>
 <div class="grid grid-cols-4 gap-2 mb-2" id="photoSelectionContainer">
 <div class="relative rounded-xl overflow-hidden aspect-square border-2 border-[#00e6a8] cursor-pointer photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik">
-<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik"/>
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbysreSWOIZ2_Pk1RryrqP5pNmnVTdeX-NJR6srvpEsw2FnNYTPNrQ_G7BwnPXtMHnogAuiHshi9YWAVdg6g1YT6fYnpHU8N_Fykw_slUc6cRAEqXUyGJolusVLRe5_1Bl_68U2NXVlY-55rfc59S-KlkhIAIcA2PEbPnysN-3kAkaNzfrXdQjCbPOVoezhd0p4sFjzVjHUOBGWC-93ANs3KLv3frnO9mTHCGHReF_z0Y59vA7fkg6jLiffPFTf14ETlxZOEflD65FKik">
 <span class="absolute top-1 right-1 w-4 h-4 bg-[#00e6a8] text-[#050c14] rounded-full flex items-center justify-center text-[10px] font-bold check-mark">✓</span>
 </div>
 <div class="relative rounded-xl overflow-hidden aspect-square border border-cyan-500/30 cursor-pointer photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWWKeevwFBpHbmRY-esN2jYVPnc4Wq-lnRjQytT3obsGIZdlOUMqcS5p3LDddD0NhKdjEgWnWBaqncUkNbhDsKJ71Z-_um4gL_bSiridPgrjPVbCzITESh9PEagTCYdg0U6Ndgc3XGc2S3TAYTGzx5SbqmQ8DACkmJ5ZwZtel-pCZdu3jQuxW1KsP0cp37MZQm-LXn__mAEiFIZCYCiDcFMpFo-2N0dZGbaGwp4wzMn5qTvx7aIRE5kXrCe3AAlZ77l1Qagfl9vzZiUc">
-<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWWKeevwFBpHbmRY-esN2jYVPnc4Wq-lnRjQytT3obsGIZdlOUMqcS5p3LDddD0NhKdjEgWnWBaqncUkNbhDsKJ71Z-_um4gL_bSiridPgrjPVbCzITESh9PEagTCYdg0U6Ndgc3XGc2S3TAYTGzx5SbqmQ8DACkmJ5ZwZtel-pCZdu3jQuxW1KsP0cp37MZQm-LXn__mAEiFIZCYCiDcFMpFo-2N0dZGbaGwp4wzMn5qTvx7aIRE5kXrCe3AAlZ77l1Qagfl9vzZiUc"/>
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWWKeevwFBpHbmRY-esN2jYVPnc4Wq-lnRjQytT3obsGIZdlOUMqcS5p3LDddD0NhKdjEgWnWBaqncUkNbhDsKJ71Z-_um4gL_bSiridPgrjPVbCzITESh9PEagTCYdg0U6Ndgc3XGc2S3TAYTGzx5SbqmQ8DACkmJ5ZwZtel-pCZdu3jQuxW1KsP0cp37MZQm-LXn__mAEiFIZCYCiDcFMpFo-2N0dZGbaGwp4wzMn5qTvx7aIRE5kXrCe3AAlZ77l1Qagfl9vzZiUc">
 </div>
 <div class="relative rounded-xl overflow-hidden aspect-square border border-cyan-500/30 cursor-pointer photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuCYN7ktoNmoZ02WFtoP1qJg8AL7G8RK9zkMCvf10A2tYwIB4tB2ETGPaxFy1-qn21uEz3VYE2KHa25tqPjHBsaGaoEmxShMmgrqiDGc4Azjwl7Bv7SCxmLnSsUKS68ZJIBUVQMkpTQCQVAqWXZTMeZKW_98C0P4cNXy5WdZV1JwDpcAQYBb6ACg6VYzpqgqJJb6FhjMJ1bF8M5y0uzF3w24kxN-sIoV61yO4Wtvzg0Hl82z_UzvxeP2CEoPjcDFcC50g_dX0RkxjXurR6U">
-<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYN7ktoNmoZ02WFtoP1qJg8AL7G8RK9zkMCvf10A2tYwIB4tB2ETGPaxFy1-qn21uEz3VYE2KHa25tqPjHBsaGaoEmxShMmgrqiDGc4Azjwl7Bv7SCxmLnSsUKS68ZJIBUVQMkpTQCQVAqWXZTMeZKW_98C0P4cNXy5WdZV1JwDpcAQYBb6ACg6VYzpqgqJJb6FhjMJ1bF8M5y0uzF3w24kxN-sIoV61yO4Wtvzg0Hl82z_UzvxeP2CEoPjcDFcC50g_dX0RkxjXurR6U"/>
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYN7ktoNmoZ02WFtoP1qJg8AL7G8RK9zkMCvf10A2tYwIB4tB2ETGPaxFy1-qn21uEz3VYE2KHa25tqPjHBsaGaoEmxShMmgrqiDGc4Azjwl7Bv7SCxmLnSsUKS68ZJIBUVQMkpTQCQVAqWXZTMeZKW_98C0P4cNXy5WdZV1JwDpcAQYBb6ACg6VYzpqgqJJb6FhjMJ1bF8M5y0uzF3w24kxN-sIoV61yO4Wtvzg0Hl82z_UzvxeP2CEoPjcDFcC50g_dX0RkxjXurR6U">
 </div>
 <div class="relative rounded-xl overflow-hidden aspect-square border border-cyan-500/30 cursor-pointer photo-choice" data-photo="https://lh3.googleusercontent.com/aida-public/AB6AXuBRwDpZLPyLXHDS-Tnff0AoY4cf0hufOjqGd9sbMzS5JevfHqt4CbHbTts1qNmRKg6UktyBDutrWWp-A3jJJka3zeHzd-0uqG8PwVR73Ckn5gGOxLdgElBwYzXvGsbqYatyvpawADriTwA8xfBPo-m86XZ73chPGHja3GiDDPgj1ny2ZwACv9dOGeX0sdb8mEMcYz4TBoOwJbJcyWvixMeolhNs6SbCP8F4g-zpf9yDBBck1PBGYv3qrux1RrliUJQZoRXP_ppwimnYUZc">
-<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRwDpZLPyLXHDS-Tnff0AoY4cf0hufOjqGd9sbMzS5JevfHqt4CbHbTts1qNmRKg6UktyBDutrWWp-A3jJJka3zeHzd-0uqG8PwVR73Ckn5gGOxLdgElBwYzXvGsbqYatyvpawADriTwA8xfBPo-m86XZ73chPGHja3GiDDPgj1ny2ZwACv9dOGeX0sdb8mEMcYz4TBoOwJbJcyWvixMeolhNs6SbCP8F4g-zpf9yDBBck1PBGYv3qrux1RrliUJQZoRXP_ppwimnYUZc"/>
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRwDpZLPyLXHDS-Tnff0AoY4cf0hufOjqGd9sbMzS5JevfHqt4CbHbTts1qNmRKg6UktyBDutrWWp-A3jJJka3zeHzd-0uqG8PwVR73Ckn5gGOxLdgElBwYzXvGsbqYatyvpawADriTwA8xfBPo-m86XZ73chPGHja3GiDDPgj1ny2ZwACv9dOGeX0sdb8mEMcYz4TBoOwJbJcyWvixMeolhNs6SbCP8F4g-zpf9yDBBck1PBGYv3qrux1RrliUJQZoRXP_ppwimnYUZc">
 </div>
 </div>
 <!-- Upload customizado do celular -->
 <label class="w-full text-center py-2.5 px-3 bg-[#0c2234] border border-dashed border-[#00e6a8]/50 rounded-xl hover:border-[#00e6a8] text-[#00e6a8] text-xs font-semibold cursor-pointer transition flex items-center justify-center gap-1.5 font-['Space_Grotesk']">
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 <span class="" id="uploadLabel">Enviar fotos da galeria ou câmera</span>
-<input accept="image/*" class="hidden" id="customPhotoInput" onchange="handlePhotoUpload(event)" type="file"/>
+<input accept="image/*" class="hidden" id="customPhotoInput" onchange="handlePhotoUpload(event)" type="file">
 </label>
 </div>
-</div>
+<div class=""><div class="flex items-center justify-between mb-1.5"><label class="block text-slate-300 font-bold font-['Space_Grotesk']" for="inputPropertyDescription">7. Descrição do Imóvel (Opcional)</label><span class="text-[10px] text-slate-400">Destaque diferenciais e acabamento</span></div><textarea class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl p-3 text-white text-xs placeholder-slate-500 focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] resize-none" id="inputPropertyDescription" placeholder="Ex: Excelente imóvel com acabamento de primeira, ótima ventilação e localização privilegiada no bairro Jardins / Cidade das Rosas..." rows="3"></textarea></div></div>
 <!-- ETAPA 3: Valores com Suporte Multimoedas & Contato do Proprietário -->
 <div class="space-y-4 hidden" id="formStep3">
 <!-- Bloco de Moeda e Valor com Máscara Automática -->
@@ -566,7 +524,7 @@
 <div class="flex items-center justify-between mb-1.5">
 <label class="text-[#00e6a8] font-bold text-xs flex items-center gap-1.5 font-['Space_Grotesk']" for="selectCurrency">
 <span class="text-sm">🌐</span>
-<span>Moeda do Anúncio</span>
+<span class="">Moeda do Anúncio</span>
 </label>
 <span class="text-[10px] text-slate-400 font-medium">8 Moedas Globais</span>
 </div>
@@ -594,16 +552,16 @@
 <div class="flex items-center justify-between mb-1.5">
 <label class="block text-[#00e6a8] font-bold text-xs flex items-center gap-1.5 font-['Space_Grotesk']" id="labelPriceTitle">
 <span class="text-sm" id="labelPriceIcon">🔑</span>
-<span id="labelPriceText">Valor do Aluguel Mensal</span>
+<span id="labelPriceText" class="">Valor do Aluguel Mensal</span>
 </label>
 <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[#00e6a8]/20 text-[#00e6a8] border border-[#00e6a8]/40 font-['Space_Grotesk']" id="step3DealBadge">Aluguel</span>
 </div>
 <div class="relative">
 <span class="absolute left-3.5 top-1/2 -translate-y-1/2 font-extrabold text-[#00e6a8] text-sm font-['Space_Grotesk'] select-none" id="inputCurrencyPrefix">R$</span>
-<input autocomplete="off" class="w-full bg-[#0c2234] border border-cyan-500/40 rounded-xl pl-14 pr-4 py-2.5 text-white font-extrabold text-sm focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] font-['Space_Grotesk'] tracking-wide" id="inputValue" inputmode="numeric" placeholder="380,00" required="" type="text" value="380,00"/>
+<input autocomplete="off" class="w-full bg-[#0c2234] border border-cyan-500/40 rounded-xl pl-14 pr-4 py-2.5 text-white font-extrabold text-sm focus:border-[#00e6a8] focus:ring-1 focus:ring-[#00e6a8] font-['Space_Grotesk'] tracking-wide" id="inputValue" inputmode="numeric" placeholder="380,00" required="" type="text" value="380,00">
 </div>
 <div class="flex items-center justify-between text-[11px] text-slate-400 mt-1">
-<span id="subtextPrice">Valor mensal cobrado pelo aluguel do imóvel.</span>
+<span id="subtextPrice" class="">Valor mensal cobrado pelo aluguel do imóvel.</span>
 <span class="text-[10px] text-[#00e6a8] font-mono">Máscara: 1.000,00</span>
 </div>
 </div>
@@ -612,16 +570,16 @@
 <label class="block text-[#00e6a8] font-bold font-['Space_Grotesk']">8. Contato do Proprietário / Anunciante</label>
 <div>
 <span class="text-[11px] text-slate-300 block mb-1">Nome Completo:</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e6a8]" id="inputOwnerName" placeholder="Seu nome completo" required="" type="text" value=""/>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e6a8]" id="inputOwnerName" placeholder="Seu nome completo" required="" type="text" value="">
 </div>
 <div>
 <span class="text-[11px] text-slate-300 block mb-1">WhatsApp com DDD (para contato direto):</span>
-<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e6a8] font-['Space_Grotesk']" id="inputOwnerPhone" placeholder="Seu número (com DDD)" required="" type="text" value=""/>
+<input class="w-full bg-[#0c2234] border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs focus:border-[#00e6a8] font-['Space_Grotesk']" id="inputOwnerPhone" placeholder="Seu número (com DDD)" required="" type="text" value="">
 <span class="text-[10px] text-slate-400 block mt-1">Interessados clicarão no botão "Entrar em Contato" para falar diretamente neste número.</span>
 </div>
 </div>
 <div class="flex items-start gap-2 pt-1">
-<input checked="" class="mt-0.5 rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="acceptTerms" required="" type="checkbox"/>
+<input checked="" class="mt-0.5 rounded border-cyan-500/40 text-[#00e6a8] focus:ring-0" id="acceptTerms" required="" type="checkbox">
 <label class="text-[11px] text-slate-400" for="acceptTerms">Declaro que as informações são verídicas e desejo colocar este imóvel em destaque imediato na plataforma.</label>
 </div>
 </div>
@@ -634,10 +592,10 @@
 <div class="flex-1"></div>
 <button class="px-5 py-2.5 rounded-xl bg-[#00e6a8] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-extrabold text-xs tracking-wider uppercase shadow-neon-cyan transition flex items-center gap-1.5 cursor-pointer font-['Space_Grotesk']" id="modalNextStepBtn" onclick="nextStep()" type="button">
 <span class="">Avançar para Fotos &amp; Cômodos</span>
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </button>
 <button class="hidden px-6 py-3 rounded-xl bg-[#00e6a8] hover:bg-[#00cfa2] active:scale-95 text-[#050c14] font-black text-xs tracking-wider uppercase shadow-neon-cyan transition flex items-center gap-2 cursor-pointer font-['Space_Grotesk']" id="modalSubmitBtn" onclick="publishListing()" type="button">
-<svg class="w-4 h-4 animate-spin hidden" id="submitSpinner" viewbox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" fill="none" r="10" stroke-width="4"></circle><path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path></svg>
+<svg class="w-4 h-4 animate-spin hidden" id="submitSpinner" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" fill="none" r="10" stroke-width="4"></circle><path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path></svg>
 <span class="" id="submitBtnText">PUBLICAR ANÚNCIO AGORA</span>
 </button>
 </div>
@@ -1272,4 +1230,172 @@
   });
 </script>
 <!-- END: InteractiveScripts -->
-</body></html>
+
+
+<script class="">
+  function handleSolarChange(value) {
+    const sombra = document.getElementById('labelSolarSombra');
+    const sol = document.getElementById('labelSolarSol');
+    const textSombra = document.getElementById('solarTextSombra');
+    const textSol = document.getElementById('solarTextSol');
+    if (value === 'Lado da Sombra') {
+      if (sombra) {
+        sombra.className = 'flex items-center gap-2 p-2.5 rounded-xl border border-[#00e6a8] bg-[#0c2234] cursor-pointer solar-option shadow-[0_0_10px_rgba(0,230,168,0.2)]';
+      }
+      if (sol) {
+        sol.className = 'flex items-center gap-2 p-2.5 rounded-xl border border-cyan-500/30 bg-[#0c2234] cursor-pointer solar-option';
+      }
+      if (textSombra) textSombra.className = 'text-xs text-[#00e6a8] font-bold block';
+      if (textSol) textSol.className = 'text-xs text-slate-300 font-bold block';
+    } else {
+      if (sol) {
+        sol.className = 'flex items-center gap-2 p-2.5 rounded-xl border border-[#00e6a8] bg-[#0c2234] cursor-pointer solar-option shadow-[0_0_10px_rgba(0,230,168,0.2)]';
+      }
+      if (sombra) {
+        sombra.className = 'flex items-center gap-2 p-2.5 rounded-xl border border-cyan-500/30 bg-[#0c2234] cursor-pointer solar-option';
+      }
+      if (textSol) textSol.className = 'text-xs text-[#00e6a8] font-bold block';
+      if (textSombra) textSombra.className = 'text-xs text-slate-300 font-bold block';
+    }
+  }
+
+  const originalHandleDealType = window.handleDealTypeChange;
+  window.handleDealTypeChange = function(type) {
+    if (typeof originalHandleDealType === 'function') {
+      originalHandleDealType(type);
+    }
+    const builtAreaWrapper = document.getElementById('wrapperBuiltArea');
+    const gridWrapper = document.getElementById('dimensionsGridWrapper');
+    const dimTitle = document.getElementById('labelDimensionsTitle');
+    const labelTerreno = document.getElementById('labelDimensionsTerreno');
+    if (type === 'Área de Lazer') {
+      if (builtAreaWrapper) builtAreaWrapper.classList.add('hidden');
+      if (gridWrapper) {
+        gridWrapper.classList.remove('grid-cols-2');
+        gridWrapper.classList.add('grid-cols-1');
+      }
+      if (dimTitle) dimTitle.textContent = '4. Dimensões & Área do Terreno';
+      if (labelTerreno) labelTerreno.textContent = 'Dimensões / Área Total do Terreno:';
+    } else {
+      if (builtAreaWrapper) builtAreaWrapper.classList.remove('hidden');
+      if (gridWrapper) {
+        gridWrapper.classList.remove('grid-cols-1');
+        gridWrapper.classList.add('grid-cols-2');
+      }
+      if (dimTitle) dimTitle.textContent = '4. Dimensões do Terreno & Área';
+      if (labelTerreno) labelTerreno.textContent = 'Dimensão do Terreno:';
+    }
+  };
+
+  const originalPublishListing = window.publishListing;
+  window.publishListing = function() {
+    const descInput = document.getElementById('inputPropertyDescription');
+    const customDesc = descInput && descInput.value.trim() ? descInput.value.trim() : 'Excelente imóvel com acabamento de primeira, ótima ventilação e localização privilegiada no bairro Jardins / Cidade das Rosas.';
+    const solarInput = document.querySelector('input[name="solarPosition"]:checked')?.value || 'Lado da Sombra';
+
+    const descTextEl = document.getElementById('propertyDescriptionText');
+    if (descTextEl) descTextEl.textContent = customDesc;
+
+    const solarBadge = document.getElementById('propertySolarBadge');
+    const solarTextEl = document.getElementById('propertySolarText');
+    if (solarBadge && solarTextEl) {
+      if (solarInput === 'Lado do Sol') {
+        solarBadge.innerHTML = '<span>☀️</span><span id="propertySolarText">Lado do Sol</span>';
+      } else {
+        solarBadge.innerHTML = '<span>🌤️</span><span id="propertySolarText">Lado da Sombra</span>';
+      }
+    }
+
+    if (typeof originalPublishListing === 'function') {
+      originalPublishListing();
+    }
+  };
+</script><script id="step1-validation-script">
+  function validateStep1() {
+    const errBox = document.getElementById('step1ValidationError');
+    const cep = document.getElementById('inputCep');
+    const street = document.getElementById('inputStreet');
+    const district = document.getElementById('inputDistrict');
+    const city = document.getElementById('inputCity');
+    const dimensions = document.getElementById('inputDimensions');
+    const area = document.getElementById('inputArea');
+    const dealType = document.querySelector('input[name="dealType"]:checked')?.value || selectedDealType;
+    const isLazer = dealType === 'Área de Lazer';
+
+    const requiredFields = [
+      { el: cep, name: 'CEP' },
+      { el: street, name: 'Rua' },
+      { el: district, name: 'Bairro' },
+      { el: city, name: 'Cidade' },
+      { el: dimensions, name: 'Dimensões do Terreno' }
+    ];
+
+    if (!isLazer) {
+      requiredFields.push({ el: area, name: 'Área Útil' });
+    }
+
+    // Reset previous error outlines
+    [cep, street, district, city, dimensions, area].forEach(f => {
+      if (f) {
+        f.classList.remove('border-rose-500', 'focus:border-rose-500');
+      }
+    });
+
+    let hasError = false;
+    let firstInvalid = null;
+
+    requiredFields.forEach(field => {
+      if (!field.el || !field.el.value.trim()) {
+        hasError = true;
+        if (field.el) {
+          field.el.classList.add('border-rose-500');
+          if (!firstInvalid) firstInvalid = field.el;
+        }
+      }
+    });
+
+    if (hasError) {
+      if (errBox) {
+        errBox.classList.remove('hidden');
+        errBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+      if (firstInvalid) {
+        firstInvalid.focus();
+      }
+      return false;
+    }
+
+    if (errBox) {
+      errBox.classList.add('hidden');
+    }
+    return true;
+  }
+
+  // Attach live clear of error border on input
+  ['inputCep', 'inputStreet', 'inputDistrict', 'inputCity', 'inputDimensions', 'inputArea'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('input', () => {
+        if (el.value.trim()) {
+          el.classList.remove('border-rose-500');
+          const errBox = document.getElementById('step1ValidationError');
+          if (errBox && !document.querySelector('.border-rose-500')) {
+            errBox.classList.add('hidden');
+          }
+        }
+      });
+    }
+  });
+
+  const prevGoToStep = window.goToStep;
+  window.goToStep = function(step) {
+    if (currentStep === 1 && step > 1) {
+      if (!validateStep1()) {
+        return;
+      }
+    }
+    if (typeof prevGoToStep === 'function') {
+      prevGoToStep(step);
+    }
+  };
+</script></body></html>
